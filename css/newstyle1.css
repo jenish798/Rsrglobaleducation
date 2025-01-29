@@ -40,9 +40,9 @@
   }
 
   .button {
-    background-color: #6A6ED0; 
+    background-color: #393BA7; 
     border: none;
-    color: #000000;
+    color: #ffffff;
     padding: 10px 20px;
     margin: 10px;
     text-align: center;
@@ -68,6 +68,18 @@
   width: 80%;
   margin: auto;
 }
+
+.content h4{
+color: #000000;
+font-weight: bold;
+text-align:left;
+}
+
+.content p{
+  text-align: justify;
+  color: gray;
+}
+
 .timeline::before {
   content: "";
   position: absolute;
@@ -110,9 +122,8 @@
   color: white;
   font-weight: bold;
   text-align: center;
-  /* line-height: 30px; */
   border-radius: 50%;
-  top: 50%;
+  top: -8%;
   left: 50%;
   transform: translate(-50%, -50%);
   border: 4px solid #fff;
@@ -127,4 +138,64 @@
 }
 .timeline::before {
   background: linear-gradient(to bottom, #007bff 0%, #007bff var(--active-height, 0%), black var(--active-height, 0%), black 100%);
+}
+
+/* Responsive for Medium Screens (md - max-width: 768px) */
+@media (max-width: 768px) {
+  .timeline {
+    width: 90%;
+  }
+
+  .timeline::before {
+    left: 0; /* Move the vertical line to the left */
+    transform: translateX(0); /* Remove the center alignment */
+  }
+
+  .timeline-item::after {
+    left: -10px; /* Move the step number to the left side with the vertical line */
+    transform: translate(0, -50%); /* Adjust for left side placement */
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-item .content,
+  .timeline-item .image {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Responsive for Small Screens (sm - max-width: 576px) */
+@media (max-width: 576px) {
+  .timeline {
+    width: 95%;
+  }
+
+  .timeline::before {
+    left: 0; /* Move the vertical line to the left */
+    transform: translateX(0); /* Remove the center alignment */
+  }
+
+  .timeline-item::after {
+    left: -10px; /* Keep the step number aligned to the left */
+    transform: translate(0, -50%); /* Adjust for left side placement */
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-item .content,
+  .timeline-item .image {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+
+  .timeline-item .content {
+    text-align: left;
+  }
 }
