@@ -38,6 +38,170 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 
 
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> -->
+
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"> -->
+
+  <style>
+
+     /*--------------------------------------------------------------
+# heading button
+--------------------------------------------------------------*/
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; 
+  }
+
+  .button {
+    background-color: #393BA7; 
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .button:hover {
+    background-color:#4C4FAF;  /* Darker green when hovered */
+  }
+
+    .studydestinationbtn {
+  cursor: pointer;
+  background: #FD0011;
+  color: #fff;
+  padding: 15px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  font-size: 15px;
+  border-radius: 20px; 
+}
+
+  .studydestinationbtn:hover {
+    color: #fff;
+  }
+
+  .box-section {
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px;
+}
+
+.box-section h5 {
+font-weight: bold;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+.col {
+    flex: 1 1 calc(25% - 16px);
+    min-width: 280px;
+    display: flex;
+}
+.box {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    background: #f8f9fa;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.box:hover {
+    transform: translateY(-5px);
+}
+.icon {
+        width: auto; /* Adjust width as needed */
+        height: auto; /* Maintains aspect ratio */
+        display: block; /* Ensures no extra spacing */
+        margin: 0 auto; /* Centers the image */
+    }
+@media (max-width: 992px) {
+    .col {
+        flex: 1 1 calc(50% - 16px);
+    }
+}
+@media (max-width: 600px) {
+    .col {
+        flex: 1 1 100%;
+    }
+}
+
+ /*--------------------------------------------------------------
+# course
+--------------------------------------------------------------*/
+
+.course-item {
+            font-family: Arial, sans-serif;
+            /* background-color: #f3f4f6; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* min-height: auto; */
+            margin: 0;
+        }
+
+.course-container {
+            width: 90%;
+            max-width: 1000px;
+            text-align: center;
+        }
+        .course-title {
+            font-size: 24px;
+            color: #1e3a8a;
+            margin-bottom: 20px;
+        }
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .course-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .course-icon {
+            font-size: 24px;
+            color: #1e3a8a;
+            margin-right: 10px;
+        }
+        .course-text {
+            text-align: left;
+        }
+        .course-text h3 {
+            font-size: 16px;
+            margin: 0;
+        }
+        .course-text p {
+            font-size: 14px;
+            color: gray;
+            margin: 0;
+        }
+
+  </style>
+
   </head>
   <body>
 
@@ -159,7 +323,7 @@
           <div class="col-md-9 ftco-animate pb-5">
           	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Study Destination<i class="ion-ios-arrow-forward"></i></span></p>
             <h1 class="mb-3 bread">USA</h1>
-            <a href="javascript:void(0)" class="btn btn-primary">Free Counselling Session</a>
+            <a href="javascript:void(0)" class="studydestinationbtn">Free Counselling Session</a>
           </div>
         </div>
       </div>
@@ -169,19 +333,357 @@
       <div class="container">
         <div class="row">
     <div class="button-container">
-      <button class="button">How to apply</button>
-      <button class="button">courses in USA</button>
-      <button class="button">PhDs</button>
-      <button class="button">Student exchanges</button>
+      <button class="button">How to Apply</button>
+      <button class="button">Courses in USA</button>
+      <button class="button">PHDs</button>
+      <button class="button">Student Exchanges</button>
       <button class="button">Course Fees</button>
       <button class="button">Funding to study in the USA</button>
-      <button class="button">Student visas</button>
+      <button class="button">Student Visas</button>
       <button class="button">Top-Ranked Universities</button>
      
     </div>
   </div>
 </div>
   </section>
+
+    <section class="ftco-section ftco-degree-bg">
+    <div class="box-section">
+      <div class="row">
+          <div class="col">
+              <div class="box">
+                <img src="images/studydestination/icons/research.png" alt="Diverse Course Icon" class="icon">
+                  <h5>World-Class Universities and Research</h5>
+                  <p>The US is home to many of the top universities globally, such as Harvard, MIT, and Stanford, offering cutting-edge research facilities, programs, and professors at the forefront of their fields.</p>
+              </div>
+          </div>
+          <div class="col">
+              <div class="box">
+                <img src="images/studydestination/icons/Course-Offerings.png" alt="Diverse Course Icon" class="icon">
+                  <h5>Diverse Course Offerings</h5>
+                  <p>The variety of courses and flexibility in choosing or combining majors allows students to explore different disciplines, often leading to more well-rounded educational experiences.</p>
+              </div>
+          </div>
+          <div class="col">
+              <div class="box">
+                <img src="images/studydestination/icons/innovation and Technology.png" alt="Diverse Course Icon" class="icon">
+                  <h5>Innovation and Technology</h5>
+                  <p>The USA is a leader in innovation, particularly in fields like technology, engineering, and entrepreneurship. Students have access to the latest technology, research, and startup ecosystems.</p>
+              </div>
+          </div>
+          <div class="col">
+              <div class="box">
+                <img src="images/studydestination/icons/Internships.png" alt="Diverse Course Icon" class="icon">
+                  <h5>Career Opportunities and Internships</h5>
+                  <p>The strong job market, especially in major cities, and connections with top companies provide students with numerous internship and employment opportunities, especially in fields like tech, finance, and healthcare.</p>
+              </div>
+          </div>
+          <div class="col">
+              <div class="box">
+                <img src="images/studydestination/icons/endless-opportunities.png" alt="Diverse Course Icon" class="icon">
+                  <h5>Endless Funding Opportunities</h5>
+                  <p>U.S. institutions often provide substantial funding options for graduate students through fellowships, scholarships, and research assistantships, enabling them to focus on their studies without the burden of financial constraints.</p>
+              </div>
+          </div>
+          <div class="col">
+              <div class="box">
+                <img src="images/studydestination/icons/help-desk.png" alt="Diverse Course Icon" class="icon">
+                  <h5>Support Services for International Students</h5>
+                  <p>U.S. universities offer robust support systems for international students, including orientation programs, English language classes, and assistance with visa status and employment opportunities.</p>
+              </div>
+          </div>
+          <div class="col">
+              <div class="box">
+                <img src="images/studydestination/icons/Research-Opportunities.png" alt="Diverse Course Icon" class="icon">
+                  <h5>Pioneering Research Opportunities</h5>
+                  <p>The U.S. is a global leader in research and development, providing students with opportunities to collaborate on groundbreaking projects.</p>
+              </div>
+          </div>
+          <div class="col">
+              <div class="box">
+                <img src="images/studydestination/icons/industrial.png" alt="Diverse Course Icon" class="icon">
+                  <h5>Access to Industry Giants</h5>
+                  <p>Located in close proximity to major global business hubs such as Silicon Valley, Wall Street, and Hollywood, U.S. universities offer students the chance to directly connect with industry leaders.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="ftco-section ftco-degree-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h4 class="mb-3 bold-text text-center">Top-Ranked Universities in the USA</h4>
+        <div class="container mt-5">
+          <!-- Table View for Large Screens Only -->
+          <div class="table-responsive d-none d-lg-block">
+            <table class="table table-bordered table-hover">
+              <thead class="bold-text">
+                <tr class="table-active">
+                  <th scope="col" class="text-center fw-bold">University</th>
+                  <th scope="col" class="text-center fw-bold">QS Ranking (2025)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-center">Massachusetts Institute of Technology (MIT)</td>
+                  <td class="text-center">1</td>
+                </tr>
+                <tr>
+                  <td class="text-center">Harvard University</td>
+                  <td class="text-center">4</td>
+                </tr>
+                <tr>
+                  <td class="text-center">Stanford University</td>
+                  <td class="text-center">5</td>
+                </tr>
+                <tr>
+                  <td class="text-center">University of California, Berkeley (UCB)</td>
+                  <td class="text-center">10</td>
+                </tr>
+                <tr>
+                  <td class="text-center">University of Chicago</td>
+                  <td class="text-center">11</td>
+                </tr>
+                <tr>
+                  <td class="text-center">University of Pennsylvania</td>
+                  <td class="text-center">12</td>
+                </tr>
+                <tr>
+                  <td class="text-center">Cornell University</td>
+                  <td class="text-center">13</td>
+                </tr>
+                <tr>
+                  <td class="text-center">California Institute of Technology (Caltech)</td>
+                  <td class="text-center">15</td>
+                </tr>
+                <tr>
+                  <td class="text-center">Yale University</td>
+                  <td class="text-center">16</td>
+                </tr>
+                <tr>
+                  <td class="text-center">Princeton University</td>
+                  <td class="text-center">17</td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Card View for Medium and Smaller Screens -->
+          <div class="d-lg-none">
+            <div class="row">
+              <!-- Each card represents a university -->
+              <div class="col-sm-12 col-md-6 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Massachusetts Institute of Technology (MIT)</h5>
+                    <p class="card-text"><b>Ranking:</b> 1</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Harvard University</h5>
+                    <p class="card-text"><b>Ranking:</b> 4</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Stanford University</h5>
+                    <p class="card-text"><b>Ranking:</b> 5</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">University of California, Berkeley (UCB)</h5>
+                    <p class="card-text"><b>Ranking:</b> 10</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">University of Chicago</h5>
+                    <p class="card-text"><b>Ranking:</b> 11</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">University of Pennsylvania</h5>
+                    <p class="card-text"><b>Ranking:</b> 12</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Cornell University</h5>
+                    <p class="card-text"><b>Ranking:</b> 13</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">California Institute of Technology (Caltech)</h5>
+                    <p class="card-text"><b>Ranking:</b> 15</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Yale University</h5>
+                    <p class="card-text"><b>Ranking:</b> 16</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Princeton University</h5>
+                    <p class="card-text"><b>Ranking:</b> 17</p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ftco-section ftco-degree-bg course-item">
+  <div class="course-container">
+    <h2 class="course-title mb-3 bold-text text-center">Top courses in USA</h2>
+    <div class="course-grid">
+        <div class="course-card"><div class="course-icon"> 🏗️ </div><div class="course-text"><h3>Engineering</h3></div></div>
+        <div class="course-card"><div class="course-icon"> 📊 </div><div class="course-text"><h3>Data Science</h3></div></div>
+        <div class="course-card"><div class="course-icon"> 🖥️ </div><div class="course-text"><h3>Information Technology</h3></div></div>
+        <div class="course-card"><div class="course-icon"> 📚 </div><div class="course-text"><h3>MBA</h3></div></div>
+        <div class="course-card"><div class="course-icon"> 🏢 </div><div class="course-text"><h3>Computer Science</h3></div></div>
+        <div class="course-card"><div class="course-icon"> 🤖 </div><div class="course-text"><h3>Artificial Intelligence</h3></div></div>
+        <div class="course-card"><div class="course-icon"> 💰 </div><div class="course-text"><h3>finance</h3></div></div>
+        <div class="course-card"><div class="course-icon"> 🏥 </div><div class="course-text"><h3>Medicine </h3></div></div>
+    </div>
+</div>
+</section>
+
+<section class="ftco-section ftco-degree-bg">
+<section id="faq" class="faq section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <!-- <h4>Frequently Asked Questions</h4> -->
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row justify-content-center">
+
+      <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+
+        <h4 class="mb-3 bold-text text-center">Cost of Studying in USA & Fees</h4>
+
+        <div class="faq-container">
+
+          <!-- <div class="faq-item faq-active">
+            <h3>Non consectetur a erat nam at lectus urna duis?</h3>
+            <div class="faq-content">
+              <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div> -->
+          <!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3>Tuition Fees</h3>
+            <div class="faq-content">
+              <p>Public Universities (Out-of-State): $25,000 to $40,000 per year (~₹20 to ₹32 lakhs) <br>
+              	Private Universities: $30,000 to $50,000+ per year (~₹24 to ₹40 lakhs) <br>
+                Community Colleges: $5,000 to $20,000 per year (~₹4 to ₹16 lakhs)</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3>Living Expenses</h3>
+            <div class="faq-content">
+              <p>On-Campus Housing: $8,000 to $15,000 per year (~₹6.5 to ₹12 lakhs) <br>
+                Off-Campus Housing: $5,000 to $12,000 per year (~₹4 to ₹10 lakhs) <br>
+                Food: $3,000 to $5,000 per year (~₹2.5 to ₹4 lakhs) <br>
+                Transportation: $500 to $2,000 per year (~₹40,000 to ₹1.6 lakhs)</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3> Health Insurance</h3>
+            <div class="faq-content">
+              <p>Approximately $1,000 to $2,500 per year (~₹80,000 to ₹2 lakhs)</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+              <h3>Books and Supplies</h3>
+              <div class="faq-content">
+                <p>Around $500 to $1,000 per year (~₹40,000 to ₹80,000)</p>
+              </div>
+              <i class="faq-toggle bi bi-chevron-right"></i>
+            </div><!-- End Faq item-->
+
+            <div class="faq-item">
+              <h3>Visa and SEVIS Fee</h3>
+              <div class="faq-content">
+                <p>Visa Application Fee: $160 (~₹13,000) <br>
+                  SEVIS Fee (Student and Exchange Visitor Information System): $350 (~₹28,000)</p>
+              </div>
+              <i class="faq-toggle bi bi-chevron-right"></i>
+            </div><!-- End Faq item-->
+
+            <div class="faq-item">
+              <h3>Other Costs</h3>
+              <div class="faq-content">
+                <p>Personal expenses, activities, and incidentals: $2,000 to $4,000 per year (~₹1.6 to ₹3.2 lakhs)</p>
+              </div>
+              <i class="faq-toggle bi bi-chevron-right"></i>
+            </div><!-- End Faq item-->
+
+            <div class="faq-item">
+              <h3>Total Estimated Cost (per year)</h3>
+              <div class="faq-content">
+                <p>Public Universities (Out-of-State): $30,000 to $55,000 (~₹24 to ₹44 lakhs) <br>
+                  Private Universities: $40,000 to $70,000+ (~₹32 to ₹56 lakhs) <br>
+                  Community Colleges: $10,000 to $30,000 (~₹8 to ₹24 lakhs)
+                </p>
+              </div>
+              <i class="faq-toggle bi bi-chevron-right"></i>
+            </div><!-- End Faq item-->
+
+        </div>
+
+      </div><!-- End Faq Column-->
+
+    </div>
+
+  </div>
+
+</section><!-- /Faq Section -->
+</section>
 
     <section class="ftco-section ftco-degree-bg">
         <div class="container">
@@ -238,29 +740,7 @@
   
           </div>
         </div>
-      </section> <!-- .section -->
-
-      <!-- <section class="ftco-section ftco-degree-bg">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 ftco-animate">
-              <h4 class="mb-3 bold-text">Student visas</h4>
-              <p>
-                Any foreign national looking to enter the USA will need a visa. The F-1 non-immigrant visa is the most common type for those wishing to study in the USA at an accredited college or university. You’ll need to have been accepted and approved on your course before applying for one. You will then register with the Student and Exchange Visitor Information System (SEVIS) and there is a $200 (£155) fee for this. You will also need to make an appointment for a visa interview with the US embassy in your country. You’ll need to bring the following: your passport your visa application form financial documents. The earlier you start this process the better – F-1 visas can be issued 120 days before your course start date. US visa requirements can be complicated so for a complete guide visit the US Department of State – Student Visas. Due to the current political situation in the US and the changeable nature of immigration laws, nationals of predominantly Muslim countries will need to keep a close eye on any rules or restrictions that may affect them entering the USA.
-              </p>
-
-  </div> 
-
-  <div class="col-md-6 ftco-animate">
-    <h4 class="mb-3 bold-text">How to apply</h4>
-    <p>
-        It can take longer to apply to a US institution due to the various stages you must negotiate. It’s advised that you apply 12 to 18 months in advance. The Fulbright Commission recommends that you apply to no more than six institutions – this will allow you enough time to focus on each application while giving you an increased chance of success. To study in the USA all students must apply directly to their chosen institution and sit a multiple choice admission exam. Most universities require students to sit SAT or ACT exams. They can be taken in test centres around the UK and cost roughly £50 each. Kaplan provides free SAT practice tools as well as SAT and ACT test preparation courses. Additionally you’ll need to provide: an application form a personal statement transcripts of academic records two or three recommendation letters admission exam scores. For graduate programmes you may have to provide a research statement and CV and also attend an interview. All students must pay an application fee to each university, usually $50 to $100. Application deadlines for postgraduate study vary but most fall between November and February.
-    </p>
-
-</div> 
-          </div>
-        </div>
-      </section>  -->
+      </section> 
       <!-- .section -->
 
       <section class="ftco-section ftco-degree-bg">
@@ -285,277 +765,7 @@
         </div>
       </section>
 
-      <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h4 class="mb-3 bold-text text-center">Top-Ranked Universities in the USA</h4>
-              <div class="container mt-5">
-                <!-- Table View for Large Screens Only -->
-                <div class="table-responsive d-none d-lg-block">
-                  <table class="table table-bordered table-hover">
-                    <thead class="bold-text">
-                      <tr class="table-active">
-                        <th scope="col" class="text-center fw-bold">University</th>
-                        <th scope="col" class="text-center fw-bold">QS Ranking (2024)</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="text-center">Massachusetts Institute of Technology (MIT)</td>
-                        <td class="text-center">1</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">Stanford University</td>
-                        <td class="text-center">2</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">Harvard University</td>
-                        <td class="text-center">3</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">California Institute of Technology (Caltech)</td>
-                        <td class="text-center">6</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">University of Chicago</td>
-                        <td class="text-center">10</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">University of Pennsylvania</td>
-                        <td class="text-center">13</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">Princeton University</td>
-                        <td class="text-center">17</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">Yale University</td>
-                        <td class="text-center">18</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">Columbia University</td>
-                        <td class="text-center">19</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">Cornell University</td>
-                        <td class="text-center">20</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">University of Michigan-Ann Arbor</td>
-                        <td class="text-center">23</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">University of California, Berkeley (UC Berkeley)</td>
-                        <td class="text-center">30</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">Northwestern University</td>
-                        <td class="text-center">32</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">New York University (NYU)</td>
-                        <td class="text-center">36</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">University of California, Los Angeles (UCLA)</td>
-                        <td class="text-center">40</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">Carnegie Mellon University</td>
-                        <td class="text-center">52</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">Duke University</td>
-                        <td class="text-center">52</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">Brown University</td>
-                        <td class="text-center">58</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">University of Texas at Austin</td>
-                        <td class="text-center">67</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">University of Washington</td>
-                        <td class="text-center">74</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-      
-                <!-- Card View for Medium and Smaller Screens -->
-                <div class="d-lg-none">
-                  <div class="row">
-                    <!-- Each card represents a university -->
-                    <div class="col-sm-12 col-md-6 mb-3">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">Massachusetts Institute of Technology (MIT)</h5>
-                          <p class="card-text"><b>Ranking:</b> 1</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 mb-3">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">Stanford University</h5>
-                          <p class="card-text"><b>Ranking:</b> 2</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 mb-3">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">Harvard University</h5>
-                          <p class="card-text"><b>Ranking:</b> 3</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 mb-3">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">California Institute of Technology (Caltech)</h5>
-                          <p class="card-text"><b>Ranking:</b> 6</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 mb-3">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">University of Chicago</h5>
-                          <p class="card-text"><b>Ranking:</b> 10</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 mb-3">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">University of Pennsylvania</h5>
-                          <p class="card-text"><b>Ranking:</b> 13</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 mb-3">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">Princeton University</h5>
-                          <p class="card-text"><b>Ranking:</b> 17</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 mb-3">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">Yale University</h5>
-                          <p class="card-text"><b>Ranking:</b> 18</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 mb-3">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">Columbia University</h5>
-                          <p class="card-text"><b>Ranking:</b> 19</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 mb-3">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">Cornell University</h5>
-                          <p class="card-text"><b>Ranking:</b> 20</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 mb-3">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">University of Michigan-Ann Arbor</h5>
-                          <p class="card-text"><b>Ranking:</b> 23</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 mb-3">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">University of California, Berkeley (UC Berkeley)</h5>
-                          <p class="card-text"><b>Ranking:</b> 30</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 mb-3">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">Northwestern University</h5>
-                          <p class="card-text"><b>Ranking:</b> 32</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 mb-3">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">New York University (NYU)</h5>
-                          <p class="card-text"><b>Ranking:</b> 36</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 mb-3">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">University of California, Los Angeles (UCLA)</h5>
-                          <p class="card-text"><b>Ranking:</b> 40</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 mb-3">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">Carnegie Mellon University</h5>
-                          <p class="card-text"><b>Ranking:</b> 52</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 mb-3">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">Duke University</h5>
-                          <p class="card-text"><b>Ranking:</b> 52</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 mb-3">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">Brown University</h5>
-                          <p class="card-text"><b>Ranking:</b> 58</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 mb-3">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">University of Texas at Austin</h5>
-                          <p class="card-text"><b>Ranking:</b> 67</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 mb-3">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">University of Washington</h5>
-                          <p class="card-text"><b>Ranking:</b> 74</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
       
       
        
@@ -648,6 +858,8 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0h4s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+
+  <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
 
   <script>
     $(document).ready(function() {
