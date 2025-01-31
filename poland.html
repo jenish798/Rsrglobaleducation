@@ -40,6 +40,30 @@
     .heading_color {
     color: #393BA7;
 }
+
+        /*--------------------------------------------------------------
+# Scroll Top Button
+--------------------------------------------------------------*/
+
+        /* Scroll to Top Button Style */
+        .scroll-to-top {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          background-color: #393BA7;
+          color: white;
+          border: none;
+          border-radius: 100%;
+          padding: 12px 20px;
+          /* font-size: 15px; */
+          cursor: pointer;
+          display: none; /* Hidden by default */
+          z-index: 1000; /* Ensure it's always on top */
+      }
+
+      .scroll-to-top:hover {
+          background-color: #5557C4;
+      }
     
    /*--------------------------------------------------------------
 # counselling button
@@ -109,6 +133,416 @@
             font-size: 32px;
             margin-bottom: 10px;
             color: #fff;
+        }
+
+         /*--------------------------------------------------------------
+# poland-course
+--------------------------------------------------------------*/
+
+        /* Card Styles */
+        .polandcourse-card {
+            margin-top: 30px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 6px 12px rgba(0, 123, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .polandcourse-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 123, 255, 0.2);
+        }
+
+        .polandcourse-card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: center;
+            background-color: #FD0011;
+            color: #fff;
+            padding: 20px 0;
+            letter-spacing: 1px;
+        }
+
+        .polandcourse-card-body {
+            background-color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 1.2rem;
+            color: #FD0011;
+        }
+
+        .container.polandcourse-container {
+            padding: 50px 15px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 767px) {
+            .polandcourse-header {
+                font-size: 2.5rem;
+            }
+
+            .polandcourse-card-body {
+                padding: 25px 15px;
+            }
+        }
+
+        
+         /*--------------------------------------------------------------
+# poland-studying
+--------------------------------------------------------------*/
+
+        /* Section Style */
+        .polandstudying-section {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 123, 255, 0.2);
+            padding: 20px;
+            margin-top: 25px;
+        }
+
+        /* Title inside each Section */
+        .polandstudying-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #000; /* Darker text for titles */
+        }
+
+        .polandstudying-content {
+            font-size: 1.1rem;
+            color: #000;
+            margin-top: 10px;
+        }
+
+        /* Colorful Section for Living Cost */
+        .living-cost {
+            background-color: #f7c72f; /* Yellow */
+        }
+
+        /* Colorful Section for Tuition Fees */
+        .tuition-fees {
+            background-color: #17a2b8; /* Teal */
+        }
+
+        /* Button Style */
+        .polandstudying-button {
+            display: inline-block;
+            margin-top: 15px;
+            background-color: #ff6f61; /* Coral button */
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .polandstudying-button:hover {
+            background-color: #e64a3c; /* Darker coral on hover */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 767px) {
+
+            .polandstudying-section {
+                padding: 15px;
+            }
+
+            .polandstudying-title {
+                font-size: 1.2rem;
+            }
+
+            .polandstudying-content {
+                font-size: 1rem;
+            }
+        }
+
+          /*--------------------------------------------------------------
+# poland-eligibility
+--------------------------------------------------------------*/
+
+        .polandeligibility-header {
+          background: linear-gradient(135deg, #FD0011, #ff9a8b); /* Gradient background */
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        /* Creative Section Style */
+        .polandeligibility-section {
+            margin-top: -60px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Hover effect for interactive cards */
+        .polandeligibility-section:hover {
+            transform: translateY(-10px);
+        }
+
+        .polandeligibility-title {
+          text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #393BA7;
+            margin-bottom: 20px;
+        }
+
+        /* Icon and List Styling */
+        .polandeligibility-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .polandeligibility-list li {
+            font-size: 1rem;
+            color: #000;
+            margin-bottom: 10px;
+            display: flex;
+            /* align-items: center; */
+        }
+
+        .polandeligibility-list li i {
+            color: #ff6f61; /* Icon color */
+            margin-right: 15px;
+            font-size: 1.4rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 767px) {
+            .polandeligibility-header {
+                font-size: 2rem;
+                padding: 40px 15px;
+            }
+
+            .polandeligibility-section {
+                padding: 20px;
+            }
+
+            .polandeligibility-title {
+                font-size: 1.5rem;
+            }
+
+            .polandeligibility-list li {
+                font-size: 1rem;
+            }
+        }
+
+
+          /*--------------------------------------------------------------
+# poland-application
+--------------------------------------------------------------*/
+        .polandapplication-section {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        /* Left Side Image Style */
+        .polandapplication-image {
+            flex: 1;
+            background-image: url('/images/studydestination/poland/img-1.jpg'); /* Replace with actual image URL */
+            background-size: cover;
+            /* background-position: center; */
+            background-repeat: no-repeat;
+            height: auto;
+            border-radius: 12px;
+        }
+
+        /* Right Side Content Style */
+        .polandapplication-content {
+            flex: 1;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-left: 30px;
+        }
+
+        .polandapplication-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .polandapplication-list li {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .polandapplication-list li i {
+            color: #FD0011; /* Red icon color */
+            margin-right: 15px;
+            font-size: 1.3rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 767px) {
+            .polandapplication-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .polandapplication-content {
+                margin-left: 0;
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            .polandapplication-image {
+                height: 250px;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    /*--------------------------------------------------------------
+# poland-jobs
+--------------------------------------------------------------*/
+
+        .job-category {
+          background: linear-gradient(to right, #5c5dd9, #393BA7);
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        .salary-range {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #fff;
+        }
+        .highlight {
+            color: #fff;
+        }
+        
+        .job-title {
+            margin-top: 20px;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .job-info {
+            margin-top: 10px;
+        }
+        .footer-text {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.9rem;
+        }
+        /*--------------------------------------------------------------
+# poland-visa
+--------------------------------------------------------------*/
+
+        .visa-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .visa-content {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .visa-image {
+            flex: 1;
+            max-width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .visa-card {
+            background-color: #f4f7fa;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+        .visa-title {
+            font-size: 1.75rem;
+            font-weight: bold;
+            color: #393BA7;
+        }
+        .visa-info {
+            font-size: 1.1rem;
+            margin-top: 20px;
+        }
+        /* .visa-info strong {
+            color: #007bff;
+        } */
+        .visa-footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 1rem;
+            color: #555;
+        }
+
+              /*--------------------------------------------------------------
+# whyrsr
+--------------------------------------------------------------*/
+
+.whyrsr-section {
+            /* background-color: #f8f9fa; */
+            padding: 60px 0;
+            text-align: center;
+        }
+        .whyrsr-header {
+            font-weight: bold;
+            color: #222;
+            margin-bottom: 10px;
+        }
+        .whyrsr-subtitle {
+            color: #555;
+            margin-bottom: 40px;
+        }
+        .whyrsr-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .whyrsr-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            width: 320px;
+            min-height: 220px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .whyrsr-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .whyrsr-icon {
+            width: 60px;
+            height: 60px;
+            /* background: #007bff; */
+            color: white;
+            font-size: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        .whyrsr-title {
+            font-weight: bold;
+            font-size: 18px;
+            color: #222;
+            margin-bottom: 8px;
+        }
+        .whyrsr-text {
+            font-size: 14px;
+            color: #555;
+            text-align: center;
         }
   </style>
 
@@ -260,7 +694,7 @@
 </div>
   </section>
 
-    <section class="ftco-section ftco-degree-bg whypoland">
+    <section class="ftco-section ftco-degree-bg whypoland" id="whypoland">
         <div class="container">
           <div class="row">
             <div class="col-md-12 ftco-animate">
@@ -269,40 +703,6 @@
               <p>
                 Poland is a premier study destination offering high-quality education, affordable tuition, and a low cost of living. Renowned universities provide English-taught programs across various disciplines. Its strategic location in Europe, rich cultural heritage, and dynamic student life enhances the academic experience. Additionally, international students benefit from part-time work opportunities and promising post-graduation prospects.
               </p>
-
-              <!-- <section class="ftco-section ftco-degree-bg">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-6 ftco-animate">
-                      <h4 class="mb-3 bold-text">WHY POLAND?</h4>
-                      <div class="studentVisasText read-more-text">
-                     <p >
-                        According to the EF English Proficiency Index, Poland ranked 11th on the scale that ranks countries and regions by English skills. This means that the Polish people have above-average proficiency in English, making it easy to make yourself understood everywhere you go.
-                     </p>
-                     <p>
-                        Cost of living in Poland – 2020 guide. It’s no secret that living in Poland is much cheaper compared to other European countries (about 50% less than most other European cities). Affordable prices of food, rent and entertainment are usually one of the main reasons why people choose Poland to be their home (you will be looking at about €315-500/month)
-                     </p>
-                     <p>Poland plays an active part in the Bologna Process. Owing to the introduction of three-stage education modelled on Bachelor/Master/Doctoral studies as well as the European Credit Transfer System, both Polish students and international students studying in Poland stay fully mobile and can continue their education elsewhere in the European Union without any problems.</p>
-                     </div>
-                     <button class="readMoreBtn read-more-btn">Read More</button>
-          </div> 
-        
-          <div class="col-md-6 ftco-animate">
-            <h4 class="mb-3 bold-text">STUDY IN POLAND</h4>
-            <div class="studentVisasText read-more-text">
-            <p>
-                Poland plays an active part in the Bologna Process. Owing to the introduction of three-stage education modelled on Bachelor/Master/Doctoral studies as well as the European Credit Transfer System, both Polish students and international students studying in Poland stay fully mobile and can continue their education elsewhere in the European Union without any problems.
-            </p>
-            <p>There are 72743 foreign students from 170 countries studying in Poland which hints that education in Poland is sought after by many</p>
-            <p>Students from Ukraine and Belarus are the dominant group at Polish universities. Wide offer, a wide range of courses and programs as well as a high level of teaching staff are the most important for other nationalities that decide to study in Poland. Among them there are students from India, who rank third in the list of foreigners studying in Poland.</p>
-            <p>There are over 5,000 courses available in Poland and each of them has had to gain the <span class="bold-text">Polish Accreditation Committee’s</span> approval. Among them there are several  fields of study that have received the grade: excellent. The list of excellent fields of study is available at the Polish Accreditation Committee website: </p>
-            <a class="bold-text" href="http://www.pka.edu.pl">http://www.pka.edu.pl</a>
-          </div>
-            <button class="readMoreBtn read-more-btn">Read More</button>
-        </div> 
-                  </div>
-                </div>
-              </section> -->
 
             </div> 
   
@@ -437,95 +837,319 @@
         </div>
       </section>
 
-          <!-- Faq Section -->
-    <section id="faq" class="faq section">
-
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <!-- <h4>Frequently Asked Questions</h4> -->
-        </div><!-- End Section Title -->
-  
-        <div class="container">
-  
-          <div class="row justify-content-center">
-  
-            <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
-  
-              <div class="faq-container">
-  
-                <!-- <div class="faq-item faq-active">
-                  <h3>Non consectetur a erat nam at lectus urna duis?</h3>
-                  <div class="faq-content">
-                    <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
-                  </div>
-                  <i class="faq-toggle bi bi-chevron-right"></i>
-                </div> -->
-                <!-- End Faq item-->
-  
-                <div class="faq-item">
-                  <h3>LONG-CYCLE STUDIES</h3>
-                  <div class="faq-content">
-                    <p>
-                       
-         In Poland, there are only 11 fields of study that offer long-cycle programs:
-
-
-      
-            This Master’s degree program lasts 4.5 to 6 years and leads to the professional title of Master (magister).
-            
-            To obtain this degree, you must earn 270-360 ECTS credits.         </p>
-                  </div>
-                  <i class="faq-toggle bi bi-chevron-right"></i>
-                </div><!-- End Faq item-->
-  
-                <div class="faq-item">
-                  <h3>THIRD STUDY CYCLE</h3>
-                  <div class="faq-content">
-                    <p>Otherwise known as doctoral-level programs. This degree normally lasts 3 to 4 years and it is accessible after graduating from a Master’s degree program. All doctoral colleges are tution-free, also for foreigners.</p>
-                  </div>
-                  <i class="faq-toggle bi bi-chevron-right"></i>
-                </div><!-- End Faq item-->
-  
-                <div class="faq-item">
-                  <h3> SECOND STUDY CYCLE</h3>
-                  <div class="faq-content">
-                    <p>A Master’s degree program lasts 1.5 to 2 years and follows the first cycle studies. After graduation, you will gain the professional title of Master (magister or an equivalent degree depending on the course profile). To obtain this degree, you must earn 90-120 ECTS credits.<br/>
-                    After getting your Master’s degree you are free to enter a doctoral program (third-cycle studies).</p>
-                  </div>
-                  <i class="faq-toggle bi bi-chevron-right"></i>
-                </div><!-- End Faq item-->
-
-                <div class="faq-item">
-                    <h3> FIRST STUDY CYCLE</h3>
-                    <div class="faq-content">
-                      <p>Open to holders of an upper secondary school certificate (Matura certificate) or an equivalent entitling the holder to enrol in such programs in Poland. Additional entrance examinations may be conducted by HEIs only if this is necessary to assess knowledge or skills that are not assessed by the Matura examination or the applicant holds an upper secondary school certificate obtained abroad.<br/>
-                     After finishing the first-cycle studies (3 to 4 years) you get the professional title of a licencjat or inżynier (Engineer, in the field of engineering, agriculture or economics). This is the Polish equivalent of the Bachelor’s degree. To obtain a licencjat degree, you must earn 180-240 ECTS credits during your studies.</p>
-                    </div>
-                    <i class="faq-toggle bi bi-chevron-right"></i>
-                  </div><!-- End Faq item-->
-  
-              </div>
-  
-            </div><!-- End Faq Column-->
-  
-          </div>
-  
-        </div>
-  
-      </section><!-- /Faq Section -->
-
-      <section class="ftco-section ftco-degree-bg">
-        <div class="container">
+      <section class="ftco-section ftco-degree-bg" id="Courses">  
+        <div class="container polandcourse-container">
+          <h4 class="mb-3 bold-text text-center">Top Courses in Poland</h4>
           <div class="row">
-            <div class="col-md-12 ftco-animate">
-              <h4 class="mb-3 bold-text">Language requirements</h4>
-              <p>Most courses are taught in English as it’s the official language of business and education. Some specific courses, such as language and traditional Chinese medicine may be taught in other languages. Regardless, all universities in Singapore set high standards for proficiency in English. Therefore, if English is not your first language, you’ll need a good score in English Proficiency tests such as the IELTS (International English Language Testing System) to enter Singaporean universities.</p>
-
-            </div> 
-  
+              <!-- Medicine & Healthcare -->
+              <div class="col-md-4 col-sm-6">
+                  <div class="card polandcourse-card">
+                      <div class="polandcourse-card-title">
+                          Medicine & Healthcare
+                      </div>
+                      <div class="polandcourse-card-body">
+                          <!-- Empty Body as requested -->
+                      </div>
+                  </div>
+              </div>
+      
+              <!-- Engineering & IT -->
+              <div class="col-md-4 col-sm-6">
+                  <div class="card polandcourse-card">
+                      <div class="polandcourse-card-title">
+                          Engineering & IT
+                      </div>
+                      <div class="polandcourse-card-body">
+                          <!-- Empty Body as requested -->
+                      </div>
+                  </div>
+              </div>
+      
+              <!-- Business & Management -->
+              <div class="col-md-4 col-sm-6">
+                  <div class="card polandcourse-card">
+                      <div class="polandcourse-card-title">
+                          Business & Management
+                      </div>
+                      <div class="polandcourse-card-body">
+                          <!-- Empty Body as requested -->
+                      </div>
+                  </div>
+              </div>
+      
+              <!-- Social Sciences & Law -->
+              <div class="col-md-4 col-sm-6">
+                  <div class="card polandcourse-card">
+                      <div class="polandcourse-card-title">
+                          Social Sciences & Law
+                      </div>
+                      <div class="polandcourse-card-body">
+                          <!-- Empty Body as requested -->
+                      </div>
+                  </div>
+              </div>
+      
+              <!-- Arts & Humanities -->
+              <div class="col-md-4 col-sm-6">
+                  <div class="card polandcourse-card">
+                      <div class="polandcourse-card-title">
+                          Arts & Humanities
+                      </div>
+                      <div class="polandcourse-card-body">
+                          <!-- Empty Body as requested -->
+                      </div>
+                  </div>
+              </div>
           </div>
+      
+      </div>
+      </section>
+
+      <section class="ftco-section ftco-degree-bg" id="Intakes">
+        <div class="container" id="Intakes">
+          <h4 class="text-center mb-4 bold-text">Intakes Available</h4>
+          <ul>
+            <li> <span class="bold-text heading_color">Fall Intake (Main Intake):</span> September/October
+              Application deadlines: March to July</li>
+            <li><span class="bold-text heading_color">Spring Intake (Limited Availability):</span> February
+              Application deadlines: October to December.</li>
+          </ul>
         </div>
-      </section> <!-- .section -->
+      </section>
+
+      <section class="ftco-section ftco-degree-bg" id="Studying">
+      <div class="container polandstudying-container">
+        <h4 class="text-center mb-4 bold-text">Cost of Studying in Poland</h4>
+    
+        <div class="row">
+            <!-- Living Cost Section -->
+            <div class="col-md-6">
+                <div class="polandstudying-section living-cost">
+                    <div class="polandstudying-title">
+                        Living Cost
+                    </div>
+                    <div class="polandstudying-content">
+                        <p>€400–€800/month <strong>{₹36,000 to ₹72,000}</strong> (including rent, food, and transport)</p>
+                    </div>
+                    <!-- <a href="#" class="polandstudying-button">Learn More</a> -->
+                </div>
+            </div>
+    
+            <!-- Tuition Fees Section -->
+            <div class="col-md-6">
+                <div class="polandstudying-section tuition-fees">
+                    <div class="polandstudying-title">
+                        Tuition Fees
+                    </div>
+                    <div class="polandstudying-content">
+                        <p>€2,000–€6,000/year <strong>{₹1,80,000 to ₹5,40,000}</strong></p>
+                        <p>Medicine & MBA: €8,000–€15,000 <strong>{₹7,20,000 to ₹13,50,000}</strong></p>
+                    </div>
+                    <!-- <a href="#" class="polandstudying-button">Learn More</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="ftco-section ftco-degree-bg" id="Eligibility">
+  <div class="container polandeligibility-container">
+    <!-- Header Section -->
+    <div class="polandeligibility-header">
+        Poland Eligibility Requirements
+    </div>
+
+    <div class="row justify-content-center">
+        <!-- Academic Requirements Section -->
+        <div class="col-md-5">
+            <div class="polandeligibility-section">
+                <div class="polandeligibility-title">
+                    Academic Requirements
+                </div>
+                <ul class="polandeligibility-list">
+                    <li><strong>Bachelor’s:</strong> 12th grade from a recognized board, IELTS (if required).</li>
+                    <li><strong>Master’s:</strong> Relevant Bachelor's Degree, IELTS.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Visa Requirements Section -->
+        <div class="col-md-5">
+            <div class="polandeligibility-section">
+                <div class="polandeligibility-title">
+                    Visa Requirements
+                </div>
+                <ul class="polandeligibility-list">
+                    <li><i class="bi bi-file-earmark-check"></i> University admission letter.</li>
+                    <li><i class="bi bi-file-earmark-check"></i> Proof of funds (₹8–10 lakh+ for expenses).</li>
+                    <li><i class="bi bi-file-earmark-check"></i> Valid passport & health insurance.</li>
+                    <li><i class="bi bi-file-earmark-check"></i> Visa application & interview (if required).</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<section class="ftco-section ftco-degree-bg" id="Application">
+<h4 class="text-center mb-4 bold-text">Cost of Studying in Poland</h4>
+<!-- Application Requirements Section -->
+<div class="container polandapplication-section">
+ 
+  <!-- Left Side Image -->
+  <div class="polandapplication-image"></div>
+
+  <!-- Right Side Content -->
+  <div class="polandapplication-content">
+      <p>
+        To apply for studies in Poland, students need to submit a completed application form, academic transcripts (10th, 12th, and Bachelor's if applicable), a valid passport, and proof of English proficiency (IELTS/TOEFL if required). Additional documents include a Statement of Purpose (SOP), Letters of Recommendation (LORs), proof of funds, and health insurance. Some universities may require an entrance exam or interview.
+      </p>
+  </div>
+</div>
+</section>
+
+<!-- Part-Time Jobs Section -->
+<section class="ftco-section ftco-degree-bg" id="Jobs">
+  <h4 class="text-center mb-4 bold-text">Poland Jobs & Salaries</h4>
+<div class="container job-category">
+  <h2 class="job-title">✅ <span class="highlight">Part-Time Jobs</span></h2>
+  <div class="row job-info">
+      <div class="col-md-6">
+          <p class="highlight"><strong>Hours:</strong> 20 hours/week</p>
+          <p class="highlight"><strong>Hourly Rate:</strong> €4–€8/hour (₹360–₹720)</p>
+      </div>
+  </div>
+</div>
+
+<!-- Post-Study Jobs Section -->
+<div class="container job-category">
+  <h2 class="job-title">✅ <span class="highlight">Post-Study Jobs</span></h2>
+  <div class="row job-info">
+      <div class="col-md-6">
+          <p class="highlight"><strong>Work Permit:</strong> Available</p>
+          <p class="highlight"><strong>High Demand:</strong> IT, Engineering, Business, Healthcare</p>
+      </div>
+  </div>
+</div>
+
+<!-- Salary Information Section -->
+<div class="container job-category">
+  <h2 class="job-title">✅<span class="highlight">Average Salaries</span> </h2>
+
+  <div class="row">
+      <div class="col-md-4">
+          <h4 class="highlight">IT & Engineering</h4>
+          <p class="salary-range">€1,500–€3,500/month (₹1.35L–₹3.15L)</p>
+      </div>
+      <div class="col-md-4">
+          <h4 class="highlight">Business & Finance</h4>
+          <p class="salary-range">€1,200–€2,500/month (₹1.08L–₹2.25L)</p>
+      </div>
+      <div class="col-md-4">
+          <h4 class="highlight">Healthcare</h4>
+          <p class="salary-range">€2,000–€5,000/month (₹1.8L–₹4.5L)</p>
+      </div>
+  </div>
+</div>
+</section>
+
+<section class="ftco-section ftco-degree-bg" id="Visa">
+  <h4 class="text-center mb-4 bold-text"><h4 class="text-center mb-4 bold-text">VISA (TYPE D)</h4></h4>
+<!-- Visa Content and Image Section -->
+<div class="container visa-container">
+  <!-- Left Side Content -->
+  <div class="visa-content">
+      <!-- Visa Requirements Section -->
+      <div class="visa-card">
+          <h2 class="visa-title">✅ Requirements</h2>
+          <p>
+            Admission letter, passport, visa form, proof of funds €7,000+ (₹6,30,000+), health insurance, accommodation proof.
+          </p>
+      </div>
+
+      <!-- Visa Fee & Processing Time Section -->
+      <div class="visa-card">
+          <h2 class="visa-title">✅ Visa Fee & Processing Time</h2>
+          <div class="visa-info">
+              <p><strong>Fee:</strong> ~€80 (₹7,200)</p>
+              <p><strong>Processing Time:</strong> 3–8 weeks</p>
+          </div>
+      </div>
+
+  </div>
+
+  <!-- Right Side Image -->
+  <div class="visa-image">
+      <img src="images/studydestination/poland/img-2.jpg" alt="Visa Image" class="img-fluid rounded-3">
+  </div>
+</div>
+</section>
+
+<section class="ftco-section ftco-degree-bg">
+  <section class="whyrsr-section" id="WhyRSR">
+    <div class="container">
+      <h4 class="text-center mb-4 bold-text">Why RSR</h4>
+        <h2 class="whyrsr-header">6 Reasons to Pick RSR Global Education</h2>
+        <p class="whyrsr-subtitle text-center">Study in Your Preferred Destination with the Best Guidance</p>
+
+        <div class="whyrsr-container">
+            <!-- Expert Guidance -->
+            <div class="whyrsr-card">
+                <div class="whyrsr-icon">
+                    <img src="images/studydestination/uk/expert-icons.png" alt="expert-icons"/>
+                </div>
+                <div class="whyrsr-title">Expert Guidance</div>
+                <p class="whyrsr-text">Personalized Counseling for University & Course Selection</p>
+            </div>
+
+            <!-- Seamless Application Process -->
+            <div class="whyrsr-card">
+                <div class="whyrsr-icon">
+                  <img src="images/studydestination/uk/application-process.png" alt="">
+                                </div>
+                <div class="whyrsr-title">Seamless Application Process</div>
+                <p class="whyrsr-text">Assistance with Documentation, SOPs & Admission</p>
+            </div>
+
+            <!-- Visa Support -->
+            <div class="whyrsr-card">
+                <div class="whyrsr-icon">
+                  <img src="images/studydestination/uk/visa.png" alt="">
+                </div>
+                <div class="whyrsr-title">Visa Support</div>
+                <p class="whyrsr-text">End-to-end Visa Guidance for a smooth approval process</p>
+            </div>
+
+            <!-- Affordable & Transparent Services -->
+            <div class="whyrsr-card">
+                <div class="whyrsr-icon">
+                  <img src="images/studydestination/uk/customer-service.png" alt="">
+                </div>
+                <div class="whyrsr-title">Affordable & Transparent Services</div>
+                <p class="whyrsr-text">No hidden charges, ensuring cost-effective solutions</p>
+            </div>
+
+            <!-- Post-Arrival Support -->
+            <div class="whyrsr-card">
+                <div class="whyrsr-icon">
+                  <img src="images/studydestination/uk/job-support.png" alt="">
+                </div>
+                <div class="whyrsr-title">Post-Arrival Support</div>
+                <p class="whyrsr-text">Accommodation, Job Assistance & Local Guidance</p>
+            </div>
+
+            <!-- Financial Guidance & Scholarships -->
+            <div class="whyrsr-card">
+                <div class="whyrsr-icon">
+                  <img src="images/studydestination/uk/scholarship.png" alt="">
+                </div>
+                <div class="whyrsr-title">Financial Guidance & Scholarships</div>
+                <p class="whyrsr-text">Guidance in academic pursuits & access to scholarships</p>
+            </div>
+        </div>
+    </div>
+</section>
+</section>
 
       <footer class="ftco-footer ftco-bg-dark ftco-section">
         <div class="container">
@@ -596,6 +1220,8 @@
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
+  <!-- Scroll Top -->
+  <button id="scrollToTopBtn" class="scroll-to-top" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -614,6 +1240,7 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0h4s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/custom.js"></script>
     
   </body>
 </html>
