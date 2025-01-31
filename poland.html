@@ -35,6 +35,82 @@
 
     <!-- Google icons -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  
+  <style>
+    .heading_color {
+    color: #393BA7;
+}
+    
+   /*--------------------------------------------------------------
+# counselling button
+--------------------------------------------------------------*/
+
+  .studydestinationbtn {
+    cursor: pointer;
+    background: #FD0011;
+    color: #fff;
+    padding: 15px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    font-size: 15px;
+    border-radius: 20px; 
+  }
+  
+    .studydestinationbtn:hover {
+      color: #fff;
+    }
+
+    /*--------------------------------------------------------------
+# hyperlink
+--------------------------------------------------------------*/
+
+  .hyperlink-button-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; 
+  }
+
+  .hyperlink-button {
+    background-color: #393BA7; 
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .hyperlink-button:hover {
+    background-color:#4C4FAF;  /* Darker green when hovered */
+  }
+
+    /*--------------------------------------------------------------
+# whypoland
+--------------------------------------------------------------*/
+
+  .whypoland {
+            /* background: linear-gradient(135deg, #141E30, #243B55); */
+            background: linear-gradient(135deg, #1D1F60, #393BA7, #9FA0E6);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+        }
+        .whypoland-header {
+            font-weight: bold;
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+  </style>
 
 
   </head>
@@ -158,31 +234,43 @@
           <div class="col-md-9 ftco-animate pb-5">
           	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Study Destination<i class="ion-ios-arrow-forward"></i></span></p>
             <h1 class="mb-3 bread">Poland</h1>
-            <a href="javascript:void(0)" class="btn btn-primary">Free Counselling Session</a>
+            <a href="usa.html?showModal=true" data-toggle="modal" data-target="#myModal" class="studydestinationbtn bold-text"> <img src="images/icons/Phone_icon_ 1.png" alt=""> FREE Counselling Session</a>
           </div>
         </div>
       </div>
     </section>
 
     <section class="ftco-section ftco-degree-bg">
+      <div class="container">
+        <div class="row">
+    <div class="hyperlink-button-container">
+      <button class="hyperlink-button" onclick="scrollToSection('whypoland')">Why Poland</button>
+      <button class="hyperlink-button" onclick="scrollToSection('Universities')">Popular Universities</button>
+      <button class="hyperlink-button" onclick="scrollToSection('Courses')">Top Courses in UK</button>
+      <button class="hyperlink-button" onclick="scrollToSection('Intakes')">Intakes Available</button>
+      <button class="hyperlink-button" onclick="scrollToSection('Studying')">Cost of Studying in UK</button>
+      <button class="hyperlink-button" onclick="scrollToSection('Eligibility')">Eligibility</button>
+      <button class="hyperlink-button" onclick="scrollToSection('Application')">Application Requirements</button>
+      <button class="hyperlink-button" onclick="scrollToSection('Jobs')">Jobs and Salaries</button>
+      <button class="hyperlink-button" onclick="scrollToSection('Visa')">Visa</button>
+      <button class="hyperlink-button" onclick="scrollToSection('WhyRSR')">Why RSR</button>    
+     
+    </div>
+  </div>
+</div>
+  </section>
+
+    <section class="ftco-section ftco-degree-bg whypoland">
         <div class="container">
           <div class="row">
             <div class="col-md-12 ftco-animate">
-              <h4 class="mb-3 bold-text">ABOUT POLAND</h4>
+              <h4 class="mb-3 bold-text whypoland-header">WHY POLAND?</h4>
 
               <p>
-                Poland is a fascinating country that serves as the geographical and cultural crossroads of Eastern and Western Europe.
+                Poland is a premier study destination offering high-quality education, affordable tuition, and a low cost of living. Renowned universities provide English-taught programs across various disciplines. Its strategic location in Europe, rich cultural heritage, and dynamic student life enhances the academic experience. Additionally, international students benefit from part-time work opportunities and promising post-graduation prospects.
               </p>
 
-              <p>
-                Poland is located in the very centre of Europe. With the total area of 312,679 km² (120,728 sq mi) it’s the seventh biggest country on the continent. Polish population is over 38,5 million people. The capital city is Warsaw (around 2 million inhabitants).
-              </p>
-
-              <p>Poland borders 7 countries: Germany on the west, Czech Republic and Slovakia on the south, Ukraine, Belarus and Lithuania on the east, and Russia on the north.</p>
-
-              <p>The weather in Poland is characterised by transitional periods between the four seasons of the year.The weather in Poland is rather unpredictable and varied. Spring is often changeable. There are rather moderate temperatures. The summertime can be too hot, even 35 °C. Autumn is usually sunny. Winters can be really cold, with the chance of snow from November till March. The temperatures from December to late February usually fluctuate around 0 °C to -10</p>
-
-              <section class="ftco-section ftco-degree-bg">
+              <!-- <section class="ftco-section ftco-degree-bg">
                 <div class="container">
                   <div class="row">
                     <div class="col-md-6 ftco-animate">
@@ -214,37 +302,140 @@
         </div> 
                   </div>
                 </div>
-              </section> <!-- .section -->
-
-              <h4 class="mb-3 mt-5 bold-text">FEES</h4>
-
-              <p>Compared to other EU countries, the fees to study in Poland are really competitive.</p>
-
-              <p>The fees normally range from around 2230 USD to 6700 per year and depend on the institution and study program (for MBA programs: about 9000 – 14,000 per year).</p>
-
-              <p>If you are an EU/EEA student you are not required to pay tuition fees for courses taught in Polish but you compete with Polish students for admission spots.</p>
-
-              <p>If you are not from an EU country, studying in Poland requires you to pay tuition fees:</p>
-
-              <ul>
-                <li>2230 USD per year for first, second and long cycle studies</li>
-                <li>Business management and Commerce</li>
-                <li>3350 USD per year for doctoral, postgraduate and medical postgraduate internships as well as scientific, arts, specialist and post-doctoral internships</li>
-                <li>3350 USD per year for vocational courses and apprenticeships</li>
-                <li>2230 USD per year for an annual preparatory Polish language course to commence studies in Polish</li>
-              </ul>
-
-              <h4 class="mb-3 mt-5 bold-text">EDUCATIONAL SYSTEM</h4>
-
-              <p>The ECTS (European Credit Transfer System) used in Poland is the standard for all universities in the European Higher Education Area (EHEA), which means after you pass a subject, in addition to the grade you get a certain amount of ECTS points.</p>
-
-              <p>The structure of the educational system in Poland differs a bit from that in other European countries. Here is all the information you need:</p>
+              </section> -->
 
             </div> 
   
           </div>
         </div>
       </section> <!-- .section -->
+
+            <section class="ftco-section ftco-degree-bg">
+        <div class="container" id="Universities">
+          <div class="row">
+            <div class="col-md-12 ftco-animate">
+      
+              <h4 class="mb-3 bold-text text-center">Popular Universities</h4>
+      
+              <div class="container mt-5">
+                <!-- Table View for Large Screens Only -->
+                <div class="table-responsive d-none d-lg-block">
+                  <table class="table table-bordered table-hover">
+                    <thead class="bold-text">
+                      <tr class="table-active">
+                        <th scope="col" class="text-center fw-bold">University</th>
+                        <th scope="col" class="text-center fw-bold">QS Ranking (2025)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr><td class="text-center">University of Warsaw</td><td class="text-center">258th Globally</td></tr>
+                      <tr><td class="text-center">Jagiellonian University</td><td class="text-center">312th Worldwide</td></tr>
+                      <tr><td class="text-center">Warsaw University of Technology</td><td class="text-center">527th Globally</td></tr>
+                      <tr><td class="text-center">Adam Mickiewicz University, Poznań</td><td class="text-center">761-770 Band</td></tr>
+                      <tr><td class="text-center">Gdańsk University of Technology</td><td class="text-center">801-850 Range</td></tr>
+                      <tr><td class="text-center">AGH University of Science and Technology, Kraków</td><td class="text-center">851-900 Bracket</td></tr>
+                      <tr><td class="text-center">Poznań University of Life Sciences</td><td class="text-center">851-900 Range</td></tr>
+                      <tr><td class="text-center">University of Gdańsk</td><td class="text-center">851-900 Band</td></tr>
+                      <tr><td class="text-center">University of Wrocław</td><td class="text-center">851-900 Bracket</td></tr>
+                      <tr><td class="text-center">Nicolaus Copernicus University, Toruń</td><td class="text-center">901-950 Range</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+      
+                <!-- Card View for Medium and Smaller Screens -->
+                <div class="d-lg-none">
+                  <div class="row">
+                    <!-- Each card represents a university -->
+                   
+                    <div class="col-sm-12 col-md-6 mb-3">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">University of Warsaw</h5>
+                          <p class="card-text"><b>Ranking:</b> 258th Globally</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 mb-3">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Jagiellonian University</h5>
+                          <p class="card-text"><b>Ranking:</b> 312th Worldwide</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 mb-3">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Warsaw University of Technology</h5>
+                          <p class="card-text"><b>Ranking:</b> 527th Globally</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 mb-3">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Adam Mickiewicz University, Poznań</h5>
+                          <p class="card-text"><b>Ranking:</b> 761-770 Band</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 mb-3">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Gdańsk University of Technology</h5>
+                          <p class="card-text"><b>Ranking:</b> 801-850 Range</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 mb-3">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">AGH University of Science and Technology, Kraków</h5>
+                          <p class="card-text"><b>Ranking:</b> 851-900 Bracket</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 mb-3">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Poznań University of Life Sciences</h5>
+                          <p class="card-text"><b>Ranking:</b> 851-900 Range</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 mb-3">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">University of Gdańsk</h5>
+                          <p class="card-text"><b>Ranking:</b> 851-900 Band</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 mb-3">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">University of Wrocław</h5>
+                          <p class="card-text"><b>Ranking:</b> 851-900 Bracket</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 mb-3">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Nicolaus Copernicus University, Toruń</h5>
+                          <p class="card-text"><b>Ranking:</b> 901-950 Range</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+      
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
           <!-- Faq Section -->
     <section id="faq" class="faq section">

@@ -71,7 +71,7 @@
   }
 
   .button:hover {
-    background-color:#4C4FAF;  /* Darker green when hovered */
+    background-color:#4C4FAF;  
   }
 
     .studydestinationbtn {
@@ -235,7 +235,7 @@ font-weight: bold;
     }
 
     .eligibility-h3 {
-      color: #1a73e8;
+      color: #393BA7;
       font-size: 1.4em;
       margin-bottom: 10px;
     }
@@ -247,7 +247,7 @@ font-weight: bold;
 
     li {
       margin-bottom: 10px;
-      font-size: 1.1em;
+      /* font-size: 1.1em; */
     }
 
     /* Responsive Design */
@@ -298,9 +298,13 @@ font-weight: bold;
         }
 
         .salary-content ul {
-            list-style-type: none;
-            padding: 0;
-        }
+    list-style-type: none;
+    padding: 0;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adds space between each list item */
+}
 
         .salary-content li {
             margin-bottom: 10px;
@@ -327,22 +331,110 @@ font-weight: bold;
           position: fixed;
           bottom: 20px;
           right: 20px;
-          background-color: #007bff;
+          background-color: #393BA7;
           color: white;
           border: none;
-          border-radius: 50%;
-          padding: 15px;
-          font-size: 18px;
+          border-radius: 100%;
+          padding: 12px 20px;
+          /* font-size: 15px; */
           cursor: pointer;
           display: none; /* Hidden by default */
           z-index: 1000; /* Ensure it's always on top */
       }
 
       .scroll-to-top:hover {
-          background-color: #0056b3;
+          background-color: #5557C4;
       }
 
+      /*--------------------------------------------------------------
+# visacontainer
+--------------------------------------------------------------*/
 
+      .visacontainer {
+            max-width: 900px;
+            margin: auto;
+            margin-top: 50px;
+        }
+        .visa-image-container {
+            text-align: center;
+        }
+        .visa-image-container img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+        }
+        .visacontent {
+            transition: opacity 0.5s ease-in-out;
+        }
+        .visabuttons-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+              /*--------------------------------------------------------------
+# whyrsr
+--------------------------------------------------------------*/
+
+.whyrsr-section {
+            /* background-color: #f8f9fa; */
+            padding: 60px 0;
+            text-align: center;
+        }
+        .whyrsr-header {
+            font-weight: bold;
+            color: #222;
+            margin-bottom: 10px;
+        }
+        .whyrsr-subtitle {
+            color: #555;
+            margin-bottom: 40px;
+        }
+        .whyrsr-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .whyrsr-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            width: 320px;
+            min-height: 220px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .whyrsr-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .whyrsr-icon {
+            width: 60px;
+            height: 60px;
+            /* background: #007bff; */
+            color: white;
+            font-size: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        .whyrsr-title {
+            font-weight: bold;
+            font-size: 18px;
+            color: #222;
+            margin-bottom: 8px;
+        }
+        .whyrsr-text {
+            font-size: 14px;
+            color: #555;
+            text-align: center;
+        }
   </style>
 
   </head>
@@ -466,7 +558,7 @@ font-weight: bold;
           <div class="col-md-9 ftco-animate pb-5">
           	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Study Destination<i class="ion-ios-arrow-forward"></i></span></p>
             <h1 class="mb-3 bread">USA</h1>
-            <a href="javascript:void(0)" class="studydestinationbtn">Free Counselling Session</a>
+            <a href="usa.html?showModal=true" data-toggle="modal" data-target="#myModal" class="studydestinationbtn bold-text"> <img src="images/icons/Phone_icon_ 1.png" alt=""> FREE Counselling Session</a>
           </div>
         </div>
       </div>
@@ -484,7 +576,7 @@ font-weight: bold;
       <button class="button" onclick="scrollToSection('Intakes')">Intakes Available</button>
       <button class="button" onclick="scrollToSection('Jobs')">Jobs and Salaries</button>
       <button class="button" onclick="scrollToSection('Visa')">Visa</button>
-      <button class="button" onclick="scrollToSection('WhyRSR ')">Why RSR</button>    
+      <button class="button" onclick="scrollToSection('WhyRSR')">Why RSR</button>    
      
     </div>
   </div>
@@ -740,17 +832,8 @@ font-weight: bold;
 
         <div class="faq-container">
 
-          <!-- <div class="faq-item faq-active">
-            <h3>Non consectetur a erat nam at lectus urna duis?</h3>
-            <div class="faq-content">
-              <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
-            </div>
-            <i class="faq-toggle bi bi-chevron-right"></i>
-          </div> -->
-          <!-- End Faq item-->
-
           <div class="faq-item">
-            <h3>Tuition Fees</h3>
+            <h3 class="heading_color">Tuition Fees</h3>
             <div class="faq-content">
               <p>Public Universities (Out-of-State): $25,000 to $40,000 per year (~₹20 to ₹32 lakhs) <br>
               	Private Universities: $30,000 to $50,000+ per year (~₹24 to ₹40 lakhs) <br>
@@ -760,7 +843,7 @@ font-weight: bold;
           </div><!-- End Faq item-->
 
           <div class="faq-item">
-            <h3>Living Expenses</h3>
+            <h3 class="heading_color">Living Expenses</h3>
             <div class="faq-content">
               <p>On-Campus Housing: $8,000 to $15,000 per year (~₹6.5 to ₹12 lakhs) <br>
                 Off-Campus Housing: $5,000 to $12,000 per year (~₹4 to ₹10 lakhs) <br>
@@ -771,7 +854,7 @@ font-weight: bold;
           </div><!-- End Faq item-->
 
           <div class="faq-item">
-            <h3> Health Insurance</h3>
+            <h3 class="heading_color"> Health Insurance</h3>
             <div class="faq-content">
               <p>Approximately $1,000 to $2,500 per year (~₹80,000 to ₹2 lakhs)</p>
             </div>
@@ -779,7 +862,7 @@ font-weight: bold;
           </div><!-- End Faq item-->
 
           <div class="faq-item">
-              <h3>Books and Supplies</h3>
+              <h3 class="heading_color">Books and Supplies</h3>
               <div class="faq-content">
                 <p>Around $500 to $1,000 per year (~₹40,000 to ₹80,000)</p>
               </div>
@@ -787,7 +870,7 @@ font-weight: bold;
             </div><!-- End Faq item-->
 
             <div class="faq-item">
-              <h3>Visa and SEVIS Fee</h3>
+              <h3 class="heading_color">Visa and SEVIS Fee</h3>
               <div class="faq-content">
                 <p>Visa Application Fee: $160 (~₹13,000) <br>
                   SEVIS Fee (Student and Exchange Visitor Information System): $350 (~₹28,000)</p>
@@ -796,7 +879,7 @@ font-weight: bold;
             </div><!-- End Faq item-->
 
             <div class="faq-item">
-              <h3>Other Costs</h3>
+              <h3 class="heading_color">Other Costs</h3>
               <div class="faq-content">
                 <p>Personal expenses, activities, and incidentals: $2,000 to $4,000 per year (~₹1.6 to ₹3.2 lakhs)</p>
               </div>
@@ -804,7 +887,7 @@ font-weight: bold;
             </div><!-- End Faq item-->
 
             <div class="faq-item">
-              <h3>Total Estimated Cost (per year)</h3>
+              <h3 class="heading_color">Total Estimated Cost (per year)</h3>
               <div class="faq-content">
                 <p>Public Universities (Out-of-State): $30,000 to $55,000 (~₹24 to ₹44 lakhs) <br>
                   Private Universities: $40,000 to $70,000+ (~₹32 to ₹56 lakhs) <br>
@@ -831,7 +914,7 @@ font-weight: bold;
 <div class="eligibilitycontainer" id="Eligibility">
 
   <div class="eligibility-card">
-    <h3 class="eligibility-h3">1. Academic Requirements:</h3>
+    <h3 class="eligibility-h3">Academic Requirements:</h3>
     <ul>
       <li><strong>Undergraduate:</strong> Completion of secondary education (12th grade in India) with good academic performance.</li>
       <li><strong>Graduate:</strong> A bachelor’s degree (or equivalent) from a recognized institution.</li>
@@ -839,7 +922,7 @@ font-weight: bold;
   </div>
 
   <div class="eligibility-card">
-    <h3 class="eligibility-h3">2. Standardized Test Scores (if applicable):</h3>
+    <h3 class="eligibility-h3">Standardized Test Scores (if applicable):</h3>
     <ul>
       <li><strong>Undergraduate:</strong> TOEFL/IELTS/PTE for English proficiency, SAT/ACT (some universities may waive this).</li>
       <li><strong>Graduate:</strong> TOEFL/IELTS/PTE for English proficiency, GRE/GMAT depending on the program.</li>
@@ -847,21 +930,21 @@ font-weight: bold;
   </div>
 
   <div class="eligibility-card">
-    <h3 class="eligibility-h3">3. English Proficiency:</h3>
+    <h3 class="eligibility-h3">English Proficiency:</h3>
     <ul>
       <li>Proof of English language proficiency through TOEFL, IELTS, or PTE.</li>
     </ul>
   </div>
 
   <div class="eligibility-card">
-    <h3 class="eligibility-h3">4. Financial Requirements:</h3>
+    <h3 class="eligibility-h3">Financial Requirements:</h3>
     <ul>
       <li>Proof of sufficient funds to cover tuition, living expenses, and other costs for the duration of the program.</li>
     </ul>
   </div>
 
   <div class="eligibility-card">
-    <h3 class="eligibility-h3">5. Additional Documents:</h3>
+    <h3 class="eligibility-h3">Additional Documents:</h3>
     <ul>
       <li>Transcripts, letters of recommendation, statement of purpose (SOP), and possibly a portfolio (for specific programs).</li>
     </ul>
@@ -879,7 +962,7 @@ font-weight: bold;
   <div class="container" id="Intakes">
     <div class="row">
       <div class="col-md-12 ftco-animate">
-        <h4 class="mb-3 bold-text">Fall Intake (September):</h4>
+        <h4 class="mb-3 bold-text heading_color">Fall Intake (September):</h4>
 
         <ul>
           <li>Most Common Intake: Fall is the primary intake for most U.S. universities, and the majority of students apply for this intake.</li>
@@ -888,14 +971,14 @@ font-weight: bold;
          
         </ul>
 
-        <h4 class="mb-3 mt-5 bold-text">Spring Intake (January):</h4>
+        <h4 class="mb-3 mt-5 bold-text heading_color">Spring Intake (January):</h4>
         <ul>
           <li>Second Most Common: While not as popular as fall, spring intake is still widely offered by many universities, especially for graduate programs.</li>
           <li>Duration: Starts in January and ends in May.</li>
           <li>Application Deadline: Typically between August and October.</li>
         </ul>
 
-        <h4 class="mb-3 mt-5 bold-text">Summer Intake (May/June):</h4>
+        <h4 class="mb-3 mt-5 bold-text heading_color">Summer Intake (May/June):</h4>
         <ul>
           <li>Less Common: Summer intake is offered by fewer universities, and it’s typically used for specific programs or shorter courses.</li>
           <li>Duration: Starts in May or June and runs until August.</li>
@@ -907,9 +990,9 @@ font-weight: bold;
   </div>
 </section>
 
-<section class="ftco-section ftco-degree-bg">
+<section class="ftco-section ftco-degree-bg"  id="Jobs">
   <h4 class="mb-3 bold-text text-center">Most Demanded jobs in USA</h4>
-  <div class="salary-container" id="Jobs">
+  <div class="salary-container">
     <div class="salary-row">
         <!-- Image section (50%) -->
         <div class="salary-image">
@@ -918,65 +1001,108 @@ font-weight: bold;
 
         <!-- Content section (50%) -->
         <div class="salary-content">
-            <h2>Salary Information by Career</h2>
+            <h4 class="mb-3 bold-text text-center">Salary Information by Career</h4>
             <ul>
-                <li><strong>Surgeons and Physicians:</strong><br>Salary Range: $200,000 - $500,000+ per year</li>
-                <li><strong>Data Scientists/AI Engineers:</strong><br>Salary Range: $100,000 - $200,000+ per year</li>
-                <li><strong>Software Engineers/Developers:</strong><br>Salary Range: $100,000 - $200,000+ per year</li>
-                <li><strong>Marketing Managers (especially in Tech and Pharmaceuticals):</strong><br>Salary Range: $120,000 - $200,000+ per year</li>
-                <li><strong>Financial Managers and Advisors:</strong><br>Salary Range: $100,000 - $300,000+ per year</li>
+                <li><strong class="heading_color">Surgeons and Physicians:</strong><br>Salary Range: $200,000 - $500,000+ per year</li>
+                <li><strong class="heading_color">Data Scientists/AI Engineers:</strong><br>Salary Range: $100,000 - $200,000+ per year</li>
+                <li><strong class="heading_color">Software Engineers/Developers:</strong><br>Salary Range: $100,000 - $200,000+ per year</li>
+                <li><strong class="heading_color">Marketing Managers (especially in Tech and Pharmaceuticals):</strong><br>Salary Range: $120,000 - $200,000+ per year</li>
+                <li><strong class="heading_color">Financial Managers and Advisors:</strong><br>Salary Range: $100,000 - $300,000+ per year</li>
             </ul>
         </div>
     </div>
 </div>
 </section>
 
-<section class="ftco-section ftco-degree-bg">
-  <h4 class="mb-3 bold-text text-center" id="Visa">VISA</h4>
-  <div class="container">
-    <!-- Buttons to show content -->
-    <div class="text-center mb-3">
-      <button class="btn btn-primary" onclick="showContent(1)">F-1 Visa</button>
-      <button class="btn btn-primary" onclick="showContent(2)">J-1 Visa</button>
-      <button class="btn btn-primary" onclick="showContent(3)">M-1 Visa</button>
-    </div>
-
-    <!-- Content and image container -->
-    <div class="row">
-      <!-- Left side image (on medium and large screens) -->
-      <div class="col-12 col-md-6 mb-4 mb-md-0">
-        <img src="images/studydestination/usa/img-2.webp" alt="Image" class="img-fluid">
+<section class="ftco-section ftco-degree-bg" id="Visa">
+  <h4 class="mb-3 bold-text text-center" >VISA</h4>
+<div class="visa-container">
+  
+  <div class="row align-items-center">
+    <div class="buttons-container">
+      <button class="btn btn-primary" onclick="changeContent(0)">F-1 Visa</button>
+      <button class="btn btn-secondary" onclick="changeContent(1)">J-1 Visa</button>
+      <button class="btn btn-success" onclick="changeContent(2)">M-1 Visa</button>
+  </div>
+      <div class="col-md-4 visa-image-container">
+          <img id="visaImage" src="images/studydestination/usa/img-2.webp" alt="Student Visa">
       </div>
-
-      <!-- Right side content (on medium and large screens) -->
-      <div class="col-12 col-md-6">
-        <div id="visaContent1" class="visa-text">
-          <h4>1. Types of U.S. Student Visas:</h4>
-          <ul>
-            <li><strong>F-1 Visa (Academic Students)</strong></li>
-            <p>Work Options: F-1 visa holders are eligible for on-campus work (up to 20 hours per week during the school term and full-time during breaks), and Optional Practical Training (OPT) or Curricular Practical Training (CPT) for work related to their field of study.</p>
-          </ul>
-        </div>
-
-        <div id="visaContent2" class="visa-text">
-          <h4>2. J-1 Visa (Exchange Visitor Program):</h4>
-          <ul>
-            <li><strong>Purpose:</strong> This visa is for students participating in exchange programs sponsored by the U.S. government, universities, or private organizations. It is often used for students in short-term study programs, research scholars, or interns.</li>
-          </ul>
-        </div>
-
-        <div id="visaContent3" class="visa-text">
-          <h4>3. M-1 Visa (Vocational Students):</h4>
-          <ul>
-            <li><strong>Purpose:</strong> This visa is for students attending non-academic or vocational programs in the U.S. (e.g., technical schools or specialized training).</li>
-          </ul>
-        </div>
+      <div class="col-md-8">
+          <div id="visaContent" class="visacontent">
+              <h4>F-1 Visa (Academic Students)</h4>
+              <p>Work Options: F-1 visa holders are eligible for on-campus work (up to 20 hours per week during the school term and full-time during breaks), and Optional Practical Training (OPT) or Curricular Practical Training (CPT) for work related to their field of study.</p>
+          </div>
       </div>
-    </div>
+     
+  </div>
   </div>
 </section>
 
+<section class="ftco-section ftco-degree-bg">
+  <section class="whyrsr-section" id="WhyRSR">
+    <div class="container">
+      <h4 class="text-center mb-4 bold-text">Why RSR</h4>
+        <h2 class="whyrsr-header">6 Reasons to Pick RSR Global Education</h2>
+        <p class="whyrsr-subtitle text-center">Study in Your Preferred Destination with the Best Guidance</p>
 
+        <div class="whyrsr-container">
+            <!-- Expert Guidance -->
+            <div class="whyrsr-card">
+                <div class="whyrsr-icon">
+                    <img src="images/studydestination/uk/expert-icons.png" alt="expert-icons"/>
+                </div>
+                <div class="whyrsr-title">Expert Guidance</div>
+                <p class="whyrsr-text">Personalized Counseling for University & Course Selection</p>
+            </div>
+
+            <!-- Seamless Application Process -->
+            <div class="whyrsr-card">
+                <div class="whyrsr-icon">
+                  <img src="images/studydestination/uk/application-process.png" alt="">
+                                </div>
+                <div class="whyrsr-title">Seamless Application Process</div>
+                <p class="whyrsr-text">Assistance with Documentation, SOPs & Admission</p>
+            </div>
+
+            <!-- Visa Support -->
+            <div class="whyrsr-card">
+                <div class="whyrsr-icon">
+                  <img src="images/studydestination/uk/visa.png" alt="">
+                </div>
+                <div class="whyrsr-title">Visa Support</div>
+                <p class="whyrsr-text">End-to-end Visa Guidance for a smooth approval process</p>
+            </div>
+
+            <!-- Affordable & Transparent Services -->
+            <div class="whyrsr-card">
+                <div class="whyrsr-icon">
+                  <img src="images/studydestination/uk/customer-service.png" alt="">
+                </div>
+                <div class="whyrsr-title">Affordable & Transparent Services</div>
+                <p class="whyrsr-text">No hidden charges, ensuring cost-effective solutions</p>
+            </div>
+
+            <!-- Post-Arrival Support -->
+            <div class="whyrsr-card">
+                <div class="whyrsr-icon">
+                  <img src="images/studydestination/uk/job-support.png" alt="">
+                </div>
+                <div class="whyrsr-title">Post-Arrival Support</div>
+                <p class="whyrsr-text">Accommodation, Job Assistance & Local Guidance</p>
+            </div>
+
+            <!-- Financial Guidance & Scholarships -->
+            <div class="whyrsr-card">
+                <div class="whyrsr-icon">
+                  <img src="images/studydestination/uk/scholarship.png" alt="">
+                </div>
+                <div class="whyrsr-title">Financial Guidance & Scholarships</div>
+                <p class="whyrsr-text">Guidance in academic pursuits & access to scholarships</p>
+            </div>
+        </div>
+    </div>
+</section>
+</section>
 
       <!-- <section class="ftco-section ftco-degree-bg">
         <div class="container">
@@ -1002,7 +1128,7 @@ font-weight: bold;
        
       <!-- .section -->
 
-      <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <footer class="ftco-footer ftco-section">
         <div class="container">
           <div class="row mb-5">
             <div class="col-md">
@@ -1030,12 +1156,14 @@ font-weight: bold;
             </div>
             <div class="col-md">
                <div class="ftco-footer-widget mb-4">
-                <h4 class="ftco-heading-2">Customer Support</h4>
+                <h4 class="ftco-heading-2">Useful links</h4>
                 <ul class="list-unstyled">
-                  <li><a href="FAQ.html" class=" d-block">FAQ</a></li>
-                  <!-- <li><a href="#" class="py-2 d-block">Payment Option</a></li> -->
-                  <!-- <li><a href="#" class="py-2 d-block">Booking Tips</a></li> -->
-                  <!-- <li><a href="#" class="py-2 d-block">How it works</a></li> -->
+                  <li><a href="javascript:void(0)" class="py-2 d-block">About RSR</a></li>
+                  <li><a href="javascript:void(0)" class="py-2 d-block">Why Study Abroad</a></li>
+                  <li><a href="javascript:void(0)" class="py-2 d-block">Step by Step Guide</a></li>
+                  <li><a href="javascript:void(0)" class=" d-block">Study Destinations</a></li> 
+                  <li><a href="javascript:void(0)" class=" d-block">Services</a></li>
+                  <li><a href="FAQ.html" class=" d-block">FAQ</a></li> 
                   <li><a href="contact.html" class=" d-block">Contact Us</a></li>
                 </ul>
               </div>
@@ -1072,7 +1200,7 @@ font-weight: bold;
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
   <!-- Scroll Top -->
-  <button id="scrollToTopBtn" class="scroll-to-top" onclick="scrollToTop()">↑</button>
+  <button id="scrollToTopBtn" class="scroll-to-top" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -1094,6 +1222,10 @@ font-weight: bold;
   <script src="js/custom.js"></script>
 
   <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+
+   <!-- jQuery and Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
     $(document).ready(function() {
@@ -1132,6 +1264,20 @@ font-weight: bold;
   // Initialize the first content on page load
   showContent(currentContent);
 </script>
+
+<script>
+  $(document).ready(function() {
+    // Automatically show modal when the page loads (existing behavior)
+    $('#welcomeModal').modal('show');
+
+    // Check if the URL has the parameter 'showModal=true'
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('showModal')) {
+      $('#welcomeModal').modal('show'); // Show modal if parameter exists
+    }
+  });
+</script>
+
 
     
   </body>
