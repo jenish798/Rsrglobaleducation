@@ -41,6 +41,7 @@
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> -->
 
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"> -->
+   
 
   <style>
 
@@ -200,6 +201,148 @@ font-weight: bold;
             margin: 0;
         }
 
+        /*--------------------------------------------------------------
+# eligibility
+--------------------------------------------------------------*/
+
+        .eligibilitycontainer {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    .eligibility-heading {
+      text-align: center;
+      color: #1a73e8;
+      margin-bottom: 20px;
+    }
+
+    /* Card for each section */
+    .eligibility-card {
+      background: #f9f9f9;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .eligibility-card:hover {
+      transform: scale(1.05);
+    }
+
+    .eligibility-h3 {
+      color: #1a73e8;
+      font-size: 1.4em;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .eligibilitycontainer {
+        padding: 15px;
+      }
+
+      .eligibility-heading {
+        font-size: 1.8em;
+      }
+
+      .eligibility-card {
+        padding: 15px;
+      }
+    }
+
+    .salary-container {
+            max-width: 1200px; /* Container width */
+            margin: 0 auto; /* Centering the container */
+            padding: 20px;
+        }
+
+        /* Flexbox layout for the image and content */
+        .salary-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .salary-image, .salary-content {
+            flex: 1 1 48%; /* Ensures each section takes up 50% of the space with some margin */
+            box-sizing: border-box;
+        }
+
+        /* Image styles */
+        .salary-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px; /* Optional: adds rounded corners */
+        }
+
+        /* Content styles */
+        .salary-content h2 {
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .salary-content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .salary-content li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        /* Responsive styles for smaller screens */
+        @media (max-width: 768px) {
+            .salary-row {
+                flex-direction: column; /* Stack content vertically */
+            }
+
+            .salary-image, .salary-content {
+                flex: 1 1 100%; /* Make each section take 100% of the width */
+            }
+        }
+
+/*--------------------------------------------------------------
+# Scroll Top Button
+--------------------------------------------------------------*/
+
+        /* Scroll to Top Button Style */
+        .scroll-to-top {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          background-color: #007bff;
+          color: white;
+          border: none;
+          border-radius: 50%;
+          padding: 15px;
+          font-size: 18px;
+          cursor: pointer;
+          display: none; /* Hidden by default */
+          z-index: 1000; /* Ensure it's always on top */
+      }
+
+      .scroll-to-top:hover {
+          background-color: #0056b3;
+      }
+
+
   </style>
 
   </head>
@@ -245,7 +388,7 @@ font-weight: bold;
     </div>
     
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light" id="ftco-navbar">
   <div class="container-fluid">
     <!-- Logo Section: 20% width -->
     <a href="index.html" class="navbar-brand" style="flex: 0 0 20%;">
@@ -333,14 +476,15 @@ font-weight: bold;
       <div class="container">
         <div class="row">
     <div class="button-container">
-      <button class="button">How to Apply</button>
-      <button class="button">Courses in USA</button>
-      <button class="button">PHDs</button>
-      <button class="button">Student Exchanges</button>
-      <button class="button">Course Fees</button>
-      <button class="button">Funding to study in the USA</button>
-      <button class="button">Student Visas</button>
-      <button class="button">Top-Ranked Universities</button>
+      <button class="button" onclick="scrollToSection('whyusa')">Why USA</button>
+      <button class="button" onclick="scrollToSection('Universities')">Popular Universities</button>
+      <button class="button" onclick="scrollToSection('Courses')">Top Courses in USA</button>
+      <button class="button" onclick="scrollToSection('Studying')">Cost of Studying in USA & Fees </button>
+      <button class="button" onclick="scrollToSection('Eligibility')">Eligibility</button>
+      <button class="button" onclick="scrollToSection('Intakes')">Intakes Available</button>
+      <button class="button" onclick="scrollToSection('Jobs')">Jobs and Salaries</button>
+      <button class="button" onclick="scrollToSection('Visa')">Visa</button>
+      <button class="button" onclick="scrollToSection('WhyRSR ')">Why RSR</button>    
      
     </div>
   </div>
@@ -348,7 +492,8 @@ font-weight: bold;
   </section>
 
     <section class="ftco-section ftco-degree-bg">
-    <div class="box-section">
+    <div class="box-section id='whyusa">
+      <h4 class="mb-3 bold-text text-center">Why USA?</h4>
       <div class="row">
           <div class="col">
               <div class="box">
@@ -412,7 +557,7 @@ font-weight: bold;
 
 <section class="ftco-section ftco-degree-bg">
   <div class="container">
-    <div class="row">
+    <div class="row" id="Universities">
       <div class="col-md-12">
         <h4 class="mb-3 bold-text text-center">Top-Ranked Universities in the USA</h4>
         <div class="container mt-5">
@@ -473,7 +618,7 @@ font-weight: bold;
 
           <!-- Card View for Medium and Smaller Screens -->
           <div class="d-lg-none">
-            <div class="row">
+            <div class="row" id="Universities">
               <!-- Each card represents a university -->
               <div class="col-sm-12 col-md-6 mb-3">
                 <div class="card">
@@ -567,8 +712,8 @@ font-weight: bold;
 </section>
 
 <section class="ftco-section ftco-degree-bg course-item">
-  <div class="course-container">
-    <h2 class="course-title mb-3 bold-text text-center">Top courses in USA</h2>
+  <div class="course-container" id="Courses">
+    <h4 class="mb-3 bold-text text-center">Top courses in USA</h4>
     <div class="course-grid">
         <div class="course-card"><div class="course-icon"> 🏗️ </div><div class="course-text"><h3>Engineering</h3></div></div>
         <div class="course-card"><div class="course-icon"> 📊 </div><div class="course-text"><h3>Data Science</h3></div></div>
@@ -585,14 +730,9 @@ font-weight: bold;
 <section class="ftco-section ftco-degree-bg">
 <section id="faq" class="faq section">
 
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <!-- <h4>Frequently Asked Questions</h4> -->
-  </div><!-- End Section Title -->
-
   <div class="container">
 
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" id="Studying">
 
       <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
 
@@ -685,65 +825,160 @@ font-weight: bold;
 </section><!-- /Faq Section -->
 </section>
 
-    <section class="ftco-section ftco-degree-bg">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 ftco-animate">
-              <h4 class="mb-3 bold-text">Why study in USA</h4>
-              <p class="bold-text">The USA is the number one destination for international students and it’s not hard to see why. Find out what it’s like to study in the ‘land of opportunity’</p>
-              <p>
-                Spanning six time zones the USA is regarded as one of the finest education providers in the world and sees increasing numbers of postgraduate students’ flock to its universities each year. Universities in the United States are acknowledged as top-notch.
-              </p>
-              <p>While Studying in USA you’ll have the pick of thousands of institutions and degree programmes, as well as the opportunity to broaden your cultural horizons by experiencing American campus life. You can also give your CV a boost by getting involved in the huge variety of clubs and organisations on offer, including sports.</p>
+<section class="ftco-section ftco-degree-bg">
+  <h4 class="mb-3 bold-text text-center">Eligibility Criteria for Studying in the USA</h4>
 
-              <p>Popular student cities include Boston, Chicago, Los Angeles, New York City and San Francisco but if you’re sights are set on a less obvious destination you have 50 states to choose from.</p>
+<div class="eligibilitycontainer" id="Eligibility">
 
-              <h4 class="mb-3 bold-text">How to apply</h4>
-              <p>
-                It can take longer to apply to a US institution due to the various stages you must negotiate. It’s advised that you apply 12 to 18 months in advance. The Fulbright Commission recommends that you apply to no more than six institutions – this will allow you enough time to focus on each application while giving you an increased chance of success. To study in the USA all students must apply directly to their chosen institution and sit for amultiple-choice admission exam. Most universities require students to sit for SAT or ACT exams. They can be taken in test centers around the UK and cost roughly £50 each. Kaplan provides free SAT practice tools as well as SAT and ACT test preparation courses. Additionally, you’ll need to provide: an application form, a personal statement transcripts of academic records two or three recommendation letters, admission exam scores. For graduate programmes you may have to provide a research statement and CV and also attend an interview. All students must pay an application fee to each university, usually $50 to $100. Application deadlines for postgraduate study vary but most fall between November and February.
-              </p>
+  <div class="eligibility-card">
+    <h3 class="eligibility-h3">1. Academic Requirements:</h3>
+    <ul>
+      <li><strong>Undergraduate:</strong> Completion of secondary education (12th grade in India) with good academic performance.</li>
+      <li><strong>Graduate:</strong> A bachelor’s degree (or equivalent) from a recognized institution.</li>
+    </ul>
+  </div>
 
-              <h4 class="mb-3 mt-5 bold-text">Degree courses in the USA</h4>
-              <p>There are two types of undergraduate degree courses to study in USA:</p>
-              <p>
-                <span class="bold-text">Associate degrees :</span>
-               take two years to complete and are usually studied at technical, community or junior colleges. Students can study for an associate qualification in a range of subjects and then transfer to a Bachelors programme to complete an additional two years of study to gain a Bachelors degree.
-              </p>
+  <div class="eligibility-card">
+    <h3 class="eligibility-h3">2. Standardized Test Scores (if applicable):</h3>
+    <ul>
+      <li><strong>Undergraduate:</strong> TOEFL/IELTS/PTE for English proficiency, SAT/ACT (some universities may waive this).</li>
+      <li><strong>Graduate:</strong> TOEFL/IELTS/PTE for English proficiency, GRE/GMAT depending on the program.</li>
+    </ul>
+  </div>
 
-              <p>
-               <span class="bold-text">Bachelors degrees :</span>  take four years to complete. They differ from UK undergraduate degrees in that students study a variety of subjects before deciding on which to focus on, known as a ‘major’. Students may also gain a ‘minor’ qualification by completing classes in an additional subject alongside their ‘major’.
-              </p>
+  <div class="eligibility-card">
+    <h3 class="eligibility-h3">3. English Proficiency:</h3>
+    <ul>
+      <li>Proof of English language proficiency through TOEFL, IELTS, or PTE.</li>
+    </ul>
+  </div>
 
-              <p>For entry onto a Bachelors degree you’ll need at least five GCSE passes and two A-levels. To ensure that your chosen university recognizes your qualifications you’ll need to contact the admissions office.</p>
+  <div class="eligibility-card">
+    <h3 class="eligibility-h3">4. Financial Requirements:</h3>
+    <ul>
+      <li>Proof of sufficient funds to cover tuition, living expenses, and other costs for the duration of the program.</li>
+    </ul>
+  </div>
 
-              <h4 class="mb-3 mt-5 bold-text">PhDs</h4>
+  <div class="eligibility-card">
+    <h3 class="eligibility-h3">5. Additional Documents:</h3>
+    <ul>
+      <li>Transcripts, letters of recommendation, statement of purpose (SOP), and possibly a portfolio (for specific programs).</li>
+    </ul>
+  </div>
 
-              <p>A Doctoral degree is the highest qualification that a student can achieve in the USA. They typically take four to six years to complete. To be awarded with a PhD you’ll need to pass comprehensive examinations and produce original research, usually in the form of a dissertation. Commonly studied subjects include anthropology, biology, education, engineering, psychology and sociology.</p>
+  <div class="eligibility-card">
+    <h3 class="eligibility-h3">Note:</h3>
+    <p>Each university or program might have additional specific requirements. Please verify with the respective institution.</p>
+  </div>
+</div>
+</section>
 
-              <h4 class="mb-3 mt-5 bold-text">Student exchanges</h4>
+<section class="ftco-section ftco-degree-bg">
+  <h4 class="mb-3 bold-text text-center">Intakes Available</h4>
+  <div class="container" id="Intakes">
+    <div class="row">
+      <div class="col-md-12 ftco-animate">
+        <h4 class="mb-3 bold-text">Fall Intake (September):</h4>
 
-              <p>UK students and graduates can apply for a range of exchange opportunities with the Fulbright Commission’s Fulbright Awards Programme. You can attend a US institution to pursue a postgraduate degree or lecture and conduct research in the USA. Many UK universities are partnered with a US counterpart or are members of the International Student Exchange Program (ISEP). For example, the University of Central Lancashire (UCLan) is an ISEP member and has partners in the USA and other countries.</p>
+        <ul>
+          <li>Most Common Intake: Fall is the primary intake for most U.S. universities, and the majority of students apply for this intake.</li>
+          <li>Duration: Starts in late August or early September and runs until December or mid-January.</li>
+          <li>Application Deadline: Usually between December and March (for international students). </li>
+         
+        </ul>
 
-              <h4 class="mb-3 mt-5 bold-text">Course Fees</h4>
+        <h4 class="mb-3 mt-5 bold-text">Spring Intake (January):</h4>
+        <ul>
+          <li>Second Most Common: While not as popular as fall, spring intake is still widely offered by many universities, especially for graduate programs.</li>
+          <li>Duration: Starts in January and ends in May.</li>
+          <li>Application Deadline: Typically between August and October.</li>
+        </ul>
 
-              <p>Procurement of student visa in the USA and studying there is expensive and so any decision to study here should not be taken lightly.</p>
-              <p>Public universities charge two sets of fees: a lower rate applies to in-state students while a higher rate is charged for all out-of-state students. Private institutions don’t differentiate between out-of-sate and domestic students and charges the same rate for all, although fees will be higher than at public universities.</p>
-              <p>Fees for graduate programmes vary widely depending on your chosen subject and institution. For example, course fees and living costs at a top ranked institution could cost as much as $70,000 (£55,000) but there is financial help available depending on your circumstances. To find out exactly how much your postgraduate course costs contact your university.</p>
-              <p>While tuition fees are pricey the annual cost of living is generally much lower than in other countries such as the UK.</p>
+        <h4 class="mb-3 mt-5 bold-text">Summer Intake (May/June):</h4>
+        <ul>
+          <li>Less Common: Summer intake is offered by fewer universities, and it’s typically used for specific programs or shorter courses.</li>
+          <li>Duration: Starts in May or June and runs until August.</li>
+          <li>Application Deadline: Generally between February and April.</li>
+        </ul>
+        
+      </div>
+      </div>
+  </div>
+</section>
 
-              <h4 class="mb-3 mt-5 bold-text">Funding to study in the USA</h4>
-
-              <p>Each year international students receive a significant amount of financial help. Funding for overseas students does exist and generally differs between institutions. Some provide scholarships covering the entire cost of study, while others contribute towards the overall cost. Common sources of funding include: Needs-based financial aid – if your family income falls below a certain amount then many institutions can assist with tuition fees and accommodation. Merit scholarships – for those with outstanding talent or excellent grades in a specific subject. Sports scholarships – for talented sportsmen and women. You need the required grades as well as sporting excellence. Around 20 scholarships are offered each year by the Fulbright Commission Award Programme. UK students looking to pursue a postgraduate degree are eligible, with awards varying from journalism to medicine. For a list of awards visit Fulbright Commission – Awards and Programmes for UK Postgraduates. Several institutions also set aside a significant sum to assist international undergraduates.</p>
-  
-  
-            </div> 
-  
-          </div>
+<section class="ftco-section ftco-degree-bg">
+  <h4 class="mb-3 bold-text text-center">Most Demanded jobs in USA</h4>
+  <div class="salary-container" id="Jobs">
+    <div class="salary-row">
+        <!-- Image section (50%) -->
+        <div class="salary-image">
+            <img src="images/studydestination/usa/img-1.jpg" alt="Career Image">
         </div>
-      </section> 
-      <!-- .section -->
 
-      <section class="ftco-section ftco-degree-bg">
+        <!-- Content section (50%) -->
+        <div class="salary-content">
+            <h2>Salary Information by Career</h2>
+            <ul>
+                <li><strong>Surgeons and Physicians:</strong><br>Salary Range: $200,000 - $500,000+ per year</li>
+                <li><strong>Data Scientists/AI Engineers:</strong><br>Salary Range: $100,000 - $200,000+ per year</li>
+                <li><strong>Software Engineers/Developers:</strong><br>Salary Range: $100,000 - $200,000+ per year</li>
+                <li><strong>Marketing Managers (especially in Tech and Pharmaceuticals):</strong><br>Salary Range: $120,000 - $200,000+ per year</li>
+                <li><strong>Financial Managers and Advisors:</strong><br>Salary Range: $100,000 - $300,000+ per year</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</section>
+
+<section class="ftco-section ftco-degree-bg">
+  <h4 class="mb-3 bold-text text-center" id="Visa">VISA</h4>
+  <div class="container">
+    <!-- Buttons to show content -->
+    <div class="text-center mb-3">
+      <button class="btn btn-primary" onclick="showContent(1)">F-1 Visa</button>
+      <button class="btn btn-primary" onclick="showContent(2)">J-1 Visa</button>
+      <button class="btn btn-primary" onclick="showContent(3)">M-1 Visa</button>
+    </div>
+
+    <!-- Content and image container -->
+    <div class="row">
+      <!-- Left side image (on medium and large screens) -->
+      <div class="col-12 col-md-6 mb-4 mb-md-0">
+        <img src="images/studydestination/usa/img-2.webp" alt="Image" class="img-fluid">
+      </div>
+
+      <!-- Right side content (on medium and large screens) -->
+      <div class="col-12 col-md-6">
+        <div id="visaContent1" class="visa-text">
+          <h4>1. Types of U.S. Student Visas:</h4>
+          <ul>
+            <li><strong>F-1 Visa (Academic Students)</strong></li>
+            <p>Work Options: F-1 visa holders are eligible for on-campus work (up to 20 hours per week during the school term and full-time during breaks), and Optional Practical Training (OPT) or Curricular Practical Training (CPT) for work related to their field of study.</p>
+          </ul>
+        </div>
+
+        <div id="visaContent2" class="visa-text">
+          <h4>2. J-1 Visa (Exchange Visitor Program):</h4>
+          <ul>
+            <li><strong>Purpose:</strong> This visa is for students participating in exchange programs sponsored by the U.S. government, universities, or private organizations. It is often used for students in short-term study programs, research scholars, or interns.</li>
+          </ul>
+        </div>
+
+        <div id="visaContent3" class="visa-text">
+          <h4>3. M-1 Visa (Vocational Students):</h4>
+          <ul>
+            <li><strong>Purpose:</strong> This visa is for students attending non-academic or vocational programs in the U.S. (e.g., technical schools or specialized training).</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+      <!-- <section class="ftco-section ftco-degree-bg">
         <div class="container">
           <div class="row">
             <div class="col-md-6 ftco-animate">
@@ -763,11 +998,7 @@ font-weight: bold;
             </div>
           </div>
         </div>
-      </section>
-
-
-      
-      
+      </section> -->
        
       <!-- .section -->
 
@@ -840,6 +1071,8 @@ font-weight: bold;
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
+  <!-- Scroll Top -->
+  <button id="scrollToTopBtn" class="scroll-to-top" onclick="scrollToTop()">↑</button>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -858,6 +1091,7 @@ font-weight: bold;
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0h4s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/custom.js"></script>
 
   <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
 
@@ -873,6 +1107,32 @@ font-weight: bold;
       }
     });
   </script>
+
+<script>
+  let currentContent = 1;
+  const totalContents = 3;
+
+  // Function to show content based on index
+  function showContent(contentIndex) {
+      // Hide all content texts
+      for (let i = 1; i <= totalContents; i++) {
+          document.getElementById(`visaContent${i}`).style.display = 'none';
+      }
+      // Show the selected content
+      document.getElementById(`visaContent${contentIndex}`).style.display = 'block';
+      currentContent = contentIndex;  // Update current content index
+  }
+
+  // Automatically change content every 4 seconds
+  setInterval(() => {
+      currentContent = (currentContent % totalContents) + 1;
+      showContent(currentContent);
+  }, 5000);
+
+  // Initialize the first content on page load
+  showContent(currentContent);
+</script>
+
     
   </body>
 </html>
