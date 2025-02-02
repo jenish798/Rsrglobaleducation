@@ -36,6 +36,612 @@
     <!-- Google icons -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 
+  <style>
+    .heading_color {
+  color: #393BA7;
+}
+
+/*--------------------------------------------------------------
+# Scroll Top Button
+--------------------------------------------------------------*/
+
+      /* Scroll to Top Button Style */
+      .scroll-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #393BA7;
+        color: white;
+        border: none;
+        border-radius: 100%;
+        padding: 12px 20px;
+        /* font-size: 15px; */
+        cursor: pointer;
+        display: none; /* Hidden by default */
+        z-index: 1000; /* Ensure it's always on top */
+    }
+
+    .scroll-to-top:hover {
+        background-color: #5557C4;
+    }
+  
+/*--------------------------------------------------------------
+# counselling button
+--------------------------------------------------------------*/
+
+.studydestinationbtn {
+  cursor: pointer;
+  background: #FD0011;
+  color: #fff;
+  padding: 15px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  font-size: 15px;
+  border-radius: 20px; 
+}
+
+  .studydestinationbtn:hover {
+    color: #fff;
+  }
+
+/*--------------------------------------------------------------
+# hyperlink
+--------------------------------------------------------------*/
+
+.hyperlink-button-container {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 10px; 
+}
+
+.hyperlink-button {
+  background-color: #393BA7; 
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hyperlink-button:hover {
+  background-color:#4C4FAF;  /* Darker green when hovered */
+}
+/*--------------------------------------------------------------
+# whyaustralia
+--------------------------------------------------------------*/
+
+.whyaustralia {
+            /* background: linear-gradient(135deg, #9FA0E6 #393BA7, #1D1F60); */
+            background: linear-gradient(135deg, #1D1F60, #393BA7, #9FA0E6);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+        }
+        .whyaustralia-header {
+            font-weight: bold;
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .whystudymalaysia-card {
+      margin-bottom: 30px;
+    }
+    .whystudymalaysia-card .card-body {
+      padding: 25px;
+      text-align: center;
+    }
+    .whystudymalaysia-card i {
+      font-size: 40px;
+      color: #393BA7;
+      margin-bottom: 15px;
+    }
+    .whystudymalaysia-card .card-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .whystudymalaysia-card .card-text {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    @media (max-width: 768px) {
+      .whystudymalaysia-card .card-body {
+        padding: 20px;
+      }
+    }
+/*--------------------------------------------------------------
+# malaysiacourse
+--------------------------------------------------------------*/
+    .malaysiacourse-card {
+      margin-bottom: 30px;
+    }
+    .malaysiacourse-card .card-body {
+      padding: 25px;
+      text-align: center;
+      background-color: #f8f9fa;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .malaysiacourse-card i {
+      font-size: 40px;
+      color: #393BA7;
+      margin-bottom: 15px;
+    }
+    .malaysiacourse-card .card-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .malaysiacourse-card .card-text {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .malaysiacourse-header {
+      text-align: center;
+      margin-bottom: 50px;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #333;
+    }
+    .malaysiacourse-container {
+      margin-top: 30px;
+    }
+    @media (max-width: 768px) {
+      .malaysiacourse-card .card-body {
+        padding: 20px;
+      }
+    }
+/*--------------------------------------------------------------
+# malaysiaeligibility
+--------------------------------------------------------------*/
+    /* .malaysiaeligibility-section {
+      margin-bottom: 40px;
+    } */
+    .malaysiaeligibility-card {
+      /* background-color: #f8f9fa; */
+      padding: 25px;
+      border-radius: 10px;
+      /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    }
+    .malaysiaeligibility-card i {
+      font-size: 40px;
+      color: #393BA7;
+      margin-bottom: 15px;
+    }
+    .malaysiaeligibility-card h5 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .malaysiaeligibility-card p {
+      font-size: 1rem;
+      color: #555;
+    }
+    .malaysiaeligibility-subheader {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #393BA7;
+      margin-bottom: 15px;
+    }
+    @media (max-width: 768px) {
+      .malaysiaeligibility-card {
+        padding: 20px;
+      }
+    }
+/*--------------------------------------------------------------
+# malaysiacost
+--------------------------------------------------------------*/
+    .malaysiacost-section {
+      margin-bottom: 40px;
+    }
+    .malaysiacost-card {
+      background-color: #f8f9fa;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .malaysiacost-card i {
+      font-size: 40px;
+      color: #007bff;
+      margin-bottom: 15px;
+    }
+    .malaysiacost-table thead {
+      background: linear-gradient(135deg, #8B0000, #FD0011, #FF7373);
+      color: white;
+    }
+    .malaysiacost-table tbody tr:nth-child(odd) {
+      background-color: #f2f2f2;
+    }
+    .malaysiacost-table tbody tr:nth-child(even) {
+      background-color: #e9ecef;
+    }
+    .malaysiacost-table th, .malaysiacost-table td {
+      text-align: center;
+      padding: 15px;
+    }
+    .malaysiacost-table .table-responsive {
+      margin-top: 30px;
+    }
+    .malaysiacost-table td {
+      font-weight: 500;
+    }
+    .malaysiacost-subheader {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #007bff;
+      margin-bottom: 15px;
+    }
+    @media (max-width: 768px) {
+      .malaysiacost-card {
+        padding: 20px;
+      }
+      .malaysiacost-table td {
+        font-size: 0.9rem;
+      }
+    }
+/*--------------------------------------------------------------
+# malaysialiving
+--------------------------------------------------------------*/
+    /* Section Container */
+    .malaysialiving-section {
+      margin-bottom: 50px;
+    }
+
+    /* Card Layout */
+    .malaysialiving-card {
+      background: linear-gradient(135deg, #00c6ff, #007bff);
+      color: white;
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    /* Card Hover Effect */
+    .malaysialiving-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Icon Styling */
+    .malaysialiving-card i {
+      font-size: 60px;
+      margin-bottom: 20px;
+      transition: color 0.3s ease;
+    }
+
+    .malaysialiving-card:hover i {
+      color: #ffbc00;
+    }
+
+    /* Card Header */
+    .malaysialiving-card h5 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    /* Subheader for cost ranges */
+    .malaysialiving-subheader {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-top: 10px;
+      color: #ffbc00;
+    }
+
+    /* General Content Styling */
+    .malaysialiving-card p {
+      font-size: 1.1rem;
+      color: white;
+      margin-bottom: 15px;
+    }
+
+    /* Responsive Design for Mobile */
+    @media (max-width: 768px) {
+      .malaysialiving-card {
+        padding: 30px;
+      }
+
+      .malaysialiving-card i {
+        font-size: 50px;
+      }
+
+      .malaysialiving-card h5 {
+        font-size: 1.5rem;
+      }
+    }
+/*--------------------------------------------------------------
+# malaysiajob
+--------------------------------------------------------------*/
+.malaysia-job-section {
+      padding: 80px 0;
+    }
+
+    .malaysia-job-header {
+      text-align: center;
+      margin-bottom: 50px;
+      color: #fff;
+    }
+
+    .malaysia-job-header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #004d7a;
+    }
+
+    .malaysia-job-header p {
+      font-size: 1.2rem;
+      color: #444;
+      font-weight: 300;
+    }
+
+    .malaysia-job-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: left;
+      margin-bottom: 50px;
+      padding: 50px 20px;
+      color: #fff;
+      background: linear-gradient(to right, #ff6a00, #ee0979);
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .malaysia-job-item:hover {
+      transform: scale(1.05);
+    }
+
+    .malaysia-job-item i {
+      font-size: 4rem;
+      margin-right: 20px;
+      color: white;
+    }
+
+    .malaysia-job-item h4 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .malaysia-job-item p {
+      font-size: 1rem;
+      text-align: left;
+      font-weight: 300;
+    }
+
+    .malaysia-job-item .content {
+      max-width: 500px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .malaysia-job-header h1 {
+        font-size: 2.5rem;
+      }
+
+      .malaysia-job-header p {
+        font-size: 1rem;
+      }
+
+      .malaysia-job-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      .malaysia-job-item i {
+        margin-bottom: 20px;
+      }
+    }
+/*--------------------------------------------------------------
+# malaysiavisa
+--------------------------------------------------------------*/
+    .malaysiavisa {
+            background-color: #f0f4f8;
+            padding: 60px 0;
+        }
+
+        .malaysiavisa h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #0056b3;
+            margin-bottom: 40px;
+        }
+
+        .malaysiavisa .section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .malaysiavisa .section .icon {
+            font-size: 3rem;
+            margin-right: 20px;
+            color: #393BA7;
+        }
+
+        .malaysiavisa .section .content {
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .malaysiavisa .section .content h3 {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #393BA7;
+        }
+
+        .malaysiavisa .section .content p {
+            font-size: 1rem;
+            color: #000;
+        }
+
+        .malaysiavisa .btn-primary {
+            background-color: #0056b3;
+            border-color: #0056b3;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            margin-top: 30px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .malaysiavisa .btn-primary:hover {
+            background-color: #00408a;
+            border-color: #00408a;
+        }
+
+        @media (max-width: 768px) {
+            .malaysiavisa .section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .malaysiavisa .section .icon {
+                margin-bottom: 20px;
+            }
+        }
+/*--------------------------------------------------------------
+# malaysiastudentcities
+--------------------------------------------------------------*/
+        .student-cities {
+          background: linear-gradient(135deg, #8B0000, #FD0011, #FF7373);
+            padding: 60px 0;
+        }
+
+        .student-cities h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #0056b3;
+            margin-bottom: 40px;
+        }
+
+        .city-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .city-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .city-card .city-title {
+            font-size: 1.75rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .city-card .city-highlight {
+            font-size: 1.1rem;
+            text-align: left;
+            color: #555;
+        }
+
+        .city-card .city-highlight:first-child {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        @media (max-width: 768px) {
+            .student-cities h2 {
+                font-size: 2rem;
+            }
+
+            .city-card {
+                padding: 20px;
+            }
+        }
+
+        /*--------------------------------------------------------------
+# whyrsr
+--------------------------------------------------------------*/
+
+.whyrsr-section {
+            /* background-color: #f8f9fa; */
+            padding: 60px 0;
+            text-align: center;
+        }
+        .whyrsr-header {
+            font-weight: bold;
+            color: #222;
+            margin-bottom: 10px;
+        }
+        .whyrsr-subtitle {
+            color: #555;
+            margin-bottom: 40px;
+        }
+        .whyrsr-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .whyrsr-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            width: 320px;
+            min-height: 220px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .whyrsr-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .whyrsr-icon {
+            width: 60px;
+            height: 60px;
+            /* background: #007bff; */
+            color: white;
+            font-size: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        .whyrsr-title {
+            font-weight: bold;
+            font-size: 18px;
+            color: #222;
+            margin-bottom: 8px;
+        }
+        .whyrsr-text {
+            font-size: 14px;
+            color: #555;
+            text-align: center;
+        }
+        </style>
 
   </head>
   <body>
@@ -46,11 +652,27 @@
         <!-- Row for Email Us and Social Links -->
         <div class="row align-items-center justify-content-end">
           <!-- Email Us Button Section -->
+
+          <!-- <div lass="col-auto d-flex justify-content-end mb-2 mb-md-0">
+            <p><i class="fa-solid fa-phone"></i>Request a call back</p>
+            
+          </div> -->
+
+          <div class="d-flex justify-content-center align-items-center mb-2 mb-md-0">
+            <a href="javascript:void(0)" class="text-white d-flex align-items-center px-3" style="gap: 10px;">
+                <!-- <i class="fa-solid fa-phone" style="font-size: 1.4rem; display: flex; align-items: center;"></i> -->
+                 <img src="images/icons/Phone_icon_ 1.png" alt="">
+                <p class="mb-0 bold-text" style="margin-left: 5px; display: flex; align-items: center;">Request a call back</p>
+            </a>
+        </div>        
+        
+        
           <div class="col-auto d-flex justify-content-end mb-2 mb-md-0">
             <a href="mailto:education@rsrglobal.org" class="btn text-white d-flex justify-content-center align-items-center">
               <span class="material-symbols-outlined me-2">
                 mail
               </span>
+              <!-- <span>education@rsrglobal.org</span> -->
             </a>
           </div>
     
@@ -132,7 +754,19 @@
               <li><a class="dropdown-item" href="In_Country_Representative.html">In Country Representative</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a href="" class="nav-link">Test Prep</a></li>
+          <!-- <li class="nav-item"><a href="" class="nav-link">Test Prep</a></li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Test Prep
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li>
+                <a class="dropdown-item" href="javascript:void(0)">
+                  <img src="images/navbar-logo/psi-selt-logo.png" height="35px" width="90px" alt="English Proficiency Image">
+                </a>
+              </li>
+            </ul>
+          </li>
           <li class="nav-item"><a href="events-gallery.html" class="nav-link">Events & Gallery</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="about.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -158,8 +792,7 @@
           <div class="col-md-9 ftco-animate pb-5">
           	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Study Destination<i class="ion-ios-arrow-forward"></i></span></p>
             <h1 class="mb-3 bread">Malaysia</h1>
-            <a href="javascript:void(0)" class="btn btn-primary">Free Counselling Session</a>
-          </div>
+            <a href="usa.html?showModal=true" data-toggle="modal" data-target="#myModal" class="studydestinationbtn bold-text"> <img src="images/icons/Phone_icon_ 1.png" alt=""> FREE Counselling Session</a>          </div>
         </div>
       </div>
     </section>
@@ -167,421 +800,752 @@
     <section class="ftco-section ftco-degree-bg">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 ftco-animate">
-            <h4 class="mb-3 bold-text">Why Study in Malaysia?</h4>
+    <div class="hyperlink-button-container">
+      <button class="hyperlink-button" onclick="scrollToSection('whyMalaysia')">Why Malaysia</button>
+      <button class="hyperlink-button" onclick="scrollToSection('Universities')">Popular Universities</button>
+      <button class="hyperlink-button" onclick="scrollToSection('Courses')">Top Courses</button>
+      <button class="hyperlink-button" onclick="scrollToSection('Eligibility')">Eligibility</button>
+      <button class="hyperlink-button" onclick="scrollToSection('Intakes')">Intakes Available</button>
+      <button class="hyperlink-button" onclick="scrollToSection('Studying')">Cost of Studying</button>
+      <button class="hyperlink-button" onclick="scrollToSection('Living')">Cost of Living</button>
+      <!-- <button class="hyperlink-button" onclick="scrollToSection('living')">Application Requirements</button> -->
+      <button class="hyperlink-button" onclick="scrollToSection('Jobs')">Jobs and Salaries</button>
+      <button class="hyperlink-button" onclick="scrollToSection('Visa')">Visa</button>
+      <button class="hyperlink-button" onclick="scrollToSection('studentcities')">Top Student Cities</button>    
+      <button class="hyperlink-button" onclick="scrollToSection('WhyRSR')">Why RSR</button>    
+     
+    </div>
+  </div>
+</div>
+  </section> 
+  
+  <section class="ftco-section ftco-degree-bg whyaustralia" id="whyMalaysia">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 ftco-animate">
+          <h4 class="mb-3 bold-text whyaustralia-header text-white">Why Malaysia?</h4>
 
-            <p>
-              Malaysia is a rapidly growing hub for international education, offering world-class academic opportunities, cultural diversity, and affordable living. Here's why it stands out:
-            </p>
+          <p>
+            Australia is a top study destination known for its world-class universities, diverse courses, and globally recognized degrees. It offers a high standard of living, a multicultural environment, and strong career opportunities with post-study work visas. Students benefit from excellent support services, quality healthcare, and the ability to work part-time while studying. With its vibrant cities, beautiful landscapes, and welcoming culture, Australia provides an ideal balance of education and lifestyle.
+          </p>
 
-            <p>
-              <span class="bold-text">Academic Excellence:</span> Malaysia’s universities are recognized globally, with several institutions ranked among the top in Asia. It also hosts campuses of renowned international universities, providing quality education aligned with global standards. 
-            </p>
+        </div> 
 
-            <p><span class="bold-text">Affordability:</span> Tuition fees and living expenses in Malaysia are significantly lower compared to other popular study destinations, making it an excellent choice for students seeking quality education at a reasonable cost.</p>
-
-            <p>
-              <span class="bold-text">Cultural Diversity:</span> Known for its multicultural environment, Malaysia offers a unique opportunity to experience diverse traditions, languages, and cuisines, fostering a global outlook among students.
-            </p>
-
-            <p>
-              <span class="bold-text">Strategic Location:</span> Situated in the heart of Southeast Asia, Malaysia serves as a gateway to explore the region and beyond, with excellent connectivity and travel opportunities.
-            </p>
-
-            <p>
-              <span class="bold-text">Post-Study Opportunities:</span> The country’s growing economy and international collaborations provide promising career prospects for graduates.
-            </p>
-
-            <p>
-              <span class="bold-text">Safety and Quality of Life:</span> Malaysia is known for its political stability, safety, and high standards of living, making it an attractive destination for international students.
-            </p>
-
-            <h4 class="mb-3 mt-5 bold-text">Top Courses in Malaysia: </h4>
-
-            <p class="bold-text">Malaysia offers a wide range of programs designed to meet the demands of the global job market. Popular courses include:</p>
-
-            <ul>
-              <li>Business and Management</li>
-              <li>Engineering (Civil, Mechanical, Electrical, and more)</li>
-              <li>Medicine and Healthcare</li>
-              <li>Information Technology (IT) and Computer Science</li>
-              <li>Hospitality and Tourism Management</li>
-              <li>Architecture</li>
-              <li>Biotechnology</li>
-              <li>Data Science and Analytics</li>
-              <li>Finance and Accounting</li>
-              <li>Creative Arts and Design</li>
-            </ul>
-
-            <h4 class="mb-3 mt-5 bold-text">Top Universities in Malaysia</h4>
-
-            <p>Malaysia is home to several prestigious institutions and branch campuses of international universities. Here’s a look at some of the top-ranked universities:</p>
-
-            <div class="container mt-5">
-              <!-- Table View for Large Screens Only -->
-              <div class="table-responsive d-none d-lg-block">
-                <table class="table table-bordered border-primary">
-                  <thead class="bold-text">
-                    <tr class="table-active">
-                      <th scope="col" class="text-center fw-bold">University</th>
-                      <th scope="col" class="text-center fw-bold">Rankings (2024)</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="text-center">Universiti Malaya (UM)</td>
-                      <td class="text-center">65</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">Universiti Putra Malaysia (UPM)</td>
-                      <td class="text-center">143</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">Universiti Kebangsaan Malaysia (UKM)</td>
-                      <td class="text-center">159</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">Universiti Sains Malaysia (USM)</td>
-                      <td class="text-center">180</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">Universiti Teknologi Malaysia (UTM)</td>
-                      <td class="text-center">188</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">Taylor’s University</td>
-                      <td class="text-center">284</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">Monash University Malaysia</td>
-                      <td class="text-center">55 (parent campus)</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">University of Nottingham Malaysia</td>
-                      <td class="text-center">Top 100 (parent campus)</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            
-              <!-- Card View for Medium and Smaller Screens -->
-              <div class="d-lg-none">
-                <div class="row">
-                  <!-- Card for Universiti Malaya (UM) -->
-                  <div class="col-sm-12 col-md-6 mb-3">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">Universiti Malaya (UM)</h5>
-                        <p class="card-text"><b>Rankings (2024):</b> 65</p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Card for Universiti Putra Malaysia (UPM) -->
-                  <div class="col-sm-12 col-md-6 mb-3">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">Universiti Putra Malaysia (UPM)</h5>
-                        <p class="card-text"><b>Rankings (2024):</b> 143</p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Card for Universiti Kebangsaan Malaysia (UKM) -->
-                  <div class="col-sm-12 col-md-6 mb-3">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">Universiti Kebangsaan Malaysia (UKM)</h5>
-                        <p class="card-text"><b>Rankings (2024):</b> 159</p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Card for Universiti Sains Malaysia (USM) -->
-                  <div class="col-sm-12 col-md-6 mb-3">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">Universiti Sains Malaysia (USM)</h5>
-                        <p class="card-text"><b>Rankings (2024):</b> 180</p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Card for Universiti Teknologi Malaysia (UTM) -->
-                  <div class="col-sm-12 col-md-6 mb-3">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">Universiti Teknologi Malaysia (UTM)</h5>
-                        <p class="card-text"><b>Rankings (2024):</b> 188</p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Card for Taylor’s University -->
-                  <div class="col-sm-12 col-md-6 mb-3">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">Taylor’s University</h5>
-                        <p class="card-text"><b>Rankings (2024):</b> 284</p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Card for Monash University Malaysia -->
-                  <div class="col-sm-12 col-md-6 mb-3">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">Monash University Malaysia</h5>
-                        <p class="card-text"><b>Rankings (2024):</b> 55 (parent campus)</p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Card for University of Nottingham Malaysia -->
-                  <div class="col-sm-12 col-md-6 mb-3">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">University of Nottingham Malaysia</h5>
-                        <p class="card-text"><b>Rankings (2024):</b> Top 100 (parent campus)</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="ftco-section ftco-degree-bg" id="whyMalaysia">
+    <div class="container">
+      <div class="row text-center">
+        <!-- Academic Excellence -->
+        <div class="col-lg-4 col-md-6 whystudymalaysia-card">
+          <div class="card">
+            <div class="card-body">
+              <i class="fas fa-university"></i>
+              <h5 class="card-title">Academic Excellence</h5>
+              <p class="card-text">Malaysia’s universities are recognized globally, with several institutions ranked among the top in Asia. It also hosts campuses of renowned international universities, providing quality education aligned with global standards.</p>
             </div>
-            
-
-            <h4 class="mb-3 mt-5 bold-text">Intakes in Malaysia</h4>
-
-    <p>Malaysian universities typically offer two main intakes:</p>
-
-    <ul class="bold-text">
-      <li>January/February</li>
-      <li>July/September</li>
-    </ul>
-
-    <p>Some institutions also provide additional intakes for specific programs, ensuring flexibility for students.</p>
-
-    <h4 class="mb-3 mt-5 bold-text">Cost of Studying in Malaysia</h4>
-
-    <p>Studying in Malaysia is affordable, with costs varying based on the program and institution:</p>
-
-    <div class="container mt-5">
-      <!-- Table View for Large Screens Only -->
-      <div class="table-responsive d-none d-lg-block">
-        <table class="table table-bordered table-hover">
-          <thead class="bold-text">
-            <tr class="table-active">
-              <th scope="col" class="text-center fw-bold">Study Program</th>
-              <th scope="col" class="text-center fw-bold">Average Annual Fees (MYR)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="text-center">Undergraduate Programs</td>
-              <td class="text-center">20,000 – 40,000</td>
-            </tr>
-            <tr>
-              <td class="text-center">Postgraduate Programs</td>
-              <td class="text-center">25,000 – 45,000</td>
-            </tr>
-            <tr>
-              <td class="text-center">Medicine and Dentistry</td>
-              <td class="text-center">70,000 – 100,000</td>
-            </tr>
-          </tbody>
-        </table>
+          </div>
+        </div>
+    
+        <!-- Affordability -->
+        <div class="col-lg-4 col-md-6 whystudymalaysia-card">
+          <div class="card">
+            <div class="card-body">
+              <i class="fas fa-wallet"></i>
+              <h5 class="card-title">Affordability</h5>
+              <p class="card-text">Tuition fees and living expenses in Malaysia are significantly lower compared to other popular study destinations, making it an excellent choice for students seeking quality education at a reasonable cost.</p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Cultural Diversity -->
+        <div class="col-lg-4 col-md-6 whystudymalaysia-card">
+          <div class="card">
+            <div class="card-body">
+              <i class="fas fa-users"></i>
+              <h5 class="card-title">Cultural Diversity</h5>
+              <p class="card-text">Known for its multicultural environment, Malaysia offers a unique opportunity to experience diverse traditions, languages, and cuisines, fostering a global outlook among students.</p>
+            </div>
+          </div>
+        </div>
       </div>
     
-      <!-- Card View for Medium and Smaller Screens -->
-      <div class="d-lg-none">
-        <div class="row">
-          <!-- Card for Undergraduate Programs -->
-          <div class="col-sm-12 col-md-6 mb-3">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Undergraduate Programs</h5>
-                <p class="card-text"><b>Average Annual Fees:</b> 20,000 – 40,000 MYR</p>
-              </div>
+      <div class="row text-center">
+        <!-- Strategic Location -->
+        <div class="col-lg-4 col-md-6 whystudymalaysia-card">
+          <div class="card">
+            <div class="card-body">
+              <i class="fas fa-location-arrow"></i>
+              <h5 class="card-title">Strategic Location</h5>
+              <p class="card-text">Situated in the heart of Southeast Asia, Malaysia serves as a gateway to explore the region and beyond, with excellent connectivity and travel opportunities.</p>
             </div>
           </div>
-          <!-- Card for Postgraduate Programs -->
-          <div class="col-sm-12 col-md-6 mb-3">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Postgraduate Programs</h5>
-                <p class="card-text"><b>Average Annual Fees:</b> 25,000 – 45,000 MYR</p>
-              </div>
+        </div>
+    
+        <!-- Post-Study Opportunities -->
+        <div class="col-lg-4 col-md-6 whystudymalaysia-card">
+          <div class="card">
+            <div class="card-body">
+              <i class="fas fa-briefcase"></i>
+              <h5 class="card-title">Post-Study Opportunities</h5>
+              <p class="card-text">The country’s growing economy and international collaborations provide promising career prospects for graduates.</p>
             </div>
           </div>
-          <!-- Card for Medicine and Dentistry -->
-          <div class="col-sm-12 col-md-6 mb-3">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Medicine and Dentistry</h5>
-                <p class="card-text"><b>Average Annual Fees:</b> 70,000 – 100,000 MYR</p>
-              </div>
+        </div>
+    
+        <!-- Safety and Quality of Life -->
+        <div class="col-lg-4 col-md-6 whystudymalaysia-card">
+          <div class="card">
+            <div class="card-body">
+              <i class="fas fa-shield-alt"></i>
+              <h5 class="card-title">Safety and Quality of Life</h5>
+              <p class="card-text">Malaysia is known for its political stability, safety, and high standards of living, making it an attractive destination for international students.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    
-    
-    <h4 class="mb-3 bold-text">Cost of Living in Malaysia</h4>
+</section>
 
-    <p class="bold-text">Malaysia offers an affordable lifestyle with manageable living costs:</p>
+<section class="ftco-section ftco-degree-bg" id="Universities">
+  <div class="container" id="Universities">
+    <div class="row">
+      <div class="col-md-12 ftco-animate">
 
-            <p>
-              <span class="bold-text">Accommodation:</span>
-              <ul>
-                <li>On-Campus: MYR 300–1,000/month</li>
-                <li>Off-Campus: MYR 700–1,500/month</li>
-              </ul> 
-            </p>
+        <h4 class="mb-3 bold-text text-center">Popular Universities</h4>
 
-            <p><span class="bold-text">Utilities:</span> MYR 100–200/month</p>
+        <div class="container mt-5">
+          <!-- Table View for Large Screens Only -->
+          <div class="table-responsive d-none d-lg-block">
+            <table class="table table-bordered table-hover">
+              <thead class="bold-text">
+                <tr class="table-active">
+                  <th scope="col" class="text-center fw-bold">University</th>
+                  <th scope="col" class="text-center fw-bold">QS Ranking (2025)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td class="text-center">Universiti Malaya (UM)</td><td class="text-center">65</td></tr>
+                <tr><td class="text-center">Universiti Putra Malaysia (UPM)</td><td class="text-center">143</td></tr>
+                <tr><td class="text-center">Universiti Kebangsaan Malaysia (UKM)</td><td class="text-center">159</td></tr>
+                <tr><td class="text-center">Universiti Sains Malaysia (USM)</td><td class="text-center">180</td></tr>
+                <tr><td class="text-center">Universiti Teknologi Malaysia (UTM)</td><td class="text-center">188</td></tr>
+                <tr><td class="text-center">Taylor’s University</td><td class="text-center">284</td></tr>
+                <tr><td class="text-center">Monash University Malaysia</td><td class="text-center">55 (parent campus)</td></tr>
+                <tr><td class="text-center">University of Technology Sydney (UTS)</td><td class="text-center">Top 100 (parent campus)</td></tr>
+              </tbody>
+            </table>
+          </div>
 
-            <p>
-              <span class="bold-text">Food:</span> MYR 500–800/month
-            </p>
-
-            <p>
-              <span class="bold-text">Transportation:</span> MYR 100–150/month
-            </p>
-
-            <p>
-              <span class="bold-text">Healthcare and Insurance:</span> MYR 500/year
-            </p>
-
-            <p>Estimated monthly living expenses: MYR 1,500–2,500</p>
-
-            <h4 class="mb-3 bold-text">Job Prospects in Malaysia</h4>
-
-            <p class="bold-text">
-              Malaysia’s robust economy and growing industries offer excellent job opportunities for graduates:
-            </p>
-<ol>
-            <li>
-              <span class="bold-text">Business and Finance:</span> Demand for accountants, financial analysts, and business consultants.> 
-            </li>
-
-            <li><span class="bold-text">Technology:</span> Roles in IT, cybersecurity, software development, and data analytics are on the rise.
-
-            <li>
-              <span class="bold-text">Engineering:</span> Opportunities in construction, manufacturing, and green energy.
-            </li>
-
-            <li>
-              <span class="bold-text">Healthcare:</span> High demand for medical professionals, nurses, and healthcare administrators.
-            </li>
-
-            <li>
-              <span class="bold-text">Tourism and Hospitality:</span> Growth in tourism creates roles in hotel management and event planning.
-            </li>
-          </ol>
-
-            <p>Malaysia also allows international students to work part-time during their studies, providing valuable work experience and income.</p>
-
-            <h4 class="mb-3 bold-text">Student Visa for Malaysia</h4>
-
-            <p>If you plan to study in Malaysia, you’ll need a student visa. Here’s an overview:</p>
-
-            <ul>
-              <li>
-                <span class="bold-text">Eligibility:</span> Admission to a recognized Malaysian educational institution.
-              </li>
-              <li>
-                <span class="bold-text">Application Process:</span> Submit an application via the Education Malaysia Global Services (EMGS) portal.
-              </li>
-              <li>
-                <span class="bold-text">Validity:</span>Usually valid for the duration of the program.
-              </li>
-              <li>
-                <span class="bold-text">Work Rights:</span>International students can work part-time for up to 20 hours per week during semester breaks.
-              </li>
-            </ul>
-
-            <h4 class="mb-3 bold-text">Top Student Cities in Malaysia</h4>
-
-            <p>Malaysia offers vibrant cities with excellent facilities and student-friendly environments:</p>
-
-            <div class="container mt-5">
-              <!-- Table View for Large Screens Only -->
-              <div class="table-responsive d-none d-lg-block">
-                <table class="table table-bordered">
-                  <thead class="bold-text">
-                    <tr class="table-active">
-                      <th scope="col" class="text-center fw-bold">City</th>
-                      <th scope="col" class="text-center fw-bold">Key Highlights</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="text-center">Kuala Lumpur</td>
-                      <td class="text-center">Multicultural hub, home to top universities</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">Penang</td>
-                      <td class="text-center">Blend of culture, education, and heritage</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">Johor Bahru</td>
-                      <td class="text-center">Affordable living and growing industries</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">Malacca</td>
-                      <td class="text-center">Rich historical and cultural experiences</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            
-              <!-- Card View for Medium and Smaller Screens -->
-              <div class="d-lg-none">
-                <div class="row">
-                  <!-- Card for Kuala Lumpur -->
-                  <div class="col-sm-12 col-md-6 mb-3">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">Kuala Lumpur</h5>
-                        <p class="card-text"><b>Key Highlights:</b> Multicultural hub, home to top universities</p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Card for Penang -->
-                  <div class="col-sm-12 col-md-6 mb-3">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">Penang</h5>
-                        <p class="card-text"><b>Key Highlights:</b> Blend of culture, education, and heritage</p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Card for Johor Bahru -->
-                  <div class="col-sm-12 col-md-6 mb-3">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">Johor Bahru</h5>
-                        <p class="card-text"><b>Key Highlights:</b> Affordable living and growing industries</p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Card for Malacca -->
-                  <div class="col-sm-12 col-md-6 mb-3">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">Malacca</h5>
-                        <p class="card-text"><b>Key Highlights:</b> Rich historical and cultural experiences</p>
-                      </div>
-                    </div>
+          <!-- Card View for Medium and Smaller Screens -->
+          <div class="d-lg-none">
+            <div class="row">
+              <!-- Each card represents a university -->
+             
+              <div class="col-sm-12 col-md-6 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Universiti Malaya (UM)</h5>
+                    <p class="card-text"><b>Ranking:</b>65</p>
                   </div>
                 </div>
               </div>
+              <div class="col-sm-12 col-md-6 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Universiti Putra Malaysia (UPM)</h5>
+                    <p class="card-text"><b>Ranking:</b>143</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Universiti Kebangsaan Malaysia (UKM)</h5>
+                    <p class="card-text"><b>Ranking:</b>159</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Universiti Sains Malaysia (USM)</h5>
+                    <p class="card-text"><b>Ranking:</b>180</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Universiti Teknologi Malaysia (UTM)</h5>
+                    <p class="card-text"><b>Ranking:</b>188</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Taylor’s University</h5>
+                    <p class="card-text"><b>Ranking:</b>284</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Monash University Malaysia</h5>
+                    <p class="card-text"><b>Ranking:</b>55 (parent campus)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">University of Nottingham Malaysia</h5>
+                    <p class="card-text"><b>Ranking:</b>Top 100 (parent campus)</p>
+                  </div>
+                </div>
+              </div>
+
             </div>
-            
-
-            <p>Let Malaysia be your gateway to quality education and global opportunities!</p>
-
-          </div> 
+          </div>
 
         </div>
       </div>
-    </section> <!-- .section -->
+    </div>
+  </div>
+</section>
+
+<section class="ftco-section ftco-degree-bg" id="Courses">
+<div class="container malaysiacourse-container">
+  <h4 class="mb-3 bold-text text-center">Top Courses in Malaysia</h4>
   
+  <div class="row text-center">
+    <!-- Business and Management -->
+    <div class="col-lg-4 col-md-6 malaysiacourse-card">
+      <div class="card">
+        <div class="card-body">
+          <i class="fas fa-briefcase"></i>
+          <h5 class="card-title">Business and Management</h5>
+          <p class="card-text">Gain leadership skills and a global perspective in business through Malaysia's diverse range of business programs.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Engineering -->
+    <div class="col-lg-4 col-md-6 malaysiacourse-card">
+      <div class="card">
+        <div class="card-body">
+          <i class="fas fa-cogs"></i>
+          <h5 class="card-title">Engineering</h5>
+          <p class="card-text">Malaysia offers a variety of engineering disciplines, including civil, mechanical, electrical, and more.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Medicine and Healthcare -->
+    <div class="col-lg-4 col-md-6 malaysiacourse-card">
+      <div class="card">
+        <div class="card-body">
+          <i class="fas fa-stethoscope"></i>
+          <h5 class="card-title">Medicine and Healthcare</h5>
+          <p class="card-text">Pursue your career in healthcare with globally recognized medical programs in Malaysia.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row text-center">
+    <!-- Information Technology -->
+    <div class="col-lg-4 col-md-6 malaysiacourse-card">
+      <div class="card">
+        <div class="card-body">
+          <i class="fas fa-laptop-code"></i>
+          <h5 class="card-title">Information Technology</h5>
+          <p class="card-text">Explore the world of IT and computer science with Malaysia's advanced and industry-focused programs.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hospitality and Tourism -->
+    <div class="col-lg-4 col-md-6 malaysiacourse-card">
+      <div class="card">
+        <div class="card-body">
+          <i class="fas fa-concierge-bell"></i>
+          <h5 class="card-title">Hospitality and Tourism</h5>
+          <p class="card-text">Malaysia is renowned for its tourism industry, offering courses in hospitality, tourism management, and related fields.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Architecture -->
+    <div class="col-lg-4 col-md-6 malaysiacourse-card">
+      <div class="card">
+        <div class="card-body">
+          <i class="fas fa-building"></i>
+          <h5 class="card-title">Architecture</h5>
+          <p class="card-text">Study architecture in Malaysia, known for its iconic modern and traditional designs.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row text-center">
+    <!-- Biotechnology -->
+    <div class="col-lg-4 col-md-6 malaysiacourse-card">
+      <div class="card">
+        <div class="card-body">
+          <i class="fas fa-dna"></i>
+          <h5 class="card-title">Biotechnology</h5>
+          <p class="card-text">Malaysia offers cutting-edge programs in biotechnology, preparing you for an exciting career in science and innovation.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Data Science -->
+    <div class="col-lg-4 col-md-6 malaysiacourse-card">
+      <div class="card">
+        <div class="card-body">
+          <i class="fas fa-chart-bar"></i>
+          <h5 class="card-title">Data Science and Analytics</h5>
+          <p class="card-text">Dive into the world of data science, analytics, and AI with Malaysia’s specialized programs in this field.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Finance and Accounting -->
+    <div class="col-lg-4 col-md-6 malaysiacourse-card">
+      <div class="card">
+        <div class="card-body">
+          <i class="fas fa-calculator"></i>
+          <h5 class="card-title">Finance and Accounting</h5>
+          <p class="card-text">Prepare for a career in finance and accounting with programs designed to meet global financial standards.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row text-center">
+    <!-- Creative Arts and Design -->
+    <div class="col-lg-4 col-md-6 malaysiacourse-card">
+      <div class="card">
+        <div class="card-body">
+          <i class="fas fa-palette"></i>
+          <h5 class="card-title">Creative Arts and Design</h5>
+          <p class="card-text">Unleash your creativity with Malaysia's artistic programs in design, multimedia, and other creative fields.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="ftco-section ftco-degree-bg" id="Eligibility">
+<div class="container malaysiaeligibility-section">
+  <h4 class="mb-3 bold-text text-center">Eligibility Requirements</h4>
+
+  <!-- Academic Requirements Section -->
+  <div class="row">
+    <div class="col-lg-6 col-md-12">
+      <div class="malaysiaeligibility-card">
+        <i class="fas fa-graduation-cap"></i>
+        <h5>Academic Requirements</h5>
+        
+        <div class="malaysiaeligibility-subheader">Undergraduate Programs</div>
+        <p>• Completion of high school or equivalent (e.g., A-levels, IB, or other international qualifications).</p>
+        <p>• Minimum academic grades as required by the institution.</p>
+
+        <div class="malaysiaeligibility-subheader">Postgraduate Programs</div>
+        <p>• A recognized undergraduate degree (Bachelor’s).</p>
+        <p>• Relevant academic background for the specific program you’re applying to.</p>
+      </div>
+    </div>
+
+    <!-- English Proficiency Section -->
+    <div class="col-lg-6 col-md-12">
+      <div class="malaysiaeligibility-card">
+        <i class="fas fa-language"></i>
+        <h5>English Proficiency</h5>
+        
+        <div class="malaysiaeligibility-subheader">For Non-Native English Speakers</div>
+        <p>• Proof of English proficiency may be required (e.g., IELTS, TOEFL, or equivalent).</p>
+        <p>• Some institutions may offer language programs if you do not meet the required scores.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="ftco-section ftco-degree-bg" id="Intakes">
+  <div class="container" id="Intakes">
+    <h4 class="text-center mb-4 bold-text">Intakes Available</h4>
+<p>Malaysian universities typically offer two main intakes:</p>
+    <ul>
+      <li> <span class="bold-text heading_color">February/March (Semester 1):</span> Major intake, most courses available</li>
+      <li><span class="bold-text heading_color">July (Semester 2):</span> Second-largest intake, many programs open</li>
+      <li><span class="bold-text heading_color">November (Summer/Trimester 3):</span> Limited courses, mainly for specific programs</li>
+    </ul>
+    <p>Some institutions also provide additional intakes for specific programs, ensuring flexibility for students.</p>
+  </div>
+</section>
+
+<section class="ftco-section ftco-degree-bg" id="Studying">
+<div class="container malaysiacost-section">
+  <h4 class="text-center mb-4 bold-text">Cost of Studying in Malaysia</h4>
+
+  <div class="malaysiacost-card">
+    <p>Studying in Malaysia is affordable, with costs varying based on the program and institution. Below are the average annual fees for different study programs:</p>
+
+    <!-- Table displaying the cost of studying -->
+    <div class="table-responsive malaysiacost-table">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Study Program</th>
+            <th>Average Annual Fees (MYR)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Undergraduate Programs</td>
+            <td>20,000 – 40,000</td>
+          </tr>
+          <tr>
+            <td>Postgraduate Programs</td>
+            <td>25,000 – 45,000</td>
+          </tr>
+          <tr>
+            <td>Medicine and Dentistry</td>
+            <td>70,000 – 100,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="ftco-section ftco-degree-bg" id="Living">
+<div class="container malaysialiving-section">
+  <!-- Header -->
+  <h4 class="text-center mb-4 bold-text">Cost of Living in Malaysia</h4>
+
+  <!-- Card Section for Living Expenses -->
+  <div class="row">
+    <!-- Accommodation Card -->
+    <div class="col-lg-4 col-md-6">
+      <div class="malaysialiving-card">
+        <i class="fas fa-home"></i>
+        <h5>Accommodation</h5>
+        <div class="malaysialiving-subheader">On-Campus</div>
+        <p>MYR 300 – 1,000/month</p>
+        <div class="malaysialiving-subheader">Off-Campus</div>
+        <p>MYR 700 – 1,500/month</p>
+      </div>
+    </div>
+
+    <!-- Utilities Card -->
+    <div class="col-lg-4 col-md-6">
+      <div class="malaysialiving-card">
+        <i class="fas fa-plug"></i>
+        <h5>Utilities</h5>
+        <p>MYR 100 – 200/month</p>
+      </div>
+    </div>
+
+    <!-- Food Card -->
+    <div class="col-lg-4 col-md-6">
+      <div class="malaysialiving-card">
+        <i class="fas fa-utensils"></i>
+        <h5>Food</h5>
+        <p>MYR 500 – 800/month</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second Row for Living Expenses -->
+  <div class="row">
+    <!-- Transportation Card -->
+    <div class="col-lg-4 col-md-6">
+      <div class="malaysialiving-card">
+        <i class="fas fa-bus"></i>
+        <h5>Transportation</h5>
+        <p>MYR 100 – 150/month</p>
+      </div>
+    </div>
+
+    <!-- Healthcare Card -->
+    <div class="col-lg-4 col-md-6">
+      <div class="malaysialiving-card">
+        <i class="fas fa-heartbeat"></i>
+        <h5>Healthcare & Insurance</h5>
+        <p>MYR 500/year</p>
+      </div>
+    </div>
+
+    <!-- Estimated Expenses Card -->
+    <div class="col-lg-4 col-md-6">
+      <div class="malaysialiving-card">
+        <i class="fas fa-wallet"></i>
+        <h5>Estimated Monthly Living Expenses</h5>
+        <p><strong>MYR 1,500 – 2,500</strong></p>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+</section>
+
+<section class="ftco-section ftco-degree-bg" id="Jobs">
+<div class="container malaysia-job-section">
+  <h4 class="text-center mb-4 bold-text">Job Prospects in Malaysia</h4>
+  <div class="malaysia-job-header">
+    <!-- <h1>Job Prospects in Malaysia</h1> -->
+  </div>
+  <p>Malaysia’s robust economy and growing industries offer excellent job opportunities for graduates.</p>
+
+
+  <div class="row">
+    <!-- Business and Finance -->
+    <div class="col-md-4">
+      <div class="malaysia-job-item">
+        <i class="bi bi-briefcase"></i>
+        <div class="content">
+          <h4>Business & Finance</h4>
+          <p>Accounting, financial analysis, and business consulting are growing sectors.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technology -->
+    <div class="col-md-4">
+      <div class="malaysia-job-item">
+        <i class="bi bi-laptop"></i>
+        <div class="content">
+          <h4>Technology</h4>
+          <p>Explore roles in IT, software development, cybersecurity, and data analytics.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Engineering -->
+    <div class="col-md-4">
+      <div class="malaysia-job-item">
+        <i class="bi bi-tools"></i>
+        <div class="content">
+          <h4>Engineering</h4>
+          <p>Opportunities in construction, manufacturing, and renewable energy sectors.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- Healthcare -->
+    <div class="col-md-4">
+      <div class="malaysia-job-item">
+        <i class="bi bi-heart"></i>
+        <div class="content">
+          <h4>Healthcare</h4>
+          <p>There’s a rising demand for healthcare professionals, nurses, and administrators.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tourism and Hospitality -->
+    <div class="col-md-4">
+      <div class="malaysia-job-item">
+        <i class="bi bi-house-door"></i>
+        <div class="content">
+          <h4>Tourism & Hospitality</h4>
+          <p>Job openings in hotel management, event planning, and tourism-related services.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Part-time Jobs for Students -->
+    <div class="col-md-4">
+      <div class="malaysia-job-item">
+        <i class="bi bi-person"></i>
+        <div class="content">
+          <h4>Part-time Jobs</h4>
+          <p>International students can work part-time while studying, gaining work experience.</p>
+        </div>
+      </div>
+    </div>
+
+    <p>Malaysia also allows international students to work part-time during their studies, providing valuable work experience and income.</p>
+  </div>
+</div>
+</section>
+
+<section class="ftco-section ftco-degree-bg" id="Visa">
+<div class="malaysiavisa">
+  <div class="container">
+    <h4 class="text-center mb-4 bold-text">Student Visa for Malaysia</h4>
+
+      <!-- Eligibility Section -->
+      <div class="section">
+          <div class="icon">
+              <i class="fas fa-check-circle"></i>
+          </div>
+          <div class="content">
+              <h3>Eligibility</h3>
+              <p>Admission to a recognized Malaysian educational institution is required to apply for a student visa. Ensure that your institution is approved by the government of Malaysia.</p>
+          </div>
+      </div>
+
+      <!-- Application Process Section -->
+      <div class="section">
+          <div class="icon">
+              <i class="fas fa-paper-plane"></i>
+          </div>
+          <div class="content">
+              <h3>Application Process</h3>
+              <p>Submit your visa application through the Education Malaysia Global Services (EMGS) portal. You will need to provide all required documents and information for processing.</p>
+          </div>
+      </div>
+
+      <!-- Visa Validity Section -->
+      <div class="section">
+          <div class="icon">
+              <i class="fas fa-calendar-check"></i>
+          </div>
+          <div class="content">
+              <h3>Visa Validity</h3>
+              <p>Your student visa will typically be valid for the duration of your study program. Make sure to renew it before it expires if your program continues beyond the current visa duration.</p>
+          </div>
+      </div>
+
+      <!-- Work Rights Section -->
+      <div class="section">
+          <div class="icon">
+              <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="content">
+              <h3>Work Rights</h3>
+              <p>International students in Malaysia are allowed to work part-time for up to 20 hours per week during semester breaks. This allows you to gain practical experience and support your studies.</p>
+          </div>
+      </div>
+
+  </div>
+</div>
+</section>
+
+<section class="ftco-section ftco-degree-bg" id="studentcities">
+<div class="student-cities">
+  <div class="container">
+    <h4 class="text-center mb-4 bold-text text-white">Top Student Cities in Malaysia</h4>
+      <!-- <h2>Top Student Cities in Malaysia</h2> -->
+      <div class="row">
+          <!-- Kuala Lumpur -->
+          <div class="col-md-6 col-lg-3">
+              <div class="city-card">
+                  <h3 class="city-title">Kuala Lumpur</h3>
+                  <p class="city-highlight">Multicultural hub, home to top universities</p>
+                  <!-- <p class="city-highlight">Known for its vibrant city life and academic excellence.</p> -->
+              </div>
+          </div>
+
+          <!-- Penang -->
+          <div class="col-md-6 col-lg-3">
+              <div class="city-card">
+                  <h3 class="city-title">Penang</h3>
+                  <p class="city-highlight">Blend of culture, education, and heritage</p>
+                  <!-- <p class="city-highlight">Penang offers a mix of historical charm and modern education facilities.</p> -->
+              </div>
+          </div>
+
+          <!-- Johor Bahru -->
+          <div class="col-md-6 col-lg-3">
+              <div class="city-card">
+                  <h3 class="city-title">Johor Bahru</h3>
+                  <p class="city-highlight">Affordable living and growing industries</p>
+                  <!-- <p class="city-highlight">A rapidly developing city with a lower cost of living.</p> -->
+              </div>
+          </div>
+
+          <!-- Malacca -->
+          <div class="col-md-6 col-lg-3">
+              <div class="city-card">
+                  <h3 class="city-title">Malacca</h3>
+                  <p class="city-highlight">Rich historical and cultural experiences</p>
+                  <!-- <p class="city-highlight">A UNESCO World Heritage City offering a unique student experience.</p> -->
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</section>
+
+<section class="ftco-section ftco-degree-bg">
+  <section class="whyrsr-section" id="WhyRSR">
+    <div class="container">
+      <h4 class="text-center mb-4 bold-text">Why RSR</h4>
+        <h2 class="whyrsr-header">6 Reasons to Pick RSR Global Education</h2>
+        <p class="whyrsr-subtitle text-center">Study in Your Preferred Destination with the Best Guidance</p>
+
+        <div class="whyrsr-container">
+            <!-- Expert Guidance -->
+            <div class="whyrsr-card">
+                <div class="whyrsr-icon">
+                    <img src="images/studydestination/uk/expert-icons.png" alt="expert-icons"/>
+                </div>
+                <div class="whyrsr-title">Expert Guidance</div>
+                <p class="whyrsr-text">Personalized Counseling for University & Course Selection</p>
+            </div>
+
+            <!-- Seamless Application Process -->
+            <div class="whyrsr-card">
+                <div class="whyrsr-icon">
+                  <img src="images/studydestination/uk/application-process.png" alt="">
+                                </div>
+                <div class="whyrsr-title">Seamless Application Process</div>
+                <p class="whyrsr-text">Assistance with Documentation, SOPs & Admission</p>
+            </div>
+
+            <!-- Visa Support -->
+            <div class="whyrsr-card">
+                <div class="whyrsr-icon">
+                  <img src="images/studydestination/uk/visa.png" alt="">
+                </div>
+                <div class="whyrsr-title">Visa Support</div>
+                <p class="whyrsr-text">End-to-end Visa Guidance for a smooth approval process</p>
+            </div>
+
+            <!-- Affordable & Transparent Services -->
+            <div class="whyrsr-card">
+                <div class="whyrsr-icon">
+                  <img src="images/studydestination/uk/customer-service.png" alt="">
+                </div>
+                <div class="whyrsr-title">Affordable & Transparent Services</div>
+                <p class="whyrsr-text">No hidden charges, ensuring cost-effective solutions</p>
+            </div>
+
+            <!-- Post-Arrival Support -->
+            <div class="whyrsr-card">
+                <div class="whyrsr-icon">
+                  <img src="images/studydestination/uk/job-support.png" alt="">
+                </div>
+                <div class="whyrsr-title">Post-Arrival Support</div>
+                <p class="whyrsr-text">Accommodation, Job Assistance & Local Guidance</p>
+            </div>
+
+            <!-- Financial Guidance & Scholarships -->
+            <div class="whyrsr-card">
+                <div class="whyrsr-icon">
+                  <img src="images/studydestination/uk/scholarship.png" alt="">
+                </div>
+                <div class="whyrsr-title">Financial Guidance & Scholarships</div>
+                <p class="whyrsr-text">Guidance in academic pursuits & access to scholarships</p>
+            </div>
+        </div>
+    </div>
+</section>
+</section>
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
@@ -610,13 +1574,15 @@
             </div>
           </div>
           <div class="col-md">
-             <div class="ftco-footer-widget mb-4">
-              <h4 class="ftco-heading-2">Customer Support</h4>
+            <div class="ftco-footer-widget mb-4">
+              <h4 class="ftco-heading-2">Useful links</h4>
               <ul class="list-unstyled">
-                <li><a href="FAQ.html" class=" d-block">FAQ</a></li>
-                <!-- <li><a href="#" class="py-2 d-block">Payment Option</a></li> -->
-                <!-- <li><a href="#" class="py-2 d-block">Booking Tips</a></li> -->
-                <!-- <li><a href="#" class="py-2 d-block">How it works</a></li> -->
+                <li><a href="about.html" class="py-2 d-block">About RSR</a></li>
+                <li><a href="whystudyaboard.html" class="py-2 d-block">Why Study Abroad</a></li>
+                <li><a href="studyaboard.html" class="py-2 d-block">Step by Step Guide</a></li>
+                <li><a href="javascript:void(0)" class=" d-block">Study Destinations</a></li> 
+                <li><a href="services.html" class=" d-block">Services</a></li>
+                <li><a href="FAQ.html" class=" d-block">FAQ</a></li> 
                 <li><a href="contact.html" class=" d-block">Contact Us</a></li>
               </ul>
             </div>
@@ -644,6 +1610,20 @@
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
           </div>
         </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 footer-logo1">
+           <a href="https://rsrglobal.org/" target="_blank"><img src="images/logos/rsr-global-logo.webp" class="img-fluid" alt="RSR Global Logo"></a>
+          </div>
+          <div class="col-lg-4 col-md-6 footer-logo">
+           <a href="https://rsrglobalimmigration.com/" target="_blank"> <img src="images/logos/rsr-global-immigration-logo.png" class="img-fluid" alt="RSR Global Immigration Logo"></a>
+          </div>
+          <div class="col-lg-4 col-md-6 footer-logo">
+            <!-- <p>In Affilitation With</p> -->
+            <a href="https://rsrtrainingacademy.com/" target="_blank"> <img src="images/logos/rsr-training-academy-logo.png" class="img-fluid" alt="RSR Global Immigration Logo"></a>
+           </div>
+        </div>
+        
       </div>
     </footer>
     
@@ -652,6 +1632,8 @@
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
+  <!-- Scroll Top -->
+<button id="scrollToTopBtn" class="scroll-to-top" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -670,6 +1652,7 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0h4s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/custom.js"></script>
     
   </body>
 </html>

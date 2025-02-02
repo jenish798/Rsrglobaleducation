@@ -36,9 +36,91 @@
     <!-- Google icons -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 
-    <style>
-      th {
+  <style>
+
+    .heading_color {
+        color: #393BA7;
+    }
+    .heading_color1 {
+        color: #FD0011;
         font-weight: bold;
+    }
+
+/*--------------------------------------------------------------
+# Scroll Top Button
+--------------------------------------------------------------*/
+
+        /* Scroll to Top Button Style */
+        .scroll-to-top {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          background-color: #393BA7;
+          color: white;
+          border: none;
+          border-radius: 100%;
+          padding: 12px 20px;
+          /* font-size: 15px; */
+          cursor: pointer;
+          display: none; /* Hidden by default */
+          z-index: 1000; /* Ensure it's always on top */
+      }
+
+      .scroll-to-top:hover {
+          background-color: #5557C4;
+      }
+    
+        
+    /*--------------------------------------------------------------
+    # counselling button
+    --------------------------------------------------------------*/
+    
+      .studydestinationbtn {
+        cursor: pointer;
+        background: #FD0011;
+        color: #fff;
+        padding: 15px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        border-radius: 3px;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        font-size: 15px;
+        border-radius: 20px; 
+      }
+      
+        .studydestinationbtn:hover {
+          color: #fff;
+        }
+    
+    /*--------------------------------------------------------------
+    # hyperlink
+    --------------------------------------------------------------*/
+    
+      .hyperlink-button-container {
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 10px; 
+      }
+    
+      .hyperlink-button {
+        background-color: #393BA7; 
+        border: none;
+        color: #ffffff;
+        padding: 10px 20px;
+        margin: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+    
+      .hyperlink-button:hover {
+        background-color:#4C4FAF;  /* Darker green when hovered */
       }
     </style>
 
@@ -51,11 +133,27 @@
         <!-- Row for Email Us and Social Links -->
         <div class="row align-items-center justify-content-end">
           <!-- Email Us Button Section -->
+
+          <!-- <div lass="col-auto d-flex justify-content-end mb-2 mb-md-0">
+            <p><i class="fa-solid fa-phone"></i>Request a call back</p>
+            
+          </div> -->
+
+          <div class="d-flex justify-content-center align-items-center mb-2 mb-md-0">
+            <a href="javascript:void(0)" class="text-white d-flex align-items-center px-3" style="gap: 10px;">
+                <!-- <i class="fa-solid fa-phone" style="font-size: 1.4rem; display: flex; align-items: center;"></i> -->
+                 <img src="images/icons/Phone_icon_ 1.png" alt="">
+                <p class="mb-0 bold-text" style="margin-left: 5px; display: flex; align-items: center;">Request a call back</p>
+            </a>
+        </div>        
+        
+        
           <div class="col-auto d-flex justify-content-end mb-2 mb-md-0">
             <a href="mailto:education@rsrglobal.org" class="btn text-white d-flex justify-content-center align-items-center">
               <span class="material-symbols-outlined me-2">
                 mail
               </span>
+              <!-- <span>education@rsrglobal.org</span> -->
             </a>
           </div>
     
@@ -137,7 +235,19 @@
             <li><a class="dropdown-item" href="In_Country_Representative.html">In Country Representative</a></li>
           </ul>
         </li>
-        <li class="nav-item"><a href="" class="nav-link">Test Prep</a></li>
+        <!-- <li class="nav-item"><a href="" class="nav-link">Test Prep</a></li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Test Prep
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+            <li>
+              <a class="dropdown-item" href="javascript:void(0)">
+                <img src="images/navbar-logo/psi-selt-logo.png" height="35px" width="90px" alt="English Proficiency Image">
+              </a>
+            </li>
+          </ul>
+        </li>
         <li class="nav-item"><a href="events-gallery.html" class="nav-link">Events & Gallery</a></li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="about.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -152,9 +262,7 @@
     </div>
   </div>
 </nav>
-    <!-- END nav -->
-
-    
+    <!-- END nav -->    
     
     <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/studydestination/newzealand.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
@@ -163,339 +271,31 @@
           <div class="col-md-9 ftco-animate pb-5">
           	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Study Destination<i class="ion-ios-arrow-forward"></i></span></p>
             <h1 class="mb-3 bread">NewZealand</h1>
-            <a href="javascript:void(0)" class="btn btn-primary">Free Counselling Session</a>
+            <a href="usa.html?showModal=true" data-toggle="modal" data-target="#myModal" class="studydestinationbtn bold-text"> <img src="images/icons/Phone_icon_ 1.png" alt=""> FREE Counselling Session</a>          </div>
           </div>
         </div>
       </div>
     </section>
 
-              <section class="ftco-section ftco-degree-bg">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-12 ftco-animate">
-                      <h4 class="mb-3 bold-text">Why Study in New Zealand?</h4>
-        
-                      <p>
-                        New Zealand stands out as an ideal destination for international students due to its exceptional education system, vibrant culture, and promising career opportunities. Here's why:
-                      </p>
-        
-                      <p>
-                        <span class="bold-text">Educational Excellence:</span> All eight universities in New Zealand are ranked among the top 3% globally, offering internationally recognized qualifications. 
-                      </p>
-        
-                      <p><span class="bold-text">Research Opportunities:</span> Known for its hands-on learning and advanced research facilities, New Zealand excels in agriculture, environmental science, and engineering, providing students with cutting-edge knowledge and practical skills.</p>
-        
-                      <p>
-                        <span class="bold-text">Post-Graduation Work Opportunities:</span> The "Post-Study Work Visa" allows graduates to work in New Zealand for up to three years, enhancing career prospects.
-                      </p>
-
-                      <p>
-                        <span class="bold-text">Quality of Life:</span> Ranked 4th globally for quality of life, New Zealand offers a peaceful environment, stunning landscapes, and a welcoming, safe atmosphere for international students.
-                      </p>
-
-                      <p>
-                        <span class="bold-text">Strong Graduate Outcomes:</span> With 95% of graduates employed within six months of completing their studies, New Zealand ensures a high return on your educational investment. (Source: Universities NZ)
-                      </p>
-        
-                      <h4 class="mb-3 mt-5 bold-text">Top Courses in New Zealand: </h4>
-        
-                      <p class="bold-text">Explore these in-demand courses designed to equip you with globally recognized skills and career prospects:</p>
-        
-                      <ul>
-                        <li>Master of Business Administration (MBA)</li>
-                        <li>Artificial Intelligence</li>
-                        <li>Civil Engineering</li>
-                        <li>Agriculture</li>
-                        <li>IT and Computer Science</li>
-                        <li>Medicine, Healthcare, and Nursing</li>
-                        <li>Sports Management</li>
-                        <li>Cloud Computing</li>
-                        <li>Hotel Management</li>
-                        <li>Animation and Web Design</li>
-                      </ul>
-        
-                      <h4 class="mb-3 mt-5 bold-text">Top Universities in New Zealand</h4>
-        
-                      <p>New Zealand’s universities are globally acclaimed for their academic excellence, research innovation, and student-centric approach.</p>
-        
-                      <div class="container mt-5">
-                        <!-- Table View for Large Screens Only -->
-                        <div class="table-responsive d-none d-lg-block">
-                          <table class="table table-bordered border-primary">
-                            <thead class="bold-text">
-                              <tr class="table-active">
-                                <th scope="col" class="text-center fw-bold">University</th>
-                                <th scope="col" class="text-center fw-bold">Rankings (2024)</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td class="text-center">The University of Auckland</td>
-                                <td class="text-center">64</td>
-                              </tr>
-                              <tr>
-                                <td class="text-center">University of Otago</td>
-                                <td class="text-center">214</td>
-                              </tr>
-                              <tr>
-                                <td class="text-center">University of Waikato</td>
-                                <td class="text-center">235</td>
-                              </tr>
-                              <tr>
-                                <td class="text-center">Massey University</td>
-                                <td class="text-center">239</td>
-                              </tr>
-                              <tr>
-                                <td class="text-center">Victoria University of Wellington</td>
-                                <td class="text-center">244</td>
-                              </tr>
-                              <tr>
-                                <td class="text-center">University of Canterbury</td>
-                                <td class="text-center">261</td>
-                              </tr>
-                              <tr>
-                                <td class="text-center">Lincoln University</td>
-                                <td class="text-center">371</td>
-                              </tr>
-                              <tr>
-                                <td class="text-center">Auckland University of Technology</td>
-                                <td class="text-center">412</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                      
-                        <!-- Card View for Medium and Smaller Screens -->
-                        <div class="d-lg-none">
-                          <div class="row">
-                            <!-- Card for The University of Auckland -->
-                            <div class="col-sm-12 col-md-6 mb-3">
-                              <div class="card">
-                                <div class="card-body">
-                                  <h5 class="card-title">The University of Auckland</h5>
-                                  <p class="card-text"><b>Rankings (2024):</b> 64</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Card for University of Otago -->
-                            <div class="col-sm-12 col-md-6 mb-3">
-                              <div class="card">
-                                <div class="card-body">
-                                  <h5 class="card-title">University of Otago</h5>
-                                  <p class="card-text"><b>Rankings (2024):</b> 214</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Card for University of Waikato -->
-                            <div class="col-sm-12 col-md-6 mb-3">
-                              <div class="card">
-                                <div class="card-body">
-                                  <h5 class="card-title">University of Waikato</h5>
-                                  <p class="card-text"><b>Rankings (2024):</b> 235</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Card for Massey University -->
-                            <div class="col-sm-12 col-md-6 mb-3">
-                              <div class="card">
-                                <div class="card-body">
-                                  <h5 class="card-title">Massey University</h5>
-                                  <p class="card-text"><b>Rankings (2024):</b> 239</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Card for Victoria University of Wellington -->
-                            <div class="col-sm-12 col-md-6 mb-3">
-                              <div class="card">
-                                <div class="card-body">
-                                  <h5 class="card-title">Victoria University of Wellington</h5>
-                                  <p class="card-text"><b>Rankings (2024):</b> 244</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Card for University of Canterbury -->
-                            <div class="col-sm-12 col-md-6 mb-3">
-                              <div class="card">
-                                <div class="card-body">
-                                  <h5 class="card-title">University of Canterbury</h5>
-                                  <p class="card-text"><b>Rankings (2024):</b> 261</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Card for Lincoln University -->
-                            <div class="col-sm-12 col-md-6 mb-3">
-                              <div class="card">
-                                <div class="card-body">
-                                  <h5 class="card-title">Lincoln University</h5>
-                                  <p class="card-text"><b>Rankings (2024):</b> 371</p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Card for Auckland University of Technology -->
-                            <div class="col-sm-12 col-md-6 mb-3">
-                              <div class="card">
-                                <div class="card-body">
-                                  <h5 class="card-title">Auckland University of Technology</h5>
-                                  <p class="card-text"><b>Rankings (2024):</b> 412</p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      
-
-                      <h4 class="mb-3 mt-5 bold-text">Intakes in New Zealand</h4>
-
-              <p>New Zealand universities offer two primary intakes:</p>
-
-              <ul>
-                <li>Semester 1 (February to June)</li>
-                <li>Semester 2 (July to November)</li>
-              </ul>
-
-              <p>Some institutions also provide additional intakes for specific programs, ensuring flexibility for students.</p>
-
-              <h4 class="mb-3 mt-5 bold-text">Cost of Studying in New Zealand</h4>
-
-              <p>The cost varies based on the program and level of study:</p>
-
-              <div class="container mt-5">
-                <!-- Table View for Large Screens Only -->
-                <div class="table-responsive d-none d-lg-block">
-                  <table class="table table-bordered table-hover">
-                    <thead class="bold-text">
-                      <tr class="table-active">
-                        <th scope="col" class="text-center fw-bold">Study Program</th>
-                        <th scope="col" class="text-center fw-bold">Average Annual Fees (NZD)</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="text-center">Undergraduate Programs</td>
-                        <td class="text-center">25,000 – 45,000</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">Postgraduate Programs</td>
-                        <td class="text-center">20,000 – 37,000</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">PhD Programs</td>
-                        <td class="text-center">6,500 – 9,000</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">MBA Programs</td>
-                        <td class="text-center">31,000 – 50,000</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              
-                <!-- Card View for Medium and Smaller Screens -->
-                <div class="d-lg-none">
-                  <div class="row">
-                    <!-- Card for Undergraduate Programs -->
-                    <div class="col-sm-12 col-md-6 mb-3">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">Undergraduate Programs</h5>
-                          <p class="card-text"><b>Average Annual Fees:</b> 25,000 – 45,000 NZD</p>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Card for Postgraduate Programs -->
-                    <div class="col-sm-12 col-md-6 mb-3">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">Postgraduate Programs</h5>
-                          <p class="card-text"><b>Average Annual Fees:</b> 20,000 – 37,000 NZD</p>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Card for PhD Programs -->
-                    <div class="col-sm-12 col-md-6 mb-3">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">PhD Programs</h5>
-                          <p class="card-text"><b>Average Annual Fees:</b> 6,500 – 9,000 NZD</p>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Card for MBA Programs -->
-                    <div class="col-sm-12 col-md-6 mb-3">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">MBA Programs</h5>
-                          <p class="card-text"><b>Average Annual Fees:</b> 31,000 – 50,000 NZD</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              
-              <h4 class="mb-3 bold-text">Cost of Living in New Zealand</h4>
-
-              <p class="bold-text">Living costs depend on the city and lifestyle. Here’s a breakdown:</p>
-        
-                      <p>
-                        <span class="bold-text">Accommodation:</span>
-                        <ul>
-                          <li>On-Campus: NZD 215–555/week</li>
-                          <li>Off-Campus: NZD 120–600/week</li>
-                        </ul> 
-                      </p>
-        
-                      <p><span class="bold-text">Utilities:</span> NZD 100/month (shared housing)</p>
-        
-                      <p>
-                        <span class="bold-text">Food:</span> NZD 80–120/week
-                      </p>
-
-                      <p>
-                        <span class="bold-text">Healthcare:</span> NZD 350/semester for insurance
-                      </p>
-
-                      <p>
-                        <span class="bold-text">Estimated annual living expenses:</span>
-                        <ul>
-                          <li>Smaller Cities: NZD 15,000–20,000</li>
-                          <li>Larger Cities (e.g., Auckland): NZD 18,000–25,000</li>
-                        </ul> 
-                      </p>
-
-                      <h4 class="mb-3 bold-text">Job Prospects in New Zealand</h4>
-        
-                      <p class="bold-text">
-                        In 2024, key industries include:
-                      </p>
-        <ol>
-                      <li>
-                        <span class="bold-text">Healthcare:</span> High demand for nurses, aged-care workers, and allied health professionals.> 
-                      </li>
-        
-                      <li><span class="bold-text">Technology and Engineering:</span> Opportunities in IT, cybersecurity, renewable energy, and software development.</li>
-        
-                      <li>
-                        <span class="bold-text">Education:</span> Increased demand for qualified teachers, especially in regional areas.
-                      </li>
-
-                      <li>
-                        <span class="bold-text">Green Jobs:</span> Roles in renewable energy and sustainability due to New Zealand’s focus on climate goals.
-                      </li>
-                    </ol>
-
-                      <p>The "Post-Study Work Visa" facilitates a smooth transition from academics to employment, ensuring strong job prospects for graduates.</p>
-
-        
-                    </div> 
-          
-                  </div>
-                </div>
-              </section> <!-- .section -->
+    <section class="ftco-section ftco-degree-bg">
+      <div class="container">
+        <div class="row">
+    <div class="hyperlink-button-container">
+      <button class="hyperlink-button" onclick="scrollToSection('whynewzeland')">Why NewZeland</button>
+      <button class="hyperlink-button" onclick="scrollToSection('Universities')">Popular Universities</button>
+      <button class="hyperlink-button" onclick="scrollToSection('Courses')">Top Courses</button>
+      <button class="hyperlink-button" onclick="scrollToSection('Studying')">Cost of Studying</button>
+      <button class="hyperlink-button" onclick="scrollToSection('Intakes')">Intakes Available</button>
+      <button class="hyperlink-button" onclick="scrollToSection('Eligibility')">Eligibility</button>
+      <button class="hyperlink-button" onclick="scrollToSection('Jobs')">Jobs and Salaries</button>
+      <button class="hyperlink-button" onclick="scrollToSection('Visa')">Visa</button>
+      <button class="hyperlink-button" onclick="scrollToSection('WhyRSR')">Why RSR</button>    
+     
+    </div>
+  </div>
+</div>
+  </section> 
   
-
               <footer class="ftco-footer ftco-bg-dark ftco-section">
                 <div class="container">
                   <div class="row mb-5">
@@ -523,13 +323,15 @@
                       </div>
                     </div>
                     <div class="col-md">
-                       <div class="ftco-footer-widget mb-4">
-                        <h4 class="ftco-heading-2">Customer Support</h4>
+                      <div class="ftco-footer-widget mb-4">
+                        <h4 class="ftco-heading-2">Useful links</h4>
                         <ul class="list-unstyled">
-                          <li><a href="FAQ.html" class=" d-block">FAQ</a></li>
-                          <!-- <li><a href="#" class="py-2 d-block">Payment Option</a></li> -->
-                          <!-- <li><a href="#" class="py-2 d-block">Booking Tips</a></li> -->
-                          <!-- <li><a href="#" class="py-2 d-block">How it works</a></li> -->
+                          <li><a href="about.html" class="py-2 d-block">About RSR</a></li>
+                          <li><a href="whystudyaboard.html" class="py-2 d-block">Why Study Abroad</a></li>
+                          <li><a href="studyaboard.html" class="py-2 d-block">Step by Step Guide</a></li>
+                          <li><a href="javascript:void(0)" class=" d-block">Study Destinations</a></li> 
+                          <li><a href="services.html" class=" d-block">Services</a></li>
+                          <li><a href="FAQ.html" class=" d-block">FAQ</a></li> 
                           <li><a href="contact.html" class=" d-block">Contact Us</a></li>
                         </ul>
                       </div>
@@ -557,6 +359,20 @@
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                     </div>
                   </div>
+
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6 footer-logo1">
+                     <a href="https://rsrglobal.org/" target="_blank"><img src="images/logos/rsr-global-logo.webp" class="img-fluid" alt="RSR Global Logo"></a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 footer-logo">
+                     <a href="https://rsrglobalimmigration.com/" target="_blank"> <img src="images/logos/rsr-global-immigration-logo.png" class="img-fluid" alt="RSR Global Immigration Logo"></a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 footer-logo">
+                      <!-- <p>In Affilitation With</p> -->
+                      <a href="https://rsrtrainingacademy.com/" target="_blank"> <img src="images/logos/rsr-training-academy-logo.png" class="img-fluid" alt="RSR Global Immigration Logo"></a>
+                     </div>
+                  </div>
+                  
                 </div>
               </footer>
     

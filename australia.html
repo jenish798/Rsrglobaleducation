@@ -134,6 +134,290 @@
             margin-bottom: 10px;
             color: #fff;
         }
+/*--------------------------------------------------------------
+# australiacourse
+--------------------------------------------------------------*/
+        .australiacourse {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .australiacourse .left {
+      flex: 1;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .australiacourse .right {
+      flex: 1;
+      padding: 15px;
+    }
+
+    .australiacourse .right h3 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .australiacourse .right ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .australiacourse .right ul li {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .australiacourse {
+        flex-direction: column;
+      }
+
+      .australiacourse .left, .australiacourse .right {
+        flex: none;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+
+    /*--------------------------------------------------------------
+# tables
+--------------------------------------------------------------*/
+
+.custom-table {
+          border: 3px solid black; /* Thicker outer border */
+      }
+      .custom-table th, 
+      .custom-table td {
+          border: 2px solid black !important; /* Thicker inner borders */
+          text-align: center; /* Align text to center */
+          vertical-align: middle;
+      }
+      .custom-table tr:last-child td {
+    border-bottom: 3px solid black !important; /* Ensures bottom line is black */
+}
+
+/*--------------------------------------------------------------
+# ukjobs
+--------------------------------------------------------------*/
+
+.ukjobs-section {
+            /* background: linear-gradient(135deg, #141E30, #243B55); */
+            background: linear-gradient(135deg, #8B0000, #FD0011, #FF7373);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+        }
+        .ukjobs-header {
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+        .ukjobs-subtitle {
+            color: #fff;
+            margin-bottom: 40px;
+            font-size: 18px;
+        }
+
+        /* Job Card Slider */
+        .ukjobs-slider {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 15px;
+            padding: 20px;
+            scrollbar-width: none; /* Hide scrollbar for cleaner UI */
+        }
+        .ukjobs-slider::-webkit-scrollbar {
+            display: none; /* Hide scrollbar on Webkit browsers */
+        }
+        .ukjobs-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 25px;
+            width: 280px;
+            flex: 0 0 auto;
+            scroll-snap-align: start;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+        .ukjobs-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.3);
+        }
+        .ukjobs-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+            color: #FFD700;
+        }
+        .ukjobs-title {
+            font-weight: bold;
+            font-size: 20px;
+            color: #fff;
+        }
+        .ukjobs-salary {
+            font-size: 14px;
+            color: #fff;
+        }
+
+        /* Scroll Buttons */
+        .ukjobs-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            padding: 5px 20px;
+            font-size: 24px;
+            cursor: pointer;
+            border-radius: 50%;
+            color: white;
+            transition: 0.3s;
+        }
+        .ukjobs-btn:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+        .ukjobs-btn-left {
+            left: 10px;
+        }
+        .ukjobs-btn-right {
+            right: 10px;
+        }
+/*--------------------------------------------------------------
+# australiavisa
+--------------------------------------------------------------*/
+.australiavisa-container {
+            margin-top: 80px;
+        }
+
+        .australiavisa-card {
+            background: linear-gradient(145deg, #007BFF, #0056b3);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            color: #fff;
+        }
+
+        .australiavisa-card-header {
+            background-color: #0056b3;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .australiavisa-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .australiavisa-list li {
+            font-size: 1.1rem;
+            padding: 15px;
+            background-color: #ffffff;
+            color: #333;
+            margin-bottom: 12px;
+            border-radius: 8px;
+            border: 1px solid #e1e5f2;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .australiavisa-list li:hover {
+            background-color: #eaf0ff;
+            transform: translateY(-4px);
+        }
+
+        .australiavisa-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .australiavisa-list li span {
+            color: #007BFF;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .australiavisa-card-header {
+                font-size: 1.3rem;
+            }
+
+            .australiavisa-list li {
+                font-size: 1rem;
+                padding: 12px;
+            }
+        }
+/*--------------------------------------------------------------
+# whyrsr
+--------------------------------------------------------------*/
+
+.whyrsr-section {
+            /* background-color: #f8f9fa; */
+            padding: 60px 0;
+            text-align: center;
+        }
+        .whyrsr-header {
+            font-weight: bold;
+            color: #222;
+            margin-bottom: 10px;
+        }
+        .whyrsr-subtitle {
+            color: #555;
+            margin-bottom: 40px;
+        }
+        .whyrsr-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .whyrsr-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            width: 320px;
+            min-height: 220px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .whyrsr-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .whyrsr-icon {
+            width: 60px;
+            height: 60px;
+            /* background: #007bff; */
+            color: white;
+            font-size: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        .whyrsr-title {
+            font-weight: bold;
+            font-size: 18px;
+            color: #222;
+            margin-bottom: 8px;
+        }
+        .whyrsr-text {
+            font-size: 14px;
+            color: #555;
+            text-align: center;
+        }
 </style>
   </head>
   <body>
@@ -144,11 +428,27 @@
         <!-- Row for Email Us and Social Links -->
         <div class="row align-items-center justify-content-end">
           <!-- Email Us Button Section -->
+
+          <!-- <div lass="col-auto d-flex justify-content-end mb-2 mb-md-0">
+            <p><i class="fa-solid fa-phone"></i>Request a call back</p>
+            
+          </div> -->
+
+          <div class="d-flex justify-content-center align-items-center mb-2 mb-md-0">
+            <a href="javascript:void(0)" class="text-white d-flex align-items-center px-3" style="gap: 10px;">
+                <!-- <i class="fa-solid fa-phone" style="font-size: 1.4rem; display: flex; align-items: center;"></i> -->
+                 <img src="images/icons/Phone_icon_ 1.png" alt="">
+                <p class="mb-0 bold-text" style="margin-left: 5px; display: flex; align-items: center;">Request a call back</p>
+            </a>
+        </div>        
+        
+        
           <div class="col-auto d-flex justify-content-end mb-2 mb-md-0">
             <a href="mailto:education@rsrglobal.org" class="btn text-white d-flex justify-content-center align-items-center">
               <span class="material-symbols-outlined me-2">
                 mail
               </span>
+              <!-- <span>education@rsrglobal.org</span> -->
             </a>
           </div>
     
@@ -164,7 +464,7 @@
                 <i class="fab fa-instagram"></i>
               </a>
               <!-- LinkedIn Icon -->
-              <a class="social-icon-link mx-2 mb-2" href="https://www.linkedin.com/company/rsr-global-education-ltd/?viewAsMember=true" role="button" target="_blank">
+              <a class="social-icon-link mx-2 mb-2" href="https://www.linkedin.com/company/rsr-global-education-ltd/?viewAsMember=true" target="_blank" role="button">
                 <i class="fab fa-linkedin-in"></i>
               </a>
               <!-- YouTube Icon -->
@@ -230,7 +530,19 @@
                 <li><a class="dropdown-item" href="In_Country_Representative.html">In Country Representative</a></li>
               </ul>
             </li>
-            <li class="nav-item"><a href="" class="nav-link">Test Prep</a></li>
+            <!-- <li class="nav-item"><a href="" class="nav-link">Test Prep</a></li> -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Test Prep
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <li>
+                  <a class="dropdown-item" href="javascript:void(0)">
+                    <img src="images/navbar-logo/psi-selt-logo.png" height="35px" width="90px" alt="English Proficiency Image">
+                  </a>
+                </li>
+              </ul>
+            </li>
             <li class="nav-item"><a href="events-gallery.html" class="nav-link">Events & Gallery</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="about.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -424,7 +736,255 @@
     </div>
   </section>
       
-      <!-- .section -->
+
+      <section class="ftco-section ftco-degree-bg" id="Courses">
+        <h4 class="mb-3 bold-text text-center">Top Courses in Australia</h4>
+      <div class="container">
+        <div class="australiacourse">
+          <!-- Left Section (Image) -->
+          <div class="left">
+            <img src="images/studydestination/australia/img-1.jpg" alt="Australia Courses" class="img-fluid">
+          </div>
+          <!-- Right Section (Content) -->
+          <div class="right">
+            <!-- <h3>Top Courses in Australia</h3> -->
+            <ul>
+              <li>Business & Management (MBA, Finance)</li>
+              <li>Engineering (Civil, Mechanical, IT)</li>
+              <li>Computer Science & IT (AI, Cybersecurity)</li>
+              <li>Medicine & Healthcare (Nursing, Public Health)</li>
+              <li>Law (LLB, Corporate Law)</li>
+              <li>Accounting & Finance</li>
+              <li>Hospitality & Tourism Management</li>
+              <li>Education & Teaching</li>
+              <li>Environmental Science</li>
+              <li>Psychology & Social Work</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section ftco-degree-bg" id="Intakes">
+      <div class="container" id="Intakes">
+        <h4 class="text-center mb-4 bold-text">Intakes Available</h4>
+    
+        <ul>
+          <li> <span class="bold-text heading_color">February/March (Semester 1):</span> Major intake, most courses available</li>
+          <li><span class="bold-text heading_color">July (Semester 2):</span> Second-largest intake, many programs open</li>
+          <li><span class="bold-text heading_color">November (Summer/Trimester 3):</span> Limited courses, mainly for specific programs</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="ftco-section ftco-degree-bg" id="living">
+      <div class="container mt-4" id="Studying">
+        <h4 class="text-center mb-4 bold-text">Cost of Living (Approx. Monthly)</h4>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped custom-table">
+                <thead class="table-dark">
+                    <tr>
+                        <th class="bg-danger">Under Graduate</th>
+                        <th class="bg-danger">Post Graduate</th>
+                        <th class="bg-danger">Doctorate</th>
+                        <th class="bg-danger">Living Expenses</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>AUD 20,000 to 45,000 per year</td>
+                        <td>AUD 22,000 – 50,000 per year</td>
+                        <td>AUD 18,000 – 42,000 per year</td>
+                        <td>AUD 20,000 – 27,000 per year</td>
+                    </tr>
+                    <tr>
+                        <td>(10,84,200 to 24,39,450 INR)</td>
+                        <td>(11,92,620 to 27,10,500 INR)</td>
+                        <td>(INR 9,75,780 to 22,76,820)</td>
+                        <td>(INR 10,84,200 to INR 14,63,670)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </section>
+
+    <section class="ftco-section ftco-degree-bg" id="Eligibility">
+      <div class="container" id="Intakes">
+        <h4 class="text-center mb-4 bold-text">Eligibility</h4>
+        <p>To study in Australia, you need academic qualifications, English proficiency, financial proof, a GTE statement, and a Student Visa (Subclass 500).</p>
+    
+      </div>
+    </section>
+
+    <section class="ftco-section ftco-degree-bg" id="living">
+      <div class="container" id="Intakes">
+        <h4 class="text-center mb-4 bold-text">Application Requirements</h4>
+        <p>For Australian applications, you need academic transcripts, English test scores, SOP, LORs (if required), resume (for PG), passport, proof of funds, and a student visa.</p>
+    
+      </div>
+    </section>
+
+    <section class="ukjobs-section" id="Jobs">
+      <div class="container position-relative">
+          <h2 class="ukjobs-header">Jobs & Salaries</h2>
+          
+    
+          <!-- Job Cards Slider -->
+          <div class="ukjobs-slider" id="ukjobsSlider">
+              <!-- Investment Banker -->
+              <div class="ukjobs-card">
+                  <i class="bi bi-cash-stack ukjobs-icon"></i>
+                  <div class="ukjobs-title">Part-time jobs for students pay </div>
+                  <p class="ukjobs-salary">AUD 22–30 (INR 1,192.62 - INR 1,626.300) per hour</p>
+              </div>
+    
+              <!-- Software Engineer -->
+              <div class="ukjobs-card">
+                  <i class="bi bi-code-slash ukjobs-icon"></i>
+                  <div class="ukjobs-title">IT & Software </div>
+                  <p class="ukjobs-salary">AUD 80,000 – 120,000 (INR 43,36,800 - INR 65,05,200)</p>
+              </div>
+    
+              <!-- Data Analyst -->
+              <div class="ukjobs-card">
+                  <i class="bi bi-bar-chart ukjobs-icon"></i>
+                  <div class="ukjobs-title">Engineering</div>
+                  <p class="ukjobs-salary">AUD 75,000 – 110,000 (INR 40,65,750 - INR 59,63,100)</p>
+              </div>
+    
+              <!-- Surgeon -->
+              <div class="ukjobs-card">
+                  <i class="bi bi-hospital ukjobs-icon"></i>
+                  <div class="ukjobs-title">Healthcare (Doctors/Nurses) </div>
+                  <p class="ukjobs-salary">AUD 70,000 – 150,000 (INR 37,94,700 - INR 81,31,500)</p>
+              </div>
+    
+              <!-- Senior Consultant -->
+              <div class="ukjobs-card">
+                  <i class="bi bi-lightbulb ukjobs-icon"></i>
+                  <div class="ukjobs-title">Accounting & Finance </div>
+                  <p class="ukjobs-salary">AUD 65,000 – 100,000 (INR 35,23,650 - INR 54,21,000)</p>
+              </div>
+    
+              <!-- UX/UI Designer -->
+              <div class="ukjobs-card">
+                  <i class="bi bi-brush ukjobs-icon"></i>
+                  <div class="ukjobs-title">Marketing & Sales </div>
+                  <p class="ukjobs-salary">AUD 60,000 – 95,000 (INR 32,52,600 - INR 51,49,950)</p>
+              </div>
+    
+              <!-- Senior Financial Planner -->
+              <div class="ukjobs-card">
+                  <i class="bi bi-bank ukjobs-icon"></i>
+                  <div class="ukjobs-title">Hospitality & Tourism </div>
+                  <p class="ukjobs-salary">AUD 50,000 – 80,000 (INR 27,10,500 - INR 43,36,800)</p>
+              </div>
+
+              <div class="ukjobs-card">
+                <i class="bi bi-bank ukjobs-icon"></i>
+                <div class="ukjobs-title">Education & Teaching </div>
+                <p class="ukjobs-salary">AUD 60,000 – 90,000 (INR 32,52,600 - INR 48,78,900)</p>
+            </div>
+          </div>
+    
+          <!-- Scroll Buttons -->
+          <button class="ukjobs-btn ukjobs-btn-left" onclick="scrollLeft()">&#10094;</button>
+          <button class="ukjobs-btn ukjobs-btn-right" onclick="scrollRight()">&#10095;</button>
+      </div>
+    </section>
+
+    <section class="ftco-section ftco-degree-bg" id="Visa">
+    <div class="container australiavisa-container">
+      <div class="row justify-content-center">
+          <div class="col-12 col-md-8">
+              <div class="card australiavisa-card">
+                  <div class="card-header australiavisa-card-header">
+                      <h4 class="text-white">Visa</h4>
+                  </div>
+                  <div class="card-body">
+                      <ul class="australiavisa-list">
+                          <li><span>CoE:</span> Confirmation of Enrolment</li>
+                          <li><span>GTE:</span> Genuine Temporary Entrant Statement</li>
+                          <li><span>English Proficiency:</span> IELTS, TOEFL, or PTE</li>
+                          <li><span>Financial Proof:</span> Tuition + Living Expenses</li>
+                          <li><span>OSHC:</span> Overseas Student Health Cover</li>
+                          <li><span>Valid Passport:</span> Passport must be valid</li>
+                          <li><span>Visa Fee:</span> Approx. AUD 710</li>
+                          <li><span>Health & Character Certificate:</span> Required documentation</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="ftco-section ftco-degree-bg">
+  <section class="whyrsr-section" id="WhyRSR">
+    <div class="container">
+      <h4 class="text-center mb-4 bold-text">Why RSR</h4>
+        <h2 class="whyrsr-header">6 Reasons to Pick RSR Global Education</h2>
+        <p class="whyrsr-subtitle text-center">Study in Your Preferred Destination with the Best Guidance</p>
+
+        <div class="whyrsr-container">
+            <!-- Expert Guidance -->
+            <div class="whyrsr-card">
+                <div class="whyrsr-icon">
+                    <img src="images/studydestination/uk/expert-icons.png" alt="expert-icons"/>
+                </div>
+                <div class="whyrsr-title">Expert Guidance</div>
+                <p class="whyrsr-text">Personalized Counseling for University & Course Selection</p>
+            </div>
+
+            <!-- Seamless Application Process -->
+            <div class="whyrsr-card">
+                <div class="whyrsr-icon">
+                  <img src="images/studydestination/uk/application-process.png" alt="">
+                                </div>
+                <div class="whyrsr-title">Seamless Application Process</div>
+                <p class="whyrsr-text">Assistance with Documentation, SOPs & Admission</p>
+            </div>
+
+            <!-- Visa Support -->
+            <div class="whyrsr-card">
+                <div class="whyrsr-icon">
+                  <img src="images/studydestination/uk/visa.png" alt="">
+                </div>
+                <div class="whyrsr-title">Visa Support</div>
+                <p class="whyrsr-text">End-to-end Visa Guidance for a smooth approval process</p>
+            </div>
+
+            <!-- Affordable & Transparent Services -->
+            <div class="whyrsr-card">
+                <div class="whyrsr-icon">
+                  <img src="images/studydestination/uk/customer-service.png" alt="">
+                </div>
+                <div class="whyrsr-title">Affordable & Transparent Services</div>
+                <p class="whyrsr-text">No hidden charges, ensuring cost-effective solutions</p>
+            </div>
+
+            <!-- Post-Arrival Support -->
+            <div class="whyrsr-card">
+                <div class="whyrsr-icon">
+                  <img src="images/studydestination/uk/job-support.png" alt="">
+                </div>
+                <div class="whyrsr-title">Post-Arrival Support</div>
+                <p class="whyrsr-text">Accommodation, Job Assistance & Local Guidance</p>
+            </div>
+
+            <!-- Financial Guidance & Scholarships -->
+            <div class="whyrsr-card">
+                <div class="whyrsr-icon">
+                  <img src="images/studydestination/uk/scholarship.png" alt="">
+                </div>
+                <div class="whyrsr-title">Financial Guidance & Scholarships</div>
+                <p class="whyrsr-text">Guidance in academic pursuits & access to scholarships</p>
+            </div>
+        </div>
+    </div>
+</section>
+</section>
 
       <footer class="ftco-footer ftco-bg-dark ftco-section">
         <div class="container">
@@ -453,13 +1013,15 @@
               </div>
             </div>
             <div class="col-md">
-               <div class="ftco-footer-widget mb-4">
-                <h4 class="ftco-heading-2">Customer Support</h4>
+              <div class="ftco-footer-widget mb-4">
+                <h4 class="ftco-heading-2">Useful links</h4>
                 <ul class="list-unstyled">
-                  <li><a href="FAQ.html" class=" d-block">FAQ</a></li>
-                  <!-- <li><a href="#" class="py-2 d-block">Payment Option</a></li> -->
-                  <!-- <li><a href="#" class="py-2 d-block">Booking Tips</a></li> -->
-                  <!-- <li><a href="#" class="py-2 d-block">How it works</a></li> -->
+                  <li><a href="about.html" class="py-2 d-block">About RSR</a></li>
+                  <li><a href="whystudyaboard.html" class="py-2 d-block">Why Study Abroad</a></li>
+                  <li><a href="studyaboard.html" class="py-2 d-block">Step by Step Guide</a></li>
+                  <li><a href="javascript:void(0)" class=" d-block">Study Destinations</a></li> 
+                  <li><a href="services.html" class=" d-block">Services</a></li>
+                  <li><a href="FAQ.html" class=" d-block">FAQ</a></li> 
                   <li><a href="contact.html" class=" d-block">Contact Us</a></li>
                 </ul>
               </div>
@@ -487,6 +1049,20 @@
     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
             </div>
           </div>
+
+          <div class="row">
+            <div class="col-lg-4 col-md-6 footer-logo1">
+             <a href="https://rsrglobal.org/" target="_blank"><img src="images/logos/rsr-global-logo.webp" class="img-fluid" alt="RSR Global Logo"></a>
+            </div>
+            <div class="col-lg-4 col-md-6 footer-logo">
+             <a href="https://rsrglobalimmigration.com/" target="_blank"> <img src="images/logos/rsr-global-immigration-logo.png" class="img-fluid" alt="RSR Global Immigration Logo"></a>
+            </div>
+            <div class="col-lg-4 col-md-6 footer-logo">
+              <!-- <p>In Affilitation With</p> -->
+              <a href="https://rsrtrainingacademy.com/" target="_blank"> <img src="images/logos/rsr-training-academy-logo.png" class="img-fluid" alt="RSR Global Immigration Logo"></a>
+             </div>
+          </div>
+          
         </div>
       </footer>
     
@@ -494,6 +1070,9 @@
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+  <!-- Scroll Top -->
+  <button id="scrollToTopBtn" class="scroll-to-top" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
 
 
   <script src="js/jquery.min.js"></script>
@@ -513,6 +1092,7 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0h4s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/custom.js"></script>
     
   </body>
 </html>

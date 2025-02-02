@@ -36,7 +36,500 @@
     <!-- Google icons -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 
+  <style>
 
+    .heading_color {
+        color: #393BA7;
+    }
+    .heading_color1 {
+        color: #FD0011;
+        font-weight: bold;
+    }
+
+/*--------------------------------------------------------------
+# Scroll Top Button
+--------------------------------------------------------------*/
+
+        /* Scroll to Top Button Style */
+        .scroll-to-top {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          background-color: #393BA7;
+          color: white;
+          border: none;
+          border-radius: 100%;
+          padding: 12px 20px;
+          /* font-size: 15px; */
+          cursor: pointer;
+          display: none; /* Hidden by default */
+          z-index: 1000; /* Ensure it's always on top */
+      }
+
+      .scroll-to-top:hover {
+          background-color: #5557C4;
+      }
+    
+        
+    /*--------------------------------------------------------------
+    # counselling button
+    --------------------------------------------------------------*/
+    
+      .studydestinationbtn {
+        cursor: pointer;
+        background: #FD0011;
+        color: #fff;
+        padding: 15px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        border-radius: 3px;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        font-size: 15px;
+        border-radius: 20px; 
+      }
+      
+        .studydestinationbtn:hover {
+          color: #fff;
+        }
+    
+    /*--------------------------------------------------------------
+    # hyperlink
+    --------------------------------------------------------------*/
+    
+      .hyperlink-button-container {
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 10px; 
+      }
+    
+      .hyperlink-button {
+        background-color: #393BA7; 
+        border: none;
+        color: #ffffff;
+        padding: 10px 20px;
+        margin: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+    
+      .hyperlink-button:hover {
+        background-color:#4C4FAF;  /* Darker green when hovered */
+      }
+/*--------------------------------------------------------------
+    # whystudyukraine
+--------------------------------------------------------------*/
+
+        .feature {
+            padding: 20px;
+            background-color: #f0f8ff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            margin-bottom: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            color: #3498db;
+            margin-bottom: 15px;
+        }
+
+        .feature-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .feature-description {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        @media (max-width: 768px) {
+            .whystudyukraine h2 {
+                font-size: 1.5rem;
+            }
+
+            .feature-icon {
+                font-size: 1.8rem;
+            }
+
+            .feature {
+                padding: 15px;
+            }
+        }
+/*--------------------------------------------------------------
+    # whystudyukraine
+--------------------------------------------------------------*/
+.ukrainecourse {
+            padding: 40px 20px;
+            margin-top: 40px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .ukrainecourse h2 {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .course-category {
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .course-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .course-icon {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .course-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .course-list {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* Color Variations */
+        .medicine {
+            background-color: #3498db;
+        }
+        .engineering {
+            background-color: #2ecc71;
+        }
+        .it {
+            background-color: #f39c12;
+        }
+        .business {
+            background-color: #9b59b6;
+        }
+        .aviation {
+            background-color: #e74c3c;
+        }
+        .law {
+            background-color: #1abc9c;
+        }
+        .agriculture {
+            background-color: #f1c40f;
+        }
+
+        @media (max-width: 768px) {
+            .course-category {
+                padding: 15px;
+            }
+        }
+/*--------------------------------------------------------------
+# ukrainecost
+--------------------------------------------------------------*/
+    .ukrainecost-section {
+      margin-bottom: 40px;
+    }
+    .ukrainecost-card {
+      text-align: center;
+      background-color: #f8f9fa;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .ukrainecost-card i {
+      font-size: 40px;
+      color: #007bff;
+      margin-bottom: 15px;
+    }
+    .ukrainecost-table thead {
+      background: linear-gradient(135deg, #8B0000, #FD0011, #FF7373);
+      color: white;
+    }
+    .ukrainecost-table tbody tr:nth-child(odd) {
+      background-color: #f2f2f2;
+    }
+    .ukrainecost-table tbody tr:nth-child(even) {
+      background-color: #e9ecef;
+    }
+    .ukrainecost-table th, .ukrainecost-table td {
+      text-align: center;
+      padding: 15px;
+    }
+    .ukrainecost-table .table-responsive {
+      margin-top: 30px;
+    }
+    .ukrainecost-table td {
+      font-weight: 500;
+    }
+    .ukrainecost-subheader {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #007bff;
+      margin-bottom: 15px;
+    }
+    @media (max-width: 768px) {
+      .ukrainecost-card {
+        padding: 20px;
+      }
+      .ukrainecost-table td {
+        font-size: 0.9rem;
+      }
+    }
+
+    /*--------------------------------------------------------------
+# APPLICATION
+--------------------------------------------------------------*/
+
+.ukraineapplication-body {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+        .ukraineapplication-container {
+            max-width: 900px;
+            margin: auto;
+        }
+        .ukraineapplication-header {
+            font-weight: bold;
+            color: #343a40;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .ukraineapplication-timeline {
+            position: relative;
+            list-style: none;
+            padding: 0;
+        }
+        .ukraineapplication-timeline::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            width: 4px;
+            height: 100%;
+            background: #FD0011;
+        }
+        .ukraineapplication-timeline-item {
+            position: relative;
+            padding: 20px 0 20px 50px;
+        }
+        .ukraineapplication-timeline-item .icon {
+            position: absolute;
+            left: 6px;
+            top: 22px;
+            width: 28px;
+            height: 28px;
+            background: #FD0011;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+        }
+        .ukraineapplication-timeline-content {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+/*--------------------------------------------------------------
+# tables
+--------------------------------------------------------------*/
+
+.custom-table {
+          border: 3px solid black; /* Thicker outer border */
+      }
+      .custom-table th, 
+      .custom-table td {
+          border: 2px solid black !important; /* Thicker inner borders */
+          text-align: center; /* Align text to center */
+          vertical-align: middle;
+      }
+      .custom-table tr:last-child td {
+    border-bottom: 3px solid black !important; /* Ensures bottom line is black */
+}
+/*--------------------------------------------------------------
+# ukraine-visa
+--------------------------------------------------------------*/
+.ukraine-visa {
+  background: linear-gradient(135deg, #1D1F60, #393BA7, #9FA0E6);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .ukraine-visa h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .visa-steps {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .visa-step {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 15px 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 600px;
+            position: relative;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .visa-step:hover {
+            transform: translateX(10px);
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .visa-step .step-number {
+            background: #393BA7;
+            color: white;
+            font-weight: bold;
+            font-size: 1.5rem;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .visa-step-content {
+            flex-grow: 1;
+        }
+
+        .visa-step-content h4 {
+            margin: 0;
+            font-size: 1.3rem;
+            color: #393BA7;
+        }
+
+        .visa-step-content p {
+            margin: 5px 0 0;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .visa-step {
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+            }
+
+            .visa-step .step-number {
+                margin-bottom: 10px;
+            }
+        }
+
+/*--------------------------------------------------------------
+# whyrsr
+--------------------------------------------------------------*/
+
+.whyrsr-section {
+            /* background-color: #f8f9fa; */
+            padding: 60px 0;
+            text-align: center;
+        }
+        .whyrsr-header {
+            font-weight: bold;
+            color: #222;
+            margin-bottom: 10px;
+        }
+        .whyrsr-subtitle {
+            color: #555;
+            margin-bottom: 40px;
+        }
+        .whyrsr-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .whyrsr-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            width: 320px;
+            min-height: 220px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .whyrsr-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .whyrsr-icon {
+            width: 60px;
+            height: 60px;
+            /* background: #007bff; */
+            color: white;
+            font-size: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        .whyrsr-title {
+            font-weight: bold;
+            font-size: 18px;
+            color: #222;
+            margin-bottom: 8px;
+        }
+        .whyrsr-text {
+            font-size: 14px;
+            color: #555;
+            text-align: center;
+        }
+    </style>
+      </style>
   </head>
   <body>
 
@@ -46,11 +539,27 @@
         <!-- Row for Email Us and Social Links -->
         <div class="row align-items-center justify-content-end">
           <!-- Email Us Button Section -->
+
+          <!-- <div lass="col-auto d-flex justify-content-end mb-2 mb-md-0">
+            <p><i class="fa-solid fa-phone"></i>Request a call back</p>
+            
+          </div> -->
+
+          <div class="d-flex justify-content-center align-items-center mb-2 mb-md-0">
+            <a href="javascript:void(0)" class="text-white d-flex align-items-center px-3" style="gap: 10px;">
+                <!-- <i class="fa-solid fa-phone" style="font-size: 1.4rem; display: flex; align-items: center;"></i> -->
+                 <img src="images/icons/Phone_icon_ 1.png" alt="">
+                <p class="mb-0 bold-text" style="margin-left: 5px; display: flex; align-items: center;">Request a call back</p>
+            </a>
+        </div>        
+        
+        
           <div class="col-auto d-flex justify-content-end mb-2 mb-md-0">
             <a href="mailto:education@rsrglobal.org" class="btn text-white d-flex justify-content-center align-items-center">
               <span class="material-symbols-outlined me-2">
                 mail
               </span>
+              <!-- <span>education@rsrglobal.org</span> -->
             </a>
           </div>
     
@@ -132,7 +641,19 @@
             <li><a class="dropdown-item" href="In_Country_Representative.html">In Country Representative</a></li>
           </ul>
         </li>
-        <li class="nav-item"><a href="" class="nav-link">Test Prep</a></li>
+        <!-- <li class="nav-item"><a href="" class="nav-link">Test Prep</a></li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Test Prep
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+            <li>
+              <a class="dropdown-item" href="javascript:void(0)">
+                <img src="images/navbar-logo/psi-selt-logo.png" height="35px" width="90px" alt="English Proficiency Image">
+              </a>
+            </li>
+          </ul>
+        </li>
         <li class="nav-item"><a href="events-gallery.html" class="nav-link">Events & Gallery</a></li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="about.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -158,96 +679,648 @@
           <div class="col-md-9 ftco-animate pb-5">
           	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Study Destination<i class="ion-ios-arrow-forward"></i></span></p>
             <h1 class="mb-3 bread">Ukraine</h1>
-            <a href="javascript:void(0)" class="btn btn-primary">Free Counselling Session</a>
+            <a href="usa.html?showModal=true" data-toggle="modal" data-target="#myModal" class="studydestinationbtn bold-text"> <img src="images/icons/Phone_icon_ 1.png" alt=""> FREE Counselling Session</a>
           </div>
         </div>
       </div>
     </section>
 
     <section class="ftco-section ftco-degree-bg">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 ftco-animate">
-                <p>Ukraine is said to be the breadbasket of Europe, with its rich dark soil and great agricultural output, it has truly earned its nickname. Situated in the heart of Europe, it is on the crossroads between Central and Eastern Europe, between the North and the South. Being the largest country in Europe, Ukraine is home to a host of beautiful sights- vibrant cities, ancient architecture and great diversity of landscapes, from the Carpathian Mountain ranges and the coastline on the Black Sea, which is a popular destination for tourists. Ukraine has always been a popular education hub for students across the world, with over 80,000 international students from 156 countries, 23% of those being from India.</p>
+      <div class="container">
+        <div class="row">
+    <div class="hyperlink-button-container">
+      <button class="hyperlink-button" onclick="scrollToSection('whyukraine')">Why Ukraine</button>
+      <button class="hyperlink-button" onclick="scrollToSection('Universities')">Popular Universities</button>
+      <button class="hyperlink-button" onclick="scrollToSection('Courses')">Top Courses in Ukraine</button>
+      <button class="hyperlink-button" onclick="scrollToSection('Studying')">Cost of Studying in Ukraine</button>
+      <button class="hyperlink-button" onclick="scrollToSection('Eligibility')">Eligibility</button>
+      <button class="hyperlink-button" onclick="scrollToSection('Intakes')">Intakes Available</button>
+      <button class="hyperlink-button" onclick="scrollToSection('Jobs')">Jobs and Salaries</button>
+      <button class="hyperlink-button" onclick="scrollToSection('Visa')">Visa</button>
+      <button class="hyperlink-button" onclick="scrollToSection('WhyRSR')">Why RSR</button>    
+     
+    </div>
+  </div>
+</div>
+  </section>
 
-              <h4 class="mb-3 bold-text">Why study in Ukraine</h4>
+  <section class="ftco-section ftco-degree-bg" id="whyukraine">
+    <div class="container">
+      <h4 class="mb-3 bold-text text-center">Why Study in Ukraine?</h4>
+        <!-- <h2>Why Study in Ukraine?</h2> -->
+        <div class="row">
+            <!-- Feature 1 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <div class="feature-title">Affordable Tuition & Living Costs</div>
+                    <div class="feature-description">Lower than many European countries</div>
+                </div>
+            </div>
+            <!-- Feature 2 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="feature-title">Globally Recognized Degrees</div>
+                    <div class="feature-description">Especially in medicine, engineering, and IT</div>
+                </div>
+            </div>
+            <!-- Feature 3 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <div class="feature-title">No IELTS/TOEFL Required</div>
+                    <div class="feature-description">Many universities accept alternatives</div>
+                </div>
+            </div>
+            <!-- Feature 4 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="feature-title">Simple Admission Process</div>
+                    <div class="feature-description">No entrance exams for most courses</div>
+                </div>
+            </div>
+            <!-- Feature 5 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="feature-title">Multicultural Environment</div>
+                    <div class="feature-description">Welcomes international students from many countries</div>
+                </div>
+            </div>
+            <!-- Feature 6 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="feature-title">Opportunities for Work & PR</div>
+                    <div class="feature-description">Some post-study work options available</div>
+                </div>
+            </div>
+            <!-- Feature 7 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="feature-title">English & Bilingual Programs</div>
+                    <div class="feature-description">Courses offered in English, Ukrainian, and Russian</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-              <ul>
-                <li>Ukraine offers globally recognized courses at quality higher education institutions and internationally acknowledged scientific achievements, especially across the biomedical and physical science industries. Many Ukrainian universities have partnerships with universities across Europe, USA and Canada, therefore students have ample opportunity to enrich their education from world renowned professors and departments.</li>
+<section class="ftco-section ftco-degree-bg" id="Universities">
+  <div class="container" id="Universities">
+    <div class="row">
+      <div class="col-md-12 ftco-animate">
 
-                <li>Registration to Ukrainian Institutions is easier and more accessible to international students than other European countries. The IELTS/ TOEFL English language examinations are not essential for admission. In addition, entrance examinations or specific A-level/Cambridge assessments are not required. Applicants are only required to provide exam results from the 10th and 12th Grade. With an exception for MBBS courses where the applicant is required to be NEET qualified.</li>
+        <h4 class="mb-3 bold-text text-center">Popular Universities</h4>
 
-                <li>Courses in Ukraine are taught in the English language and offer many short-term preparatory courses, alongside the student’s major, to learn the local language Ukrainian and Russian. Students thrive in Ukraine, as they can immerse themselves in the local culture while studying in a dynamic environment with peers from a wide range of cultures, religions and countries. Ukraine truly offers all students the key to becoming a global professional.</li>
+        <div class="container mt-5">
+          <!-- Table View for Large Screens Only -->
+          <div class="table-responsive d-none d-lg-block">
+            <table class="table table-bordered table-hover">
+              <thead class="bold-text">
+                <tr class="table-active">
+                  <th scope="col" class="text-center fw-bold">University</th>
+                  <th scope="col" class="text-center fw-bold">QS Ranking (2025)</th>
+                  <th scope="col" class="text-center fw-bold">Notable Programs</th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td class="text-center">V.N.Karazin Kharkiv National University</td><td class="text-center">401–410</td><td class="text-center">Medicine, Engineering, Natural Sciences</td></tr>
+                <tr><td class="text-center">Taras Shevchenko National University of Kyiv</td><td class="text-center">411–420</td><td class="text-center">Law, Social Sciences, Humanities</td></tr>
+                <tr><td class="text-center">National Technical University of Ukraine "Igor Sikorsky Kyiv Polytechnic Institute"</td><td class="text-center">501–550</td><td class="text-center">Engineering, Computer Science, Physics</td></tr>
+                <tr><td class="text-center">Sumy State University</td><td class="text-center">801–1000</td><td class="text-center">Engineering, Social Sciences, Medicine</td></tr>
+                <tr><td class="text-center">Lviv Polytechnic National University</td><td class="text-center">701–750</td><td class="text-center">Computer Science, Engineering, Architecture</td></tr>
+              </tbody>
+            </table>
+          </div>
 
-                <li>Tuition fees in Ukrainian institutions is lower in comparison to other European and American (USA) universities. In addition, Ukraine offers the possibility of paying tuition fees upon arrival to the university. Therefore, students are able to receive a world class education for the fraction of the price in other countries.</li>
+          <!-- Card View for Medium and Smaller Screens -->
+          <div class="d-lg-none">
+            <div class="row">
+              <!-- Each card represents a university -->
+             
+              <div class="col-sm-12 col-md-6 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">V.N.Karazin Kharkiv National University</h5>
+                    <p class="card-text"><b>Ranking:</b> 401–410</p>
+                    <p class="card-text"><b>Notable Programs:</b> Medicine, Engineering, Natural Sciences</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Taras Shevchenko National University of Kyiv</h5>
+                    <p class="card-text"><b>Ranking:</b> 411–420</p>
+                    <p class="card-text"><b>Notable Programs:</b> Law, Social Sciences, Humanities</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">National Technical University of Ukraine "Igor Sikorsky Kyiv Polytechnic Institute"</h5>
+                    <p class="card-text"><b>Ranking:</b> 501–550</p>
+                    <p class="card-text"><b>Notable Programs:</b> Engineering, Computer Science, Physics</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Sumy State University</h5>
+                    <p class="card-text"><b>Ranking:</b> 801–1000</p>
+                    <p class="card-text"><b>Notable Programs:</b> Engineering, Social Sciences, Medicine</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Lviv Polytechnic National University</h5>
+                    <p class="card-text"><b>Ranking:</b> 701–750</p>
+                    <p class="card-text"><b>Notable Programs:</b> Computer Science, Engineering, Architecture</p>
+                  </div>
+                </div>
+              </div>
+            
 
-                <li>All students who succeed and show high academic achievements at Ukrainian universities have possibilities to obtain permanent residence. Therefore, an education in Ukraine can lay the foundation for a student’s truly global career and open up countless opportunities across Europe and the world.</li>
-              </ul>
+            </div>
+          </div>
 
-              <h4 class="mb-3 mt-5 bold-text">Course styles available in Ukraine?</h4>
-              <p>There are over 800 institutions across Ukraine, offering some of the finest higher education courses, in major cities or more rural areas, students are sure to find the perfect course and university for their needs and aspirations. In Ukraine, the higher education system offers 4 levels of achievement.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-            <ul>
-                <li><span class="bold-text">Junior Specialist:</span> after completing secondary school level education, students can enroll onto courses at first accreditation level institutions to attain proficiency level. They offer mid-level professional qualifications for a range of fields, such as paramedic professions, administration and technology.</li>
+<section class="ftco-section ftco-degree-bg" id="Courses">
+<section class="ukrainecourse">
+  <div class="container">
+    <h4 class="mb-3 bold-text text-center">Top Courses to Study in Ukraine</h4>
+      <!-- <h2>Top Courses to Study in Ukraine</h2> -->
+      <div class="row">
+          <!-- Medicine & Healthcare -->
+          <div class="col-md-4 col-sm-6">
+              <div class="course-category medicine">
+                  <div class="course-icon">
+                      <i class="fas fa-stethoscope"></i>
+                  </div>
+                  <div class="course-title">Medicine & Healthcare</div>
+                  <div class="course-list">
+                      <ul>
+                          <li>MBBS</li>
+                          <li>Dentistry</li>
+                          <li>Pharmacy</li>
+                          <li>Nursing</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <!-- Engineering & Technology -->
+          <div class="col-md-4 col-sm-6">
+              <div class="course-category engineering">
+                  <div class="course-icon">
+                      <i class="fas fa-cogs"></i>
+                  </div>
+                  <div class="course-title">Engineering & Technology</div>
+                  <div class="course-list">
+                      <ul>
+                          <li>Civil Engineering</li>
+                          <li>Mechanical Engineering</li>
+                          <li>Electrical Engineering</li>
+                          <li>IT & Aerospace</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <!-- Computer Science & IT -->
+          <div class="col-md-4 col-sm-6">
+              <div class="course-category it">
+                  <div class="course-icon">
+                      <i class="fas fa-laptop-code"></i>
+                  </div>
+                  <div class="course-title">Computer Science & IT</div>
+                  <div class="course-list">
+                      <ul>
+                          <li>Software Engineering</li>
+                          <li>Cybersecurity</li>
+                          <li>AI & Machine Learning</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <!-- Business & Management -->
+          <div class="col-md-4 col-sm-6">
+              <div class="course-category business">
+                  <div class="course-icon">
+                      <i class="fas fa-briefcase"></i>
+                  </div>
+                  <div class="course-title">Business & Management</div>
+                  <div class="course-list">
+                      <ul>
+                          <li>MBA</li>
+                          <li>Finance</li>
+                          <li>Marketing</li>
+                          <li>International Business</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <!-- Aviation & Aerospace -->
+          <div class="col-md-4 col-sm-6">
+              <div class="course-category aviation">
+                  <div class="course-icon">
+                      <i class="fas fa-plane"></i>
+                  </div>
+                  <div class="course-title">Aviation & Aerospace</div>
+                  <div class="course-list">
+                      <ul>
+                          <li>Pilot Training</li>
+                          <li>Aeronautical Engineering</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <!-- Law & International Relations -->
+          <div class="col-md-4 col-sm-6">
+              <div class="course-category law">
+                  <div class="course-icon">
+                      <i class="fas fa-gavel"></i>
+                  </div>
+                  <div class="course-title">Law & International Relations</div>
+                  <div class="course-list">
+                      <ul>
+                          <li>European Law</li>
+                          <li>Political Science</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <!-- Agriculture & Environmental Studies -->
+          <div class="col-md-4 col-sm-6">
+              <div class="course-category agriculture">
+                  <div class="course-icon">
+                      <i class="fas fa-leaf"></i>
+                  </div>
+                  <div class="course-title">Agriculture & Environmental Studies</div>
+                  <div class="course-list">
+                      <ul>
+                          <li>Agronomy</li>
+                          <li>Biotechnology</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+</section>
 
-                <li><span class="bold-text">Bachelor:</span> these degrees are equivalent to undergraduate bachelor’s degrees (BSc/ BA) across the world, where a student’s training, knowledge and proficiency are assessed in a range of subjects, from economics, engineering and arts. A bachelor level degree takes approximately 4 years to achieve. These degrees are offered by second accreditation level Universities.</li>
-
-                <li><span class="bold-text">Bachelor Specialist:</span> This qualification is a level above a bachelor’s degree and requires an extra year to complete. During the extra year, a student is able to build upon their Bachelor level education with additional credits in a certain specialty area of their choice. These degrees are offered by third accreditation level institutions.</li>
-
-                <li><span class="bold-text">Masters:</span> A master’s degree demonstrates extensive knowledge and extra thinking in a specific subject area. They build upon all previous qualifications a student has achieved. Students are required to formulate and present a written paper to exhibit their research and knowledge in a certain field. Post graduate Master’s and Doctoral degrees are only offered by the fourth accreditation level institutions, as they present high levels of research and publication activities.</li>
-              </ul>
-
-              <p>PhDs- These high-level qualifications are offered at all national fourth accreditation universities and consist of 4 years education. Where two years are spent learning specialist knowledge in a specific field and the rest are spent conducting research work.</p>
-
-              <h4 class="mb-3 mt-5 bold-text">Cost of Studying in Ukraine?</h4>
-
-              <p>According to Expat Insider, Ukraine has been named the most affordable country in terms of living expenses and second most in terms of personal financial satisfaction. Students across the world choose Ukraine for their higher education for a wide range of courses. The most popular courses are MBBS Medicine, other healthcare degrees (such as Pharmacology and Dentistry) and Engineering.</p>
-
-              <p>Tuition fees for Ukrainian Universities is generally lower than other European countries, fees ranging from $2500 USD per year for most degrees (including Engineering) to $4900 USD for Medical education. Accommodation and medical insurance are also very affordable for students. One-time expenses such as visa documentation and charges can cost up to $500 USD. In addition, foreign citizens such as international students are given the same rights, freedom and obligations as citizens of Ukraine, therefore students are able to work part-time to support their extra expenses.</p>
-
-            </div> 
+<section class="ftco-section ftco-degree-bg" id="Studying">
+  <div class="container ukrainecost-section">
+    <h4 class="text-center mb-4 bold-text">Cost of Studying in Malaysia</h4>
   
-          </div>
+    <div class="ukrainecost-card text-center">
+      <!-- <p>Tuition Fees (Per Year)</p> -->
+  
+      <!-- Table displaying the cost of studying -->
+      <div class="table-responsive ukrainecost-table">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Study Program</th>
+              <th>Tuition Fees (Per Year)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>MBBS/Medicine </td>
+              <td>$4,000–$6,000</td>
+            </tr>
+            <tr>
+              <td>Engineering & IT </td>
+              <td>$2,500–$4,000</td>
+            </tr>
+            <tr>
+              <td>Business & Management </td>
+              <td>$2,000–$3,500</td>
+            </tr>
+            <tr>
+              <td>Arts & Humanities </td>
+              <td>$1,500–$3,000</td>
+            </tr>
+           </tbody>
+           <!-- <p>🏠 Living Expenses (Per Month)</p> -->
+        </table>
+      </div>
+
+      <div class="table-responsive ukrainecost-table">
+        <p class="text-center">🏠 Living Expenses (Per Month)</p>
+
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Study Program</th>
+              <th>Tuition Fees (Per Year)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Accommodation </td>
+              <td>$100–$300 (university hostel or private rental)</td>
+            </tr>
+            <tr>
+              <td>Food </td>
+              <td>$150–$250</td>
+            </tr>
+            <tr>
+              <td>Transport </td>
+              <td>$10–$30 (public transport)</td>
+            </tr>
+            <tr>
+              <td>Utilities & Internet</td>
+              <td>$50–$100</td>
+            </tr>
+            <tr>
+              <td>Miscellaneous </td>
+              <td>$50–$100</td>
+            </tr>
+           </tbody>
+        </table>
+        <p class="text-center">💰 Total Estimated Monthly Cost: $400–$800</p>
+
+        <p class="text-center">💡 Affordable Compared to Many European Countries</p>
+
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section class="ftco-section ftco-degree-bg" id="Eligibility">
+    <h4 class="text-center mb-4 bold-text">Eligibility</h4>
+    <div class="ukraineapplication-container" id="Application">
+      <!-- <h2 class="ukapplication-header">Application Requirements</h2> -->
+
+      <ul class="ukraineapplication-timeline">
+          <!-- Undergraduate -->
+          <li class="ukraineapplication-timeline-item">
+              <div class="icon"><i class="bi bi-mortarboard-fill"></i></div>
+              <div class="ukraineapplication-timeline-content">
+                  <h5 class="heading_color1">Undergraduate (Bachelor’s Degree)</h5>
+                  <ul>
+                      <li><strong>Academic Qualifications</strong> High school diploma or equivalent</li>
+                      <li><strong>Minimum Age</strong> 17 years or older</li>
+                      <li><strong>English Proficiency</strong> Not mandatory for English-taught programs, but basic knowledge is preferred</li>
+                      <li><strong>No Entrance Exams </strong>Except for some programs (e.g., Medicine)</li>
+                      <li><strong>Passport & Valid Visa </strong>Required for international students</li>
+                  </ul>
+              </div>
+          </li>
+
+          <!-- Postgraduate -->
+          <li class="ukraineapplication-timeline-item">
+              <div class="icon"><i class="bi bi-book-fill"></i></div>
+              <div class="ukraineapplication-timeline-content">
+                  <h5 class="heading_color1">Postgraduate (Master’s/PhD)</h5>
+                  <ul>
+                      <li><strong>Bachelor’s Degree </strong>In a relevant field for Master’s programs</li>
+                      <li><strong>Master’s Degree </strong>Required for PhD programs</li>
+                      <li><strong>English Proficiency</strong>IELTS/TOEFL may be required for some universities</li>
+                      <li><strong>Research Proposal </strong>Required for PhD applications</li>
+                      <li><Strong>Simple Admission Process </Strong>Many universities offer direct admission!</li>
+                  </ul>
+              </div>
+          </li>
+
+      </ul>
+  </div>
+  </section>
+  
+  <section class="ftco-section ftco-degree-bg" id="Intakes">
+    <div class="container" id="Intakes">
+      <h4 class="text-center mb-4 bold-text">Intakes Available</h4>
+  
+      <ul>
+        <li> <span class="bold-text heading_color">Fall Intake (September/October):</span> Main intake, most programs available</li>
+        <li><span class="bold-text heading_color">Spring Intake (February/March):</span> Limited courses, mainly Medicine & Engineering Rolling Admissions – Some universities accept applications year-round for preparatory courses
+         </li>
+        <li><span class="bold-text heading_color">April–July:</span> for Fall Intake</li>
+        <li><span class="bold-text heading_color">September–November:</span> for Spring Intake</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="ftco-section ftco-degree-bg" id="Jobs">
+    <div class="container mt-4" id="Studying">
+      <h4 class="text-center mb-4 bold-text">Most Demanded Jobs of Ukraine and Salaries</h4>
+      <div class="table-responsive">
+          <table class="table table-bordered table-striped custom-table">
+              <thead class="table-dark">
+                  <tr>
+                      <th class="bg-danger">Job Title</th>
+                      <th class="bg-danger">Average Monthly Salary (UAH)</th>
+                      <th class="bg-danger">Approximate Monthly Salary (INR)</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>IT Specialist</td>
+                      <td>196,643</td>
+                      <td>₹4,40,000</td>
+                  </tr>
+                  <tr>
+                      <td>Banker</td>
+                      <td>267,749</td>
+                      <td>₹6,00,000</td>
+                  </tr>
+                  <tr>
+                      <td>Marketing Specialist</td>
+                      <td>27,300</td>
+                      <td>₹61,000</td>
+                  </tr>
+                  <tr>
+                      <td>Chief Commercial Officer</td>
+                      <td>29,000</td>
+                      <td>₹64,000</td>
+                  </tr>
+                  <tr>
+                    <td>Stock Broker/Trader</td>
+                    <td>30,000</td>
+                    <td>₹67,000</td>
+                </tr>
+                <tr>
+                  <td>Builder</td>
+                  <td>20,000–50,000</td>
+                  <td>₹44,000–₹1,10,000</td>
+              </tr>
+              <tr>
+                <td>Software Engineer</td>
+                <td>58,000</td>
+                <td>₹1,30,000</td>
+            </tr>
+              </tbody>
+          </table>
+      </div>
+  </div>
+  </section>
+
+  <section class="ftco-section ftco-degree-bg" id="Visa">
+    <div class="ukraine-visa">
+      <h2>Visa</h2>
+  </div>
+  <div class="container my-5">
+    <p><span class="bold-text">Visa Type:</span> Type D (Long-Term Student Visa)</p>
+  <p class="bold-text">Eligibility & Requirements:</p>
+    <div class="visa-steps">
+        <div class="visa-step">
+            <div class="step-number">1</div>
+            <div class="visa-step-content">
+                <h4>Admission Letter </h4>
+                <p>From a recognized Ukrainian university</p>
+            </div>
         </div>
-      </section> <!-- .section -->
-
-      <section class="ftco-section ftco-degree-bg">
-        <div class="container">
-          <div class="row">
-            <h4 class="mb-3 bold-text">Most popular universities among international students in Ukraine:</h4>
-
-            <div class="col-md-6 ftco-animate">
-
-              <ul class="bold-text">
-                <li>KHARKIV NATIONAL MEDICAL UNIVERSITY</li>
-                <li>V.N. KARAZIN KHARKIV NATIONAL UNIVERSITY</li>
-                <li>BOGOMOLETS NATIONAL MEDICAL UNIVERSITY</li>
-                <li>DANILO GALITSKY LVIV STATE MEDICAL UNIVERSITY</li>
-                <li>ODESA NATIONAL MEDICAL UNIVERSITY</li>
-                <li>ZAPORIZHZHIA STATE MEDICAL UNIVERSITY</li>
-                <li>NATIONAL PIROGOV MEMORIAL MEDICAL UNIVERSITY, VINNYTSIAI.</li>
-                <li>HORBACHEVSKY TERNOPIL STATE MEDICAL UNIVERSITY</li>
-              </ul>
-
-
-  </div> 
-
-  <div class="col-md-6 ftco-animate">
-
-              <ul class="bold-text">
-                <li>HESS OF UKRAINE “BUKOVINIAN STATE MEDICAL UNIVERSITY”</li>
-                <li>TARAS SHEVCHENKO NATIONAL UNIVERSITY OF KYIV</li>
-                <li>LVIV POLITECNIC STATE UNIVERSITY</li>
-                <li>NATIONAL AVIATION UNIVERSITY, KIEV</li>
-                <li>ZHYTOMER MEDICAL INSTITUTE</li>
-                <li>NATIONAL AEROSPACE UNIVERSITY “KHARKOV AVIATION INSTITUTE”</li>
-                <li>STATE INSTITUTE “DNIPROPETROVSK MEDICAL ACADEMY OF THE MINISTRY OF HEALTH OF UKRAINE</li>
-              </ul>
-
-</div> 
-          </div>
+  
+        <div class="visa-step">
+            <div class="step-number">2</div>
+            <div class="visa-step-content">
+                <h4>Valid Passport </h4>
+                <p>At least 1-year validity</p>
+            </div>
         </div>
-      </section> <!-- .section -->
+  
+        <div class="visa-step">
+            <div class="step-number">3</div>
+            <div class="visa-step-content">
+                <h4>Visa Application Form </h4>
+                <p>Completed and signed</p>
+            </div>
+        </div>
+  
+        <div class="visa-step">
+            <div class="step-number">4</div>
+            <div class="visa-step-content">
+                <h4>Financial Proof </h4>
+                <p>Sufficient funds for tuition & living expenses</p>
+            </div>
+        </div>
+  
+        <div class="visa-step">
+            <div class="step-number">5</div>
+            <div class="visa-step-content">
+                <h4>Medical Insurance </h4>
+                <p>Coverage for the study period</p>
+            </div>
+        </div>
+        <div class="visa-step">
+          <div class="step-number">6</div>
+          <div class="visa-step-content">
+              <h4>HIV/AIDS Test Certificate </h4>
+              <p>Mandatory for some applicants</p>
+          </div>
+      </div>
+      <div class="visa-step">
+        <div class="step-number">7</div>
+        <div class="visa-step-content">
+            <h4>Birth Certificate </h4>
+            <p>Translated into Ukrainian</p>
+        </div>
+    </div>
+    <div class="visa-step">
+      <div class="step-number">8</div>
+      <div class="visa-step-content">
+          <h4>Accommodation Proof </h4>
+          <p>Confirmation of stay in Ukraine</p>
+      </div>
+  </div>
+    </div>
+  </div>
+  </section>
+
+  <section class="ftco-section ftco-degree-bg" id="WhyRSR">
+    <section class="whyrsr-section">
+      <div class="container">
+        <h4 class="text-center mb-4 bold-text">Why RSR</h4>
+          <h2 class="whyrsr-header">6 Reasons to Pick RSR Global Education</h2>
+          <p class="whyrsr-subtitle text-center">Study in Your Preferred Destination with the Best Guidance</p>
+  
+          <div class="whyrsr-container">
+              <!-- Expert Guidance -->
+              <div class="whyrsr-card">
+                  <div class="whyrsr-icon">
+                      <img src="images/studydestination/uk/expert-icons.png" alt="expert-icons"/>
+                  </div>
+                  <div class="whyrsr-title">Expert Guidance</div>
+                  <p class="whyrsr-text">Personalized Counseling for University & Course Selection</p>
+              </div>
+  
+              <!-- Seamless Application Process -->
+              <div class="whyrsr-card">
+                  <div class="whyrsr-icon">
+                    <img src="images/studydestination/uk/application-process.png" alt="">
+                                  </div>
+                  <div class="whyrsr-title">Seamless Application Process</div>
+                  <p class="whyrsr-text">Assistance with Documentation, SOPs & Admission</p>
+              </div>
+  
+              <!-- Visa Support -->
+              <div class="whyrsr-card">
+                  <div class="whyrsr-icon">
+                    <img src="images/studydestination/uk/visa.png" alt="">
+                  </div>
+                  <div class="whyrsr-title">Visa Support</div>
+                  <p class="whyrsr-text">End-to-end Visa Guidance for a smooth approval process</p>
+              </div>
+  
+              <!-- Affordable & Transparent Services -->
+              <div class="whyrsr-card">
+                  <div class="whyrsr-icon">
+                    <img src="images/studydestination/uk/customer-service.png" alt="">
+                  </div>
+                  <div class="whyrsr-title">Affordable & Transparent Services</div>
+                  <p class="whyrsr-text">No hidden charges, ensuring cost-effective solutions</p>
+              </div>
+  
+              <!-- Post-Arrival Support -->
+              <div class="whyrsr-card">
+                  <div class="whyrsr-icon">
+                    <img src="images/studydestination/uk/job-support.png" alt="">
+                  </div>
+                  <div class="whyrsr-title">Post-Arrival Support</div>
+                  <p class="whyrsr-text">Accommodation, Job Assistance & Local Guidance</p>
+              </div>
+  
+              <!-- Financial Guidance & Scholarships -->
+              <div class="whyrsr-card">
+                  <div class="whyrsr-icon">
+                    <img src="images/studydestination/uk/scholarship.png" alt="">
+                  </div>
+                  <div class="whyrsr-title">Financial Guidance & Scholarships</div>
+                  <p class="whyrsr-text">Guidance in academic pursuits & access to scholarships</p>
+              </div>
+          </div>
+      </div>
+  </section>
+  </section>
 
       <footer class="ftco-footer ftco-bg-dark ftco-section">
         <div class="container">
@@ -276,13 +1349,15 @@
               </div>
             </div>
             <div class="col-md">
-               <div class="ftco-footer-widget mb-4">
-                <h4 class="ftco-heading-2">Customer Support</h4>
+              <div class="ftco-footer-widget mb-4">
+                <h4 class="ftco-heading-2">Useful links</h4>
                 <ul class="list-unstyled">
-                  <li><a href="FAQ.html" class=" d-block">FAQ</a></li>
-                  <!-- <li><a href="#" class="py-2 d-block">Payment Option</a></li> -->
-                  <!-- <li><a href="#" class="py-2 d-block">Booking Tips</a></li> -->
-                  <!-- <li><a href="#" class="py-2 d-block">How it works</a></li> -->
+                  <li><a href="about.html" class="py-2 d-block">About RSR</a></li>
+                  <li><a href="whystudyaboard.html" class="py-2 d-block">Why Study Abroad</a></li>
+                  <li><a href="studyaboard.html" class="py-2 d-block">Step by Step Guide</a></li>
+                  <li><a href="javascript:void(0)" class=" d-block">Study Destinations</a></li> 
+                  <li><a href="services.html" class=" d-block">Services</a></li>
+                  <li><a href="FAQ.html" class=" d-block">FAQ</a></li> 
                   <li><a href="contact.html" class=" d-block">Contact Us</a></li>
                 </ul>
               </div>
@@ -310,6 +1385,19 @@
     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
             </div>
           </div>
+
+          <div class="row">
+            <div class="col-lg-4 col-md-6 footer-logo1">
+             <a href="https://rsrglobal.org/" target="_blank"><img src="images/logos/rsr-global-logo.webp" class="img-fluid" alt="RSR Global Logo"></a>
+            </div>
+            <div class="col-lg-4 col-md-6 footer-logo">
+             <a href="https://rsrglobalimmigration.com/" target="_blank"> <img src="images/logos/rsr-global-immigration-logo.png" class="img-fluid" alt="RSR Global Immigration Logo"></a>
+            </div>
+            <div class="col-lg-4 col-md-6 footer-logo">
+              <!-- <p>In Affilitation With</p> -->
+              <a href="https://rsrtrainingacademy.com/" target="_blank"> <img src="images/logos/rsr-training-academy-logo.png" class="img-fluid" alt="RSR Global Immigration Logo"></a>
+             </div>
+          </div>
         </div>
       </footer>
     
@@ -318,6 +1406,8 @@
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
+   <!-- Scroll Top -->
+   <button id="scrollToTopBtn" class="scroll-to-top" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -336,6 +1426,7 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0h4s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/custom.js"></script>
     
   </body>
 </html>
