@@ -120,11 +120,14 @@
 # selt-section-2
 --------------------------------------------------------------*/
 
+.section-background{
+  background-color: rgb(233, 92, 4);
+}
     .self-section-2 {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background-color: rgb(233, 92, 4);
+      /* background-color: rgb(233, 92, 4); */
       padding: 40px 0;
       color: white;
     }
@@ -139,7 +142,7 @@
     }
 
     .self-section-2 h2, .self-section-2 p {
-      color: white;
+      color: #000;
     }
 
     @media (max-width: 768px) {
@@ -160,8 +163,8 @@
     }
 
     .self-section-3 .box {
-        background-color: #b6a6af;
-      color: white;
+      background-color: #D2B48C;
+      color: #000;
       padding: 30px;
       text-align: center;
       border-radius: 10px;
@@ -170,7 +173,7 @@
     }
 
     .self-section-3 .box:hover {
-      background-color: #af618d;
+      background-color: #C39C6E;
     }
 
     .self-section-3 h3 {
@@ -194,6 +197,109 @@
         width: 80%;
       }
     }
+/*--------------------------------------------------------------
+# selt-section-4
+--------------------------------------------------------------*/
+.selt-section-4 {
+            max-width: 800px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+        .selt-section-4 h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #333;
+            text-align: left;
+        }
+        .selt-process-list {
+            list-style: none;
+            padding: 0;
+        }
+        .selt-process-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .selt-number {
+            background-color: #f0e0d0;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #333;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        .selt-text {
+            font-size: 1rem;
+            color: #333;
+        }
+        @media (max-width: 576px) {
+            .selt-section-4 h2 {
+                font-size: 1.5rem;
+            }
+            .selt-number {
+                width: 35px;
+                height: 35px;
+                font-size: 1rem;
+            }
+            .selt-text {
+                font-size: 0.9rem;
+            }
+        }
+/*--------------------------------------------------------------
+# selt-section-5
+--------------------------------------------------------------*/
+        .selt-section-5 {
+            background-color: #f8f4ef;
+            padding: 60px 0;
+        }
+
+        /* Left Image Section */
+        .selt-section-5-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Right Content Section */
+        .selt-section-5-content {
+            padding: 40px;
+        }
+
+        .selt-section-5-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #2d2d2d;
+        }
+
+        .selt-section-5-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .selt-section-5-icon {
+            font-size: 24px;
+            color: #d9843a; /* Adjusted for orange tone */
+        }
+
+        .selt-section-5-text h4 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .selt-section-5-text p {
+            font-size: 16px;
+            color: #555;
+            margin: 0;
+        }
 </style>
 
   </head>
@@ -271,7 +377,7 @@
       <div class="collapse navbar-collapse" id="ftco-nav" style="flex: 0 0 80%;">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item active dropdown">
+          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Study Abroad
             </a>
@@ -308,7 +414,7 @@
             </ul>
           </li>
           <!-- <li class="nav-item"><a href="" class="nav-link">Test Prep</a></li> -->
-          <li class="nav-item dropdown">
+          <li class="nav-item active dropdown">
             <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Test Prep
             </a>
@@ -338,13 +444,14 @@
 
     
     
-    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/studyaboard/bg-3.jpg');" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/selt/bg.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
+
         <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
           <div class="col-md-9 ftco-animate pb-5">
-          	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Study Aboard<i class="ion-ios-arrow-forward"></i></span></p>
-            <h1 class="mb-3 bread">Parents Guide</h1>
+          	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span></p>
+            <h1 class="mb-3 bread">PSI Selt</h1>
             <a href="usa.html?showModal=true" data-toggle="modal" data-target="#myModal" class="studydestinationbtn bold-text"> <img src="images/icons/Phone_icon_ 1.png" alt=""> FREE Counselling Session</a>          
           </div>
           </div>
@@ -369,7 +476,7 @@
       </section> 
       <!-- .section -->
 
-      <section class="ftco-section ftco-degree-bg">
+      <section class="ftco-section ftco-degree-bg section-background">
         <h1 class="text-center">Skills for English: Your Gateway to Work, Study, and 
             Residency</h1>
       <div class="self-section-2 container">
@@ -426,6 +533,81 @@
         </div>
       </div>
     </section>
+
+    <section class="selt-section-5">
+      <div class="container">
+          <div class="row align-items-center">
+              <!-- Left Side Image -->
+              <div class="col-lg-6">
+                  <img src="images/selt/img-2.jpg" alt="Graduation Image" class="selt-section-5-image">
+              </div>
+              
+              <!-- Right Side Content -->
+              <div class="col-lg-6 selt-section-5-content">
+                  <h2 class="selt-section-5-title">Who Accepts Skills for English?</h2>
+    
+                  <!-- Item 1 -->
+                  <div class="selt-section-5-item">
+                      <div class="selt-section-5-icon">🌍</div>
+                      <div class="selt-section-5-text">
+                          <h4>Government Approvals</h4>
+                          <p>Approved by the UK Home Office for UK visa applications (work, study, spousal visas) and by the Ireland Department of Justice for study visa applications.</p>
+                      </div>
+                  </div>
+    
+                  <!-- Item 2 -->
+                  <div class="selt-section-5-item">
+                      <div class="selt-section-5-icon">🎓</div>
+                      <div class="selt-section-5-text">
+                          <h4>Higher Education Institutions</h4>
+                          <p>Trusted by over 140 universities in the UK and hundreds of institutions worldwide for admissions to English-taught programs.</p>
+                      </div>
+                  </div>
+    
+                  <!-- Item 3 -->
+                  <div class="selt-section-5-item">
+                      <div class="selt-section-5-icon">🎁</div>
+                      <div class="selt-section-5-text">
+                          <h4>Pathway Providers</h4>
+                          <p>Accepted by various university pathway programs to support academic progression.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="ftco-section ftco-degree-bg">
+    <section class="selt-section-4">
+      <h2>Seamless Testing Process</h2>
+      <ul class="selt-process-list">
+          <li class="selt-process-item">
+              <div class="selt-number">1</div>
+              <div class="selt-text">Easy Booking</div>
+          </li>
+          <li class="selt-process-item">
+              <div class="selt-number">2</div>
+              <div class="selt-text">Schedule your test at a PSI centre in 130+ countries.</div>
+          </li>
+          <li class="selt-process-item">
+              <div class="selt-number">3</div>
+              <div class="selt-text">Computer-Based Test</div>
+          </li>
+          <li class="selt-process-item">
+              <div class="selt-number">4</div>
+              <div class="selt-text">No human examiner present; all assessments are digital.</div>
+          </li>
+          <li class="selt-process-item">
+              <div class="selt-number">5</div>
+              <div class="selt-text">Exact Level Matching</div>
+          </li>
+          <li class="selt-process-item">
+              <div class="selt-number">6</div>
+              <div class="selt-text">Test levels align directly with visa and academic requirements.</div>
+          </li>
+      </ul>
+  </section>
+</section>
 
       <footer class="ftco-footer ftco-bg-dark ftco-section">
         <div class="container">
@@ -486,7 +668,7 @@
             <div class="col-md-12 text-center">
   
               <p class="text-center"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |<h4 class="ftco-heading-2"><span class="logo">RSR<span> Global Education</span></span></h4> by <a href="https://www.Vimkes.com" target="_blank">VimkesTechnologies</a>
+    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <h4 class="ftco-heading-2"><span class="logo">RSR<span> Global Education</span></span></h4> by <a href="https://www.Vimkes.com" target="_blank">VimkesTechnologies</a>
     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
             </div>
           </div>
