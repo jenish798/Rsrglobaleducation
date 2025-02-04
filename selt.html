@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>RSRGlobalEducation - Study Aboard</title>
+    <title>RSRGlobalEducation - Parent Guide</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -27,7 +27,6 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/newstyle1.css">
 
     <!-- Font Awesome for custom icons (tick mark) -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
@@ -37,150 +36,7 @@
     <!-- Google icons -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
-
   <style>
-      /*--------------------------------------------------------------
-# timeline
---------------------------------------------------------------*/
-
-.timeline {
-  position: relative;
-  padding: 50px 0;
-  width: 80%;
-  margin: auto;
-}
-
-.content h4{
-color: #393BA7;
-font-weight: bold;
-text-align:left;
-}
-
-.content p{
-  text-align: justify;
-  color: gray;
-}
-
-.timeline::before {
-  content: "";
-  position: absolute;
-  width: 4px;
-  background: black;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: background 0.3s;
-}
-.timeline-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  margin-bottom: 40px;
-  position: relative;
-}
-.timeline-item .content, .timeline-item .image {
-  width: 45%;
-}
-.timeline-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-.timeline-item:nth-child(odd) .content {
-  text-align: justify;
-}
-.timeline-item:nth-child(even) .content {
-  text-align: justify;
-}
-.timeline-item::after {
-  content: attr(data-number);
-  position: absolute;
-  width: 35px;
-  height: 35px;
-  background: #393BA7;
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  border-radius: 50%;
-  top: -7%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* border: 4px solid #fff; */
-  z-index: 1;
-  transition: background 0.3s;
-}
-/* .timeline-item.active::after {
-  background: #007bff;
-}
-.timeline.active::before {
-  background: #007bff;
-} */
-.timeline::before {
-  background: linear-gradient(to bottom, #393BA7 0%, #393BA7 var(--active-height, 0%), black var(--active-height, 0%), black 100%);
-}
-
-/* Responsive for Medium Screens (md - max-width: 768px) */
-@media (max-width: 768px) {
-  .timeline {
-    width: 90%;
-  }
-
-  .timeline::before {
-    left: 0; /* Move the vertical line to the left */
-    transform: translateX(0); /* Remove the center alignment */
-  }
-
-  .timeline-item::after {
-    left: -10px; /* Move the step number to the left side with the vertical line */
-    transform: translate(0, -50%); /* Adjust for left side placement */
-  }
-
-  .timeline-item {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .timeline-item .content,
-  .timeline-item .image {
-    width: 80%;
-    margin-bottom: 20px;
-  }
-}
-
-/* Responsive for Small Screens (sm - max-width: 576px) */
-@media (max-width: 576px) {
-  .timeline {
-    width: 95%;
-  }
-
-  .timeline::before {
-    left: 0; /* Move the vertical line to the left */
-    transform: translateX(0); /* Remove the center alignment */
-  }
-
-  .timeline-item::after {
-    left: -10px; /* Keep the step number aligned to the left */
-    transform: translate(0, -50%); /* Adjust for left side placement */
-  }
-
-  .timeline-item {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .timeline-item .content,
-  .timeline-item .image {
-    width: 90%;
-    margin-bottom: 15px;
-  }
-
-  .timeline-item .content {
-    text-align: left;
-  }
-}
     .heading_color {
     color: #393BA7;
 }
@@ -209,7 +65,7 @@ text-align:left;
           background-color: #5557C4;
       }
     
-   /*--------------------------------------------------------------
+/*--------------------------------------------------------------
 # counselling button
 --------------------------------------------------------------*/
 
@@ -232,7 +88,113 @@ text-align:left;
       color: #fff;
     }
 
-  </style>
+/*--------------------------------------------------------------
+# selt-section-1
+--------------------------------------------------------------*/
+
+    .selt-section-1 {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 20px;
+    }
+    .selt-section-1 .content {
+      flex: 1;
+      padding: 20px;
+    }
+    .selt-section-1 .image {
+      flex: 1;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .selt-section-1 {
+        flex-direction: column;
+        text-align: center;
+      }
+      .selt-section-1 .image {
+        margin-top: 20px;
+      }
+    }
+/*--------------------------------------------------------------
+# selt-section-2
+--------------------------------------------------------------*/
+
+    .self-section-2 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgb(233, 92, 4);
+      padding: 40px 0;
+      color: white;
+    }
+
+    .self-section-2 .left-content, .self-section-2 .right-content {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .self-section-2 .left-content {
+      border-right: 2px solid white;
+    }
+
+    .self-section-2 h2, .self-section-2 p {
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .self-section-2 {
+        flex-direction: column;
+        text-align: center;
+      }
+      .self-section-2 .left-content {
+        border-right: none;
+      }
+    }
+/*--------------------------------------------------------------
+# selt-section-3
+--------------------------------------------------------------*/
+    .self-section-3 {
+      padding: 40px 0;
+      background-color: #f8f9fa;
+    }
+
+    .self-section-3 .box {
+        background-color: #b6a6af;
+      color: white;
+      padding: 30px;
+      text-align: center;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      transition: all 0.3s ease;
+    }
+
+    .self-section-3 .box:hover {
+      background-color: #af618d;
+    }
+
+    .self-section-3 h3 {
+      margin-top: 15px;
+    }
+
+    /* Responsive: 2x2 grid for larger screens */
+    .self-section-3 .row {
+      display: flex;
+      gap: 30px;
+    }
+
+    /* On smaller screens, make the boxes stack */
+    @media (max-width: 768px) {
+      .self-section-3 .row {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .self-section-3 .box {
+        width: 80%;
+      }
+    }
+</style>
 
   </head>
   <body>
@@ -315,8 +277,8 @@ text-align:left;
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
               <li><a class="dropdown-item" href="whystudyaboard.html">Why Study Abroad</a></li>
-              <li><a class="dropdown-item active" href="studyaboard.html">Step by Step Guide</a></li>
-              <li><a class="dropdown-item" href="parent_guide.html">Parents Guide</a></li>
+              <li><a class="dropdown-item" href="studyaboard.html">Step by Step Guide</a></li>
+              <li><a class="dropdown-item active" href="parent_guide.html">Parents Guide</a></li>
               <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
             </ul>
           </li>
@@ -376,164 +338,94 @@ text-align:left;
 
     
     
-    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/studyaboard/bg-1.jpg');" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/studyaboard/bg-3.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
           <div class="col-md-9 ftco-animate pb-5">
           	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Study Aboard<i class="ion-ios-arrow-forward"></i></span></p>
-            <h1 class="mb-3 bread">Step by Step Guide</h1>
-            <a href="usa.html?showModal=true" data-toggle="modal" data-target="#myModal" class="studydestinationbtn bold-text"> <img src="images/icons/Phone_icon_ 1.png" alt=""> FREE Counselling Session</a>
+            <h1 class="mb-3 bread">Parents Guide</h1>
+            <a href="usa.html?showModal=true" data-toggle="modal" data-target="#myModal" class="studydestinationbtn bold-text"> <img src="images/icons/Phone_icon_ 1.png" alt=""> FREE Counselling Session</a>          
+          </div>
           </div>
         </div>
       </div>
     </section>
 
     <section class="ftco-section ftco-degree-bg">
-
-        <div class="container">
-          <div class="timeline" id="timeline">
-              <div class="timeline-item" data-number="1">
-                  <div class="content">
-                      <h4>Profile Assessment and Goal Setting</h4>
-                      <p>Profile assessment for abroad education involves evaluating a student's academic background, test scores, extracurricular activities, and career goals to recommend suitable universities and programs. It helps determine the best-fit options based on the student’s qualifications and aspirations. This personalized evaluation ensures a strategic approach to university selection and application preparation. It’s a key step in maximizing chances for admission and scholarships.</p>
-                      <p>We’ll start by discussing your academic interests and career goals to help us choose the best destination, program, and university that fits your aspirations. This will also help us understand your personal preferences, such as location, budget, and course structure.</p>
-                      
-                  </div>
-                  <div class="image">
-                      <img src="images/studyaboard/step by step/research well.webp" alt="Event 1">
-                  </div>
-              </div>
-              <div class="timeline-item" data-number="2">
-                  <div class="image">
-                      <img src="images/studyaboard/step by step/speak with counsellors.webp" alt="Event 2">
-                  </div>
-                  <div class="content">
-                      <h4>Research and Shortlist Universities</h4>
-                      <p>Research Countries: Different countries offer various advantages. For example, the U.S. is known for technology and business, the UK for humanities and law, and Germany for engineering and research.</p>
-                      <p>Once we know your goals, we’ll research top universities that offer programs in your field of interest. we’ll help you shortlist universities based on their rankings, facilities, course content, and location, ensuring they align with your needs.</p>
-                  </div>
-              </div>
-              <div class="timeline-item" data-number="3">
-                  <div class="content">
-                      <h4>Check Admission Requirements</h4>
-                      <p>Eligibility Criteria: Ensure you meet academic qualifications, language proficiency, and standardized test requirements (e.g., TOEFL, IELTS, GRE).</p>
-                      <p>Each university has specific entry requirements, including academic qualifications and language proficiency tests like TOEFL or IELTS. We’ll carefully review these requirements and ensure you meet them, helping you avoid any surprises during the application process.</p>
-                     
-                  </div>
-                  <div class="image">
-                      <img src="images/studyaboard/step by step/job-application.webp" alt="Event 3">
-                  </div>
-              </div>
-              <div class="timeline-item" data-number="4">
-                  <div class="image">
-                      <img src="images/studyaboard/step by step/offer acceptance.webp" alt="Event 4">
-                  </div>
-                  <div class="content">
-                      <h4>Test Preparation</h4>
-                      <p>If standardized tests like GRE, GMAT, TOEFL, or IELTS are needed, we’ll guide you through the preparation. We’ll help with you with tips, and schedule management to ensure you perform well and meet the deadlines for application submission.</p>
-                      
-                  </div>
-              </div>
-              <div class="timeline-item" data-number="5">
-                  <div class="content">
-                      <h4>Documentation and Application</h4>
-                      <p>Prepare Documents: Gather necessary documents including:</p>
-                      <p>Here’s a basic student visa checklist:</p>
-                      <ul>
-                        <li>Academic Transcripts</li>
-                        <li>Letters of Recommendation</li>
-                        <li>Statement of Purpose (SOP)</li>
-                        <li>Updated Resume</li>
-                       
-                      </ul>
-                      <p>We’ll ensure everything is prepared, organized, and meets the requirements of your chosen universities.</p>
-                  </div>
-                  <div class="image">
-                      <img src="images/studyaboard/step by step/student visa.webp" alt="Event 5">
-                  </div>
-              </div>
-              <div class="timeline-item" data-number="6">
-                <div class="image">
-                  <img src="images/studyaboard/step by step/reading-night.webp" alt="Event 6">
-              </div>
-                  <div class="content">
-                      <h4>Apply to Universities</h4>
-                      <p>After preparing all documents, we’ll assist you in submitting applications to your shortlisted universities. We’ll carefully follow each university's guidelines, help with application forms, and ensure that all deadlines are met for a smooth submission process.</p>
-                      
-                  </div>
-                  
-              </div>
-              <div class="timeline-item" data-number="7">
-                  <div class="content">
-                      <h4>Acceptance and Offer Confirmation</h4>
-                      <p>Review Acceptance Letters: Once you receive admission offers, compare programs, financial aid packages, and university rankings.</p>
-                      <p>Once you receive offers from universities, we’ll review them and help you choose the best one based on factors like course quality, location, and overall fit. After making your decision, we’ll guide you through the acceptance process and any deposits required.</p>
-                  </div>
-                  <div class="image">
-                    <img src="images/studyaboard/step by step/bookyourflights.webp" alt="Event 7">
-                </div>
-              </div>
-              <div class="timeline-item" data-number="8">
-                <div class="image">
-                  <img src="images/studyaboard/step by step/getsetgo.webp" alt="Event 8">
-              </div>
-                  <div class="content">
-                      <h4>Financial Planning</h4>
-                      <p>We’ll work together to estimate your tuition fees, living costs, and other expenses. Additionally, we’ll help you explore scholarship opportunities, financial aid, and student loan options to make studying abroad affordable for you.</p>
-                      
-                  </div>
-              </div>
-              <div class="timeline-item" data-number="9">
-                <div class="content">
-                    <h4>Apply for a Student Visa</h4>
-                    <p>Check Visa Requirements: Each country has specific visa requirements for international students. Visit the embassy website for details.</p>
-                    <p>We’ll assist you with the visa application process, ensuring all required documents like your admission letter, financial proof, and health insurance are in place. we’ll help you stay on top of deadlines and provide support throughout the visa interview process.</p>
-                    
-                </div>
-                <div class="image">
-                    <img src="images/studyaboard/step by step/apply-passport.webp" alt="Event 9">
-                </div>
+        <div class="selt-section-1 container">
+            <div class="content">
+              <h2>SELT: Simple, Quick, and 
+                Affordable</h2>
+              <p>SELT is designed to make organizing your English language test intuitive and 
+                straightforward. Whether you need it for work, study, or residency, SELT 
+                ensures a seamless experience with fast results and wide acceptance.
+                </p>
             </div>
-            <div class="timeline-item" data-number="10">
-              <div class="image">
-                <img src="images/studyaboard/step by step/campus.webp" alt="Event 10">
-            </div>
-                <div class="content">
-                    <h4>Accommodation and Travel</h4>
-                    <p>We’ll help you find suitable accommodation, whether on-campus or off-campus, and guide you in booking flights. We’ll also ensure that you arrive with enough time to settle in before your course starts and get familiar with the new environment</p>
-                    
-                </div>
-                
-            </div>
-            <div class="timeline-item" data-number="11">
-                <div class="content">
-                    <h4>Pre-Departure Preparation</h4>
-                    <p>Before you leave, we’ll ensure you’re prepared with a checklist of essential items to pack, including documents, currency exchange, and travel essentials. You’ll be ready for your journey, knowing everything is in place for a smooth transition.</p>
-                   
-                </div>
-                <div class="image">
-                  <img src="images/studyaboard/step by step/pre-departure.webp" alt="Event 11">
-              </div>
-            </div>
-            <div class="timeline-item" data-number="12">
-              <div class="image">
-                <img src="images/studyaboard/step by step/arrival.webp" alt="Event 12">
-            </div>
-                <div class="content">
-                    <h4>Arrival and Orientation</h4>
-                    <p>Once you arrive, we’ll help you navigate your new environment. Many universities have orientation programs for international students, and we’ll make sure you’re aware of these so you can get familiar with campus life and meet new people.</p>
-                    
-                </div>
+            <div class="image">
+              <img src="images/selt/img-1.jpg" class="img-fluid" alt="Sample Image">
             </div>
           </div>
-      </div>
-
       </section> 
-      
       <!-- .section -->
 
+      <section class="ftco-section ftco-degree-bg">
+        <h1 class="text-center">Skills for English: Your Gateway to Work, Study, and 
+            Residency</h1>
+      <div class="self-section-2 container">
+        <div class="left-content">
+          <h2>Globally Recognized</h2>
+          <p>Skills for English is a globally recognized suite of English 
+            proficiency tests, designed for individuals seeking opportunities 
+            for work, study, travel, and residency.
+            </p>
+        </div>
+        <div class="right-content">
+          <h2>Developed by Experts</h2>
+          <p>Developed in partnership between the Scottish Qualifications 
+            Authority (SQA) and PSI, a leading global testing provider, Skills 
+            for English offers a seamless, efficient, and affordable way to 
+            prove your English proficiency.</p>
+        </div>
+      </div>
+    </section>
 
+    <section class="ftco-section ftco-degree-bg">
+    <div class="self-section-3 container">
+        <h1 class="text-center bold-text">Why Choose Skills for English?</h1>
+        <div class="row">
+          <div class="col-md-6 col-lg-5">
+            <div class="box">
+              <h3>One-Session Test</h3>
+              <p>The only computer-based test that assesses all skills in a 
+                single session. No additional speaking test required.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5">
+            <div class="box">
+              <h3>Auto & Expert Marking</h3>
+              <p>Reading & listening are auto-marked; speaking & writing are 
+                assessed by experts without personal details being visible.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5">
+            <div class="box">
+              <h3>Fast Results
+            </h3>
+              <p>Get your test results in as little as 3-5 days.
+            </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5">
+            <div class="box">
+              <h3>Widely Accepted</h3>
+              <p>Recognized by governments, universities, and institutions 
+                worldwide.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
       <footer class="ftco-footer ftco-bg-dark ftco-section">
         <div class="container">
@@ -623,6 +515,8 @@ text-align:left;
   <!-- Scroll Top -->
   <button id="scrollToTopBtn" class="scroll-to-top" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
 
+
+
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
@@ -641,34 +535,6 @@ text-align:left;
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
   <script src="js/custom.js"></script>
-
-  <script>
-document.addEventListener("scroll", function () {
-    let items = document.querySelectorAll(".timeline-item");
-    let timeline = document.querySelector(".timeline");
-    let windowHeight = window.innerHeight;
-    let totalHeight = document.body.scrollHeight - windowHeight;
-    let scrolled = window.scrollY;
-
-    // Calculate active height based on scroll position
-    let activeHeight = (scrolled / totalHeight) * 100;
-
-    items.forEach((item) => {
-        let rect = item.getBoundingClientRect();
-
-        // Add 'active' class when the item is visible
-        if (rect.top >= 0 && rect.bottom <= windowHeight) {
-            item.classList.add("active");
-        } else {
-            item.classList.remove("active");
-        }
-    });
-
-    // Update the height of the timeline's vertical line to match scrolling level
-    timeline.style.setProperty("--active-height", activeHeight + "%");
-});
-
-</script>
     
   </body>
 </html>
