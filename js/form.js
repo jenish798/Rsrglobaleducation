@@ -1,121 +1,102 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Create the modal container
-    let modalContainer = document.createElement("div");
-    modalContainer.id = "myModal";
-    modalContainer.className = "modal fade";
-    modalContainer.setAttribute("tabindex", "-1");
-    modalContainer.setAttribute("role", "dialog");
-    modalContainer.setAttribute("aria-labelledby", "exampleModalLabel");
-    modalContainer.setAttribute("aria-hidden", "true");
-    modalContainer.setAttribute("data-backdrop", "static");
-    modalContainer.setAttribute("data-keyboard", "false");
+    const openButtons = document.querySelectorAll(".open-form");
 
-    // Add modal HTML content
-    modalContainer.innerHTML = `
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <!-- Modal Header with Close Button -->
-                <div class="modal-header heading-section d-flex align-items-center position-relative">
-                    <h3 class="modal-title heading_color text-center mx-auto bold-text" id="exampleModalLabel">
-                        Get Connected with an Expert
-                    </h3>
-                    <button type="button" class="close" style="position: absolute; right: 1rem; top: 50%; transform: translateY(-20%);" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+    function createAndShowForm() {
+        // Remove existing form if any
+        let existingPopup = document.getElementById("popup");
+        if (existingPopup) {
+            existingPopup.remove();
+        }
+
+        // Create the form HTML dynamically
+        const popupOverlay = document.createElement("div");
+        popupOverlay.id = "popup";
+        popupOverlay.className = "popup-overlay";
+        popupOverlay.style.position = "fixed";
+        popupOverlay.style.top = "0";
+        popupOverlay.style.left = "0";
+        popupOverlay.style.width = "100%";
+        popupOverlay.style.height = "100%";
+        popupOverlay.style.background = "rgba(0, 0, 0, 0.5)";
+        popupOverlay.style.display = "flex";
+        popupOverlay.style.justifyContent = "center";
+        popupOverlay.style.alignItems = "center";
+
+        popupOverlay.innerHTML = `
+        <div class="popup-form" style="background:#ffffff; padding:20px; border-radius:10px; width:90%; max-width:450px; color:#2e3192; position:relative;">
+            <span class="close-btn" style="position:absolute; top:10px; right:15px; font-size:20px; cursor:pointer; color:black;">&times;</span>
+            <h4 class="text-center bold-text" style="color:#2e3192">Get Connected with an Expert</h4>
+            <form style='background:#2e3192; padding:20px;'>
+                <div class="row mb-4">
+                    <div class="col-6">
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="col-6">
+                        <input type="email" class="form-control" placeholder="Email-Id">
+                    </div>
                 </div>
-
-                <!-- Modal Body (Form) -->
-                <div class="modal-body">
-                    <form id="enquiryForm" method="POST" role="form" class="enquiry-form ftco-animate">
-                        <div class="row mb-1">
-                            <div class="col-12 col-lg-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="name1" placeholder="Name" required>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="email1" placeholder="Email-Id" required>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row mb-1">
-                            <div class="col-12 col-lg-6">
-                                <div class="form-group">
-                                    <input type="tel" class="form-control" id="contact_number1" placeholder="Contact Number" required>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="qualification1" placeholder="Qualification" required>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row mb-1">
-                            <div class="col-12 col-lg-6">
-                                <div class="form-group">
-                                    <select class="form-control" id="program1" required>
-                                        <option value="" disabled selected>Select Program</option>
-                                        <option value="Bachelor's Degree">Bachelor's Degree</option>
-                                        <option value="Master's Degree">Master's Degree</option>
-                                        <option value="PhD">PhD</option>
-                                        <option value="Other">Other</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <div class="form-group">
-                                    <select class="form-control" id="destination1" required>
-                                        <option value="" disabled selected>Select Study Destination</option>
-                                        <option value="USA">USA</option>
-                                        <option value="UK">UK</option>
-                                        <option value="Poland">Poland</option>
-                                        <option value="Ireland">Ireland</option>
-                                        <option value="Singapore">Singapore</option>
-                                        <option value="Australia">Australia</option>
-                                        <option value="Malaysia">Malaysia</option>
-                                        <option value="Ukraine">Ukraine</option>
-                                        <option value="New Zealand">New Zealand</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group mb-1">
-                            <textarea class="form-control" id="message1" rows="4" placeholder="Feel free to ask or share your thoughts" required></textarea>
-                        </div>
-
-                        <div class="my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-                        </div>
-
-                        <div class="form-group text-center">
-                            <button type="submit" class="btn btn-primary btn-lg py-3 px-5 custom-btn" style="background-color: #ffffff; color: #000;">
-                                Avail FREE Counselling
-                            </button>
-                        </div>
-                    </form>
+                <div class="row mb-4">
+                    <div class="col-6">
+                        <input type="text" class="form-control" placeholder="Contact Number">
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control" placeholder="Qualification">
+                    </div>
                 </div>
-            </div>
+                <div class="row mb-4">
+                    <div class="col-6">
+                        <select class="form-control">
+                           <option value="" disabled selected>Select Program</option>
+                      <option value="Bachelor's Degree">Bachelor's Degree</option>
+                      <option value="Master's Degree">Master's Degree</option>
+                      <option value="PhD">PhD</option>
+                      <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="col-6">
+                        <select class="form-control">
+                             <option value="" disabled selected>Select Study Destination</option>
+                      <option value="USA">USA</option>
+                      <option value="UK">UK</option>
+                      <option value="Poland">Poland</option>
+                      <option value="Ireland">Ireland</option>
+                      <option value="Singapore">Singapore</option>
+                      <option value="Australia">Australia</option>
+                      <option value="Malaysia">Malaysia</option>
+                      <option value="Ukraine">Ukraine</option>
+                      <option value="New Zealand">New Zealand</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <textarea class="form-control" rows="4" placeholder="Feel free to ask or share your thoughts"></textarea>
+                </div>
+                <div class="form-group text-center">
+                <button type="submit" class="btn btn-light py-3 px-5" style="border-radius: 20px;">Avail FREE Counselling</button>
+                </div>
+            </form>
         </div>
     `;
 
-    // Append modal to body
-    document.body.appendChild(modalContainer);
+        document.body.appendChild(popupOverlay);
 
-    // Event Listener for Form Submission
-    document.getElementById("enquiryForm").addEventListener("submit", function (event) {
-        event.preventDefault();
-        alert("Form submitted successfully!");
-        $("#myModal").modal("hide");
+        // Close popup on clicking 'X' button
+        document.querySelector(".close-btn").addEventListener("click", function () {
+            popupOverlay.style.display = "none";
+        });
+
+        // Close popup when clicking outside the form
+        popupOverlay.addEventListener("click", function (event) {
+            if (event.target === popupOverlay) {
+                popupOverlay.style.display = "none";
+            }
+        });
+    }
+
+    // Attach event listeners to all "open-form" buttons
+    openButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            createAndShowForm();
+        });
     });
 });
-
-// Function to Open the Modal
-function openModal() {
-    $("#myModal").modal("show");
-}
