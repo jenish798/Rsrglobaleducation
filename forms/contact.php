@@ -61,9 +61,27 @@ try {
 
     // Send confirmation email
     $confirmation_message = "
-    <p>Dear $name,</p>
-    <p>Thank you for your enquiry. We will review your information and get back to you shortly.</p>
-    <p>Best regards,<br>RSR Global Education</p>
+    <h2>Dear $name,</h2>
+
+    <p>Congratulations on registering with <strong>RSR Global Education!</strong> You have taken the first step toward an exciting global education journey, and we are here to support you every step of the way.</p>
+
+    <h2>Our Commitment to Your Success:</h2>
+
+    <p><strong>Personalized Counseling:</strong> Our experienced counselor will connect with you soon to discuss your study abroad goals.</p>
+	<p><strong>University & Course Selection:</strong> Expert guidance to help you choose the best academic and career path.</p>
+	<p><strong>Application Assistance:</strong> Step-by-step support to ensure a smooth and successful application process.</p>
+	<p><strong>Scholarship Guidance:</strong> Help in identifying and applying for scholarship and financial aid opportunities.</p>
+	<p><strong>Visa & Immigration Support:</strong> Comprehensive assistance for a hassle-free visa process.</p>
+    <p><strong>Pre-Departure Support:</strong> Helping you transition seamlessly to your new destination.</p>
+
+    <h2>Next Steps:</h2>
+
+    <p>Our team is excited to assist you! <strong>Our Experienced Counselor</strong> will reach out shortly to guide you through the process.</p>
+    <p>For any questions, feel free to contact us at <strong>education@rsrglobal.org</strong> or call <strong>+44 2086 293 915.</strong></p>
+
+    <h2>Welcome to RSR Global Education &ndash; Opening Doors to Global Education!</h2>
+
+    <p><strong>Best regards</strong>,<br>RSR Global Education Team <br><strong>www.rsrglobaleducation.com</strong></p>
     ";
 
     $mail->clearAddresses(); // Clear previous recipients
