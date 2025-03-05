@@ -14,7 +14,6 @@ $name = $_POST['name'];
 $contact_number = $_POST['contact_number'];
 $qualification = $_POST['qualification'];
 $city = $_POST['city'];
-$country = $_POST['country'];
 $program = $_POST['program'];
 $destination = $_POST['destination'];
 $message = $_POST['message'];
@@ -27,7 +26,6 @@ $message = "
 <b>Email Id:</b> $from<br>
 <b>qualification:</b> $qualification<br>
 <b>city:</b> $city<br>
-<b>country:</b> $country<br>
 <b>program:</b> $program<br>
 <b>destination:</b> $destination<br>
 <b>Message:</b> $message
