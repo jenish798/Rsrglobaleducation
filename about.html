@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -57,13 +58,12 @@
             
           </div> -->
 
-          <div class="d-flex justify-content-center align-items-center mb-2 mb-md-0">
-            <a href="javascript:void(0)" class="text-white d-flex align-items-center px-3" style="gap: 10px;">
-                <!-- <i class="fa-solid fa-phone" style="font-size: 1.4rem; display: flex; align-items: center;"></i> -->
-                 <img src="images/icons/Phone_icon_ 1.png" alt="">
-                <p class="mb-0 bold-text open-form" style="margin-left: 5px; display: flex; align-items: center;">Request a call back</p>
-            </a>
-        </div>        
+          <div class="d-flex open-form justify-content-center align-items-center mb-2 mb-md-0">
+            <button id="openFormButton" class="text-white d-flex align-items-center px-3" data-dismiss="modal" data-toggle="modal" data-target="#myModal" style="gap: 10px; background: none; border: none;">
+                <img src="images/icons/Phone_icon_ 1.png" alt="">
+                <p class="mb-0 bold-text" style="margin-left: 5px; display: flex; align-items: center;">Request a call back</p>
+            </button>
+        </div>       
         
         
           <div class="col-auto d-flex justify-content-end mb-2 mb-md-0">
@@ -679,7 +679,7 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0h4s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/form.js"></script>
+  <script src="js/popupcontactvalidate.js"></script>
     
   </body>
 </html>

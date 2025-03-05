@@ -9,14 +9,13 @@ use PHPMailer\PHPMailer\Exception;
 // Collect form data
 $to = ["education@rsrglobal.org"];
 // $to = ["solomonjenish@gmail.com"];
-$from = $_POST['email'];
-$name = $_POST['name'];
-$contact_number = $_POST['contact_number'];
-$qualification = $_POST['qualification'];
-$city = $_POST['city'];
-$program = $_POST['program'];
-$destination = $_POST['destination'];
-$message = $_POST['message'];
+$from = $_POST['email1'];
+$name = $_POST['name1'];
+$contact_number = $_POST['contact_number1'];
+$qualification = $_POST['qualification1'];
+$program = $_POST['program1'];
+$destination = $_POST['destination1'];
+$message = $_POST['message1'];
 $sub = 'Education Enquiry';
 $sub1 = 'Education Enquiry';
 
@@ -81,21 +80,6 @@ try {
 
     <p><strong>Best regards</strong>,<br>RSR Global Education Team <br><strong>www.rsrglobaleducation.com</strong></p>
 
-    h2>Follow Us on Social Media:</h2>
-    <p style='text-align: center;'>
-        <a href='https://www.facebook.com/profile.php?id=61573152189318' target='_blank' style='margin: 0 10px; text-decoration: none;'>
-            <img src='https://cdn-icons-png.flaticon.com/48/733/733547.png' width='30' height='30' alt='Facebook'>
-        </a>
-        <a href='https://www.instagram.com/rsrglobaleducation/' target='_blank' style='margin: 0 10px; text-decoration: none;'>
-            <img src='https://cdn-icons-png.flaticon.com/48/2111/2111463.png' width='30' height='30' alt='Instagram'>
-        </a>
-        <a href='https://www.linkedin.com/company/106014632/admin/dashboard/' target='_blank' style='margin: 0 10px; text-decoration: none;'>
-            <img src='https://cdn-icons-png.flaticon.com/48/145/145807.png' width='30' height='30' alt='LinkedIn'>
-        </a>
-        <a href='https://www.youtube.com/@RSRGlobalEducation' target='_blank' style='margin: 0 10px; text-decoration: none;'>
-            <img src='https://cdn-icons-png.flaticon.com/48/1384/1384060.png' width='30' height='30' alt='YouTube'>
-        </a>
-    </p>
     ";
 
     $mail->clearAddresses(); // Clear previous recipients

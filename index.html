@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="css/newstyle1.css">
 
      <!-- Bootstrap CSS -->
@@ -124,14 +125,14 @@
             <p><i class="fa-solid fa-phone"></i>Request a call back</p>
             
           </div> -->
-
-          <div class="d-flex justify-content-center align-items-center mb-2 mb-md-0">
-            <a href="javascript:void(0)" class="text-white d-flex align-items-center px-3" style="gap: 10px;">
-                <!-- <i class="fa-solid fa-phone" style="font-size: 1.4rem; display: flex; align-items: center;"></i> -->
-                 <img src="images/icons/Phone_icon_ 1.png" alt="">
-                <p class="mb-0 bold-text open-form" style="margin-left: 5px; display: flex; align-items: center;">Request a call back</p>
-            </a>
-        </div>        
+          
+        <div class="d-flex open-form justify-content-center align-items-center mb-2 mb-md-0">
+          <button id="openFormButton" class="text-white d-flex align-items-center px-3" data-dismiss="modal" data-toggle="modal" data-target="#myModal" style="gap: 10px; background: none; border: none;">
+              <img src="images/icons/Phone_icon_ 1.png" alt="">
+              <p class="mb-0 bold-text" style="margin-left: 5px; display: flex; align-items: center;">Request a call back</p>
+          </button>
+      </div>
+      
         
         
           <div class="col-auto d-flex justify-content-end mb-2 mb-md-0">
@@ -507,7 +508,7 @@
     
           <!-- Modal Body (Form) -->
           <div class="modal-body">
-            <form action="#" method="POST" role="form" class="enquiry-form ftco-animate">
+            <form action="/forms/popupcontact.php" method="POST" role="form" class="pop-form ftco-animate">
               <div class="row mb-1">
                 <div class="col-12 col-lg-6">
                   <div class="form-group">
@@ -579,6 +580,7 @@
               </div>
             </form>
           </div>
+
         </div>
       </div>
     </div>
@@ -1377,6 +1379,21 @@
       </div>
     </footer>
     
+    <!-- <h2>Follow Us on Social Media:</h2>
+    <p style='text-align: center;'>
+        <a href='https://www.facebook.com/profile.php?id=61573152189318' target='_blank' style='margin: 0 10px; text-decoration: none;'>
+            <img src='https://cdn-icons-png.flaticon.com/48/733/733547.png' width='30' height='30' alt='Facebook'>
+        </a>
+        <a href='https://www.instagram.com/rsrglobaleducation/' target='_blank' style='margin: 0 10px; text-decoration: none;'>
+            <img src='https://cdn-icons-png.flaticon.com/48/2111/2111463.png' width='30' height='30' alt='Instagram'>
+        </a>
+        <a href='https://www.linkedin.com/company/106014632/admin/dashboard/' target='_blank' style='margin: 0 10px; text-decoration: none;'>
+            <img src='https://cdn-icons-png.flaticon.com/48/145/145807.png' width='30' height='30' alt='LinkedIn'>
+        </a>
+        <a href='https://www.youtube.com/@RSRGlobalEducation' target='_blank' style='margin: 0 10px; text-decoration: none;'>
+            <img src='https://cdn-icons-png.flaticon.com/48/1384/1384060.png' width='30' height='30' alt='YouTube'>
+        </a>
+    </p> -->
   
 
   <!-- loader -->
@@ -1402,7 +1419,8 @@
   <script src="js/main.js"></script>
   <script src="js/contactvalidate.js"></script>
   <script src="js/custom.js"></script>
-  <script src="js/form.js"></script>
+  <!-- <script src="js/form.js"></script> -->
+  <script src="js/popupcontactvalidate.js"></script>
 
   <script>
 $(document).ready(function() {

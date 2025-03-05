@@ -7,7 +7,7 @@
 
 /* Modal Header */
 .modal-header {
-    background: #007bff;
+    /* background: #007bff; */
     color: white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -22,14 +22,14 @@
 }
 
 .modal-header .close {
-    color: white;
+    color: #000;
     font-size: 24px;
     opacity: 1;
     transition: 0.3s;
 }
 
 .modal-header .close:hover {
-    color: #f8f9fa;
+    color: #000;
 }
 
 /* Modal Body */
@@ -102,4 +102,86 @@
     .modal-body .btn {
         font-size: 16px;
     }
+}
+
+.pop-form {
+    background: #393BA7;
+    border-radius: 8px;
+    padding: 30px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    border: 2px solid #ccc;
+}
+
+.pop-form h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.pop-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.pop-form .error-message br+br {
+  margin-top: 25px;
+}
+
+.pop-form .sent-message {
+  display: none;
+  border-radius: 30px;
+  color: #fff;
+  background: #f9b3b3;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.pop-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.pop-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #0077B5;
+  border-top-color: #eee;
+  animation: animate-loading 1s linear infinite;
+}
+
+ .pop-form button[type=submit] {
+  background: #f9b3b3;
+  border: 0;
+  padding: 10px 35px;
+  color: #000;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.pop-form button[type=submit]:hover {
+  /* background: #4da6ff; */
+  background: #e69898;
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
