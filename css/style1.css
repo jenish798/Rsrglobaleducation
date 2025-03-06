@@ -185,3 +185,9 @@
     transform: rotate(360deg);
   }
 }
+
+/* button-border  */
+.bg{
+    border: none;
+    background: none;
+}
