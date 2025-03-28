@@ -8380,11 +8380,12 @@ h1, h2, h3, h4, h5,
 
 .hero-wrap {
   width: 100%;
-  height: 850px;
+  height: auto;
   position: inherit;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center; }
+  background-position: top center; 
+}
   @media (max-width: 1199.98px) {
     .hero-wrap {
       background-position: center center !important; } }
@@ -8397,7 +8398,8 @@ h1, h2, h3, h4, h5,
     content: '';
     opacity: .3;
     background: #000000;
-    height: 850px; }
+    height: 850px; 
+  }
   @media (max-width: 991.98px) {
     .hero-wrap {
       height: 1150px; }
@@ -8411,7 +8413,8 @@ h1, h2, h3, h4, h5,
       opacity: .3;
       height: 600px; }
     .hero-wrap.hero-wrap-2 .slider-text {
-      height: 600px !important; }
+      height: 600px !important; 
+    }
 
 .slider-text {
   height: 850px; }

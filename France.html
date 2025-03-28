@@ -44,8 +44,13 @@
   font-weight: bold;
 }
 
+.bg-color{
+  background-color:#393BA7 ;
+}
+
 .heading_color_black{
   color: #000;
+  font-weight: bold;
 }
 
 /*--------------------------------------------------------------
@@ -129,7 +134,7 @@
 
 .whyfrance {
       padding: 50px 0;
-      background-color: #f8f9fa;
+      /* background-color: #f8f9fa; */
     }
 
     .whyfrance .card {
@@ -155,6 +160,94 @@
     .whyfrance .card-body {
       padding: 15px 20px;
     }
+
+    /*--------------------------------------------------------------
+# francejobs
+--------------------------------------------------------------*/
+.francejobs-container {
+            margin-top: 80px;
+        }
+
+        .francejobs-card {
+          background: linear-gradient(135deg, #FFDAB9, #FFC1A1, #FFB07C);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            color: #fff;
+        }
+
+        .francejobs-card-header {
+            background-color: #FFC1A1;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .francejobs-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .francejobs-list li {
+            font-size: 1.1rem;
+            padding: 15px;
+            background-color: #ffffff;
+            color: #333;
+            margin-bottom: 12px;
+            border-radius: 8px;
+            border: 1px solid #e1e5f2;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .francejobs-list li:hover {
+            background-color: #eaf0ff;
+            transform: translateY(-4px);
+        }
+
+        .francejobs-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .francejobs-list li span {
+            color: #393BA7;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .francejobs-card-header {
+                font-size: 1.3rem;
+            }
+
+            .francejobs-list li {
+                font-size: 1rem;
+                padding: 12px;
+            }
+        }
+
+
+/*--------------------------------------------------------------
+# france visa
+--------------------------------------------------------------*/
+        .france-visa .card {
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.france-visa .card:hover {
+  transform: translateY(-5px);
+}
+
+.france-visa .card-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.france-visa .card-text {
+  font-size: 1rem;
+  line-height: 1.6;
+}
 
 /*--------------------------------------------------------------
 # australiacourse
@@ -206,176 +299,6 @@
       }
     }
 
-    /*--------------------------------------------------------------
-# tables
---------------------------------------------------------------*/
-
-.custom-table {
-          border: 3px solid black; /* Thicker outer border */
-      }
-      .custom-table th, 
-      .custom-table td {
-          border: 2px solid black !important; /* Thicker inner borders */
-          text-align: center; /* Align text to center */
-          vertical-align: middle;
-      }
-      .custom-table tr:last-child td {
-    border-bottom: 3px solid black !important; /* Ensures bottom line is black */
-}
-
-/*--------------------------------------------------------------
-# ukjobs
---------------------------------------------------------------*/
-
-.ukjobs-section {
-            /* background: linear-gradient(135deg, #141E30, #243B55); */
-            background: linear-gradient(135deg, #8B0000, #FD0011, #FF7373);
-            padding: 60px 0;
-            text-align: center;
-            color: white;
-        }
-        .ukjobs-header {
-            font-weight: bold;
-            color: #fff;
-            margin-bottom: 10px;
-            font-size: 32px;
-        }
-        .ukjobs-subtitle {
-            color: #fff;
-            margin-bottom: 40px;
-            font-size: 18px;
-        }
-
-        /* Job Card Slider */
-        .ukjobs-slider {
-            display: flex;
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
-            gap: 15px;
-            padding: 20px;
-            scrollbar-width: none; /* Hide scrollbar for cleaner UI */
-        }
-        .ukjobs-slider::-webkit-scrollbar {
-            display: none; /* Hide scrollbar on Webkit browsers */
-        }
-        .ukjobs-card {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 15px;
-            padding: 25px;
-            width: 280px;
-            flex: 0 0 auto;
-            scroll-snap-align: start;
-            backdrop-filter: blur(10px);
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
-            text-align: left;
-        }
-        .ukjobs-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.3);
-        }
-        .ukjobs-icon {
-            font-size: 40px;
-            margin-bottom: 15px;
-            color: #FFD700;
-        }
-        .ukjobs-title {
-            font-weight: bold;
-            font-size: 20px;
-            color: #fff;
-        }
-        .ukjobs-salary {
-            font-size: 14px;
-            color: #fff;
-        }
-
-        /* Scroll Buttons */
-        .ukjobs-btn {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(255, 255, 255, 0.2);
-            border: none;
-            padding: 5px 20px;
-            font-size: 24px;
-            cursor: pointer;
-            border-radius: 50%;
-            color: white;
-            transition: 0.3s;
-        }
-        .ukjobs-btn:hover {
-            background: rgba(255, 255, 255, 0.4);
-        }
-        .ukjobs-btn-left {
-            left: 10px;
-        }
-        .ukjobs-btn-right {
-            right: 10px;
-        }
-/*--------------------------------------------------------------
-# australiavisa
---------------------------------------------------------------*/
-.australiavisa-container {
-            margin-top: 80px;
-        }
-
-        .australiavisa-card {
-            background: linear-gradient(145deg, #007BFF, #0056b3);
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            color: #fff;
-        }
-
-        .australiavisa-card-header {
-            background-color: #0056b3;
-            text-align: center;
-            padding: 20px;
-            font-size: 1.5rem;
-            font-weight: 600;
-        }
-
-        .australiavisa-list {
-            list-style-type: none;
-            padding-left: 0;
-            margin: 0;
-        }
-
-        .australiavisa-list li {
-            font-size: 1.1rem;
-            padding: 15px;
-            background-color: #ffffff;
-            color: #333;
-            margin-bottom: 12px;
-            border-radius: 8px;
-            border: 1px solid #e1e5f2;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-
-        .australiavisa-list li:hover {
-            background-color: #eaf0ff;
-            transform: translateY(-4px);
-        }
-
-        .australiavisa-list li:last-child {
-            margin-bottom: 0;
-        }
-
-        .australiavisa-list li span {
-            color: #007BFF;
-            font-weight: 600;
-        }
-
-        @media (max-width: 768px) {
-            .australiavisa-card-header {
-                font-size: 1.3rem;
-            }
-
-            .australiavisa-list li {
-                font-size: 1rem;
-                padding: 12px;
-            }
-        }
 /*--------------------------------------------------------------
 # whyrsr
 --------------------------------------------------------------*/
@@ -626,10 +549,12 @@
               <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                 <li><a class="dropdown-item" href="usa.html">USA</a></li>
                 <li><a class="dropdown-item" href="uk.html">United Kingdom (UK)</a></li>
+                <li><a class="dropdown-item active" href="France.html">France</a></li>
+            <li><a class="dropdown-item" href="Germany.html">Germany</a></li>
                 <li><a class="dropdown-item" href="poland.html">Poland</a></li>
                 <li><a class="dropdown-item" href="ireland.html">Ireland</a></li>
                 <li><a class="dropdown-item" href="singapore.html">Singapore</a></li>
-                <li><a class="dropdown-item active" href="australia.html">Australia</a></li>
+                <li><a class="dropdown-item" href="australia.html">Australia</a></li>
                 <li><a class="dropdown-item" href="malaysia.html">Malaysia</a></li>
                 <li><a class="dropdown-item" href="ukraine.html">Ukraine</a></li>
                 <li><a class="dropdown-item" href="newzealand.html">New Zealand</a></li>
@@ -675,7 +600,7 @@
 
     
     
-    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/studydestination/australia.webp');" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/studydestination/france-banner.jpg');">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
@@ -691,7 +616,7 @@
       <div class="container">
         <div class="row">
     <div class="hyperlink-button-container">
-      <button class="hyperlink-button" onclick="scrollToSection('whyaustralia')">Why France</button>
+      <button class="hyperlink-button" onclick="scrollToSection('whyfrance')">Why France</button>
       <button class="hyperlink-button" onclick="scrollToSection('Universities')">Popular Universities</button>
       <button class="hyperlink-button" onclick="scrollToSection('Courses')">Top Courses</button>
       <button class="hyperlink-button" onclick="scrollToSection('Studying')">Cost of Studying</button>
@@ -707,64 +632,7 @@
 </div>
   </section>
 
-<!-- <section class="ftco-section ftco-degree-bg">
-    <div class="box-section" id="whyfrance">
-      <h4 class="mb-4 bold-text text-center">Why France?</h4>
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">
-  
-        <div class="col">
-          <div class="box text-center">
-            <img src="images/france/icons/education.png" alt="World-Class Education" class="icon france-icon mb-3" width="60">
-            <h5>World-Class Education</h5>
-            <p>France offers top-tier education with globally ranked institutions in science, business, engineering, and arts.</p>
-          </div>
-        </div>
-  
-        <div class="col">
-          <div class="box text-center">
-            <img src="images/france/icons/scholarship.png" alt="Affordable Education" class="icon france-icon mb-3" width="60">
-            <h5>Affordable Education and Scholarships</h5>
-            <p>Low tuition fees and multiple scholarships make France a more accessible study destination for international students.</p>
-          </div>
-        </div>
-  
-        <div class="col">
-          <div class="box text-center">
-            <img src="images/france/icons/culture.png" alt="Cultural Richness" class="icon france-icon mb-3" width="60">
-            <h5>Cultural Richness and Diversity</h5>
-            <p>Immerse yourself in a culture filled with art, history, fashion, and cuisine while enjoying vibrant French life.</p>
-          </div>
-        </div>
-  
-        <div class="col">
-          <div class="box text-center">
-            <img src="images/france/icons/lifestyle.png" alt="High Quality of Life" class="icon france-icon mb-3" width="60">
-            <h5>High Quality of Life</h5>
-            <p>Enjoy excellent healthcare, public transport, and a perfect balance between city excitement and natural beauty.</p>
-          </div>
-        </div>
-  
-        <div class="col">
-          <div class="box text-center">
-            <img src="images/france/icons/location.png" alt="Strategic Location" class="icon france-icon mb-3" width="60">
-            <h5>Strategic Location in Europe</h5>
-            <p>France's central location allows for easy travel to nearby European countries and a rich cultural exchange.</p>
-          </div>
-        </div>
-  
-        <div class="col">
-          <div class="box text-center">
-            <img src="images/france/icons/work.png" alt="Work Opportunities" class="icon france-icon mb-3" width="60">
-            <h5>Work & Post-Graduation Opportunities</h5>
-            <p>Work part-time while studying and explore full-time job options after graduation with a 12-month post-study visa.</p>
-          </div>
-        </div>
-  
-      </div>
-    </div>
-  </section> -->
-
-  <section class="whyfrance">
+  <section class="whyfrance ftco-section ftco-degree-bg" id="whyfrance">
     <div class="container">
       <h2 class="text-center mb-5">Why Study in France?</h2>
       <div class="row g-4">
@@ -961,12 +829,12 @@
       
 
       <section class="ftco-section ftco-degree-bg" id="Courses">
-        <h4 class="mb-3 bold-text text-center">Top Courses in Australia</h4>
+        <h4 class="mb-3 bold-text text-center">Top Courses in France</h4>
       <div class="container">
         <div class="australiacourse">
           <!-- Left Section (Image) -->
           <div class="left">
-            <img src="images/studydestination/australia/img-1.jpg" alt="Australia Courses" class="img-fluid">
+            <img src="images/studydestination/france/img-1.jpg" alt="france Courses" class="img-fluid">
           </div>
           <!-- Right Section (Content) -->
           <div class="right">
@@ -990,160 +858,379 @@
       </div>
     </section>
 
+    <!-- France Study Cost Section -->
+<section class="france-study-section py-5 ftco-section ftco-degree-bg" id="Studying">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h4 class="mb-3 bold-text text-center">Cost of Studying in France</h4>
+    </div>
+
+    <!-- Tuition Fees -->
+    <div class="france-box bg-white shadow-sm p-4 mb-4 rounded-4">
+      <h4 class="heading_color fw-semibold mb-3">1. Tuition Fees</h4>
+      <ul class="list-unstyled">
+        <li><strong>Public Universities:</strong>
+          <ul>
+            <li>Bachelor’s degree: €170 - €650/year (₹15K - ₹55K)</li>
+            <li>Master’s degree: €243 - €650/year (₹21K - ₹55K)</li>
+            <li>Doctoral programs: Fees are generally the same as for Master's students.</li>
+          </ul>
+        </li>
+        <li><strong>Private Institutions:</strong>o	Fees can range from <strong>€3,000 to €20,000+</strong> per year (₹2.5 lakh to ₹17 lakh), depending on the program.</li>
+      </ul>
+    </div>
+
+    <!-- Living Costs -->
+    <div class="france-box bg-white shadow-sm p-4 mb-4 rounded-4">
+      <h4 class="heading_color fw-semibold mb-3">2. Living Costs</h4>
+      <div class="row">
+        <div class="col-md-6">
+          <p><strong>Paris:</strong>Monthly expenses: €1,200 - €1,800 (₹1 lakh - ₹1.5 lakh), which includes rent, food, transport, and miscellaneous expenses.</p>
+        </div>
+        <div class="col-md-6">
+          <p><strong>Other Cities (e.g., Lyon, Toulouse, Nantes):</strong>Monthly expenses: €800 - €1,200 (₹70,000 - ₹1 lakh)</p>
+        </div>
+        <div class="col-md-6">
+          <p><strong>University Dorms:</strong> €200 - €600/month (₹17K - ₹52K)</p>
+        </div>
+        <div class="col-md-6">
+          <p><strong>Private Rentals:</strong> €400 - €1,000/month (₹35K - ₹87K), depending on the location.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional Costs -->
+    <div class="france-box bg-white shadow-sm p-4 mb-4 rounded-4">
+      <h4 class="heading_color fw-semibold mb-3">3. Additional Costs</h4>
+      <ul class="list-unstyled">
+        <li><strong>Health Insurance:</strong> For international students under 28, <strong>French social security</strong> costs approximately <strong>€250 - €500 per year</strong> (₹22,000 - ₹43,000). This covers most health-related expenses in France</li>
+        <li><strong>Books & Materials:</strong> €200 - €500/year (₹17K - ₹43K)</li>
+        <li><strong>•	Transportation:</strong> Public transport passes in cities like Paris cost around €30 - €75 per month (₹2,500 - ₹6,500).</li>
+      </ul>
+    </div>
+
+    <!-- Scholarships -->
+    <div class="france-box bg-white shadow-sm p-4 mb-4 rounded-4">
+      <h4 class="heading_color fw-semibold mb-3">4. Scholarships and Financial Aid</h4>
+      <ul class="list-unstyled">
+        <li>There are several <strong>scholarships</strong> available for international students, such as the <strong>Eiffel Excellence Scholarship,</strong> which can cover tuition, living expenses, and even travel costs.</li>
+        <li>Some institutions offer <strong>merit-based</strong> scholarships or <strong>need-based financial aid.</strong></li>
+      </ul>
+    </div>
+
+    <!-- Part-time Work -->
+    <div class="france-box bg-white shadow-sm p-4 mb-4 rounded-4">
+      <h4 class="heading_color fw-semibold mb-3">5. Part-Time Work Opportunities</h4>
+      <ul class="list-unstyled">
+        <li>International students in France can work <strong>part-time</strong> for up to <strong>20 hours per week</strong> during term time and full-time during holidays.</li>
+        <li>On average, part-time jobs pay <strong>€8 - €12 per hour</strong> (₹700 - ₹1,000). This can help cover a portion of living costs.</li>
+      </ul>
+    </div>
+
+    <!-- Conclusion -->
+    <div class="france-summary bg-color text-white p-4 rounded-4 shadow-sm">
+      <h5 class="fw-bold text-white">Conclusion:</h5>
+      <p>
+        The overall <strong>cost of studying in France</strong> for international students typically ranges from <strong>€10,000 to €30,000 per year</strong> (₹8 lakh to ₹26 lakh), depending on your program, location, and lifestyle. Scholarships, part-time jobs, and affordable public university options make France an attractive destination for higher education despite the costs.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="france-eligibility-section py-5 ftco-section ftco-degree-bg" id="Eligibility">
+  <div class="container">
+
+    <!-- Header -->
+    <div class="text-center mb-5">
+      <h4 class="mb-3 bold-text text-center">Eligibility Criteria for Studying in France</h4>
+    </div>
+
+    <!-- Section 1: Card Grid with Icon Column -->
+    <div class="bg-white rounded-4 shadow-lg p-5 mb-5 position-relative border-start border-danger border-5">
+      <h3 class="heading_color_black fw-bold mb-4">Eligibility for Undergraduate Programs (Bachelor's Degree)</h3>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <h5 class="fw-semibold heading_color">Academic Qualifications:</h5>
+          <ul>
+            <li>Bachelor’s: Completed 12 years of schooling (high school).</li>
+            <li>Master’s: Completed a Bachelor’s degree or equivalent.</li>
+            <li>Ph.D.: Completed a Master’s degree or equivalent, with research experience in the relevant field.</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h5 class="fw-semibold heading_color">Language Proficiency:</h5>
+          <ul>
+            <li>For French-taught programs: Proficiency in French (DELF/DALF certification, B2 level or higher).</li>
+            <li>For English-taught programs: Proof of English proficiency (IELTS/TOEFL).</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5 class="fw-semibold heading_color">Financial Proof:</h5>
+          <p>Show sufficient funds to cover tuition fees and living expenses (approximately €615 per month or ₹55,000).</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="fw-semibold heading_color">Valid Passport:</h5>
+          <p>Must have a valid passport for at least six months beyond your intended stay.</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="fw-semibold heading_color">Health Insurance:</h5>
+          <p>Proof of health insurance or enrollment in French social security (for students under 28).</p>
+        </div>
+        <div class="col-12">
+          <h5 class="fw-semibold heading_color">Acceptance Letter:</h5>
+          <p>An official acceptance letter from a French institution is required.</p>
+
+          <h5 class="fw-semibold heading_color">Visa Requirements:</h5>
+          <p>Apply for a long-stay student visa after meeting the above criteria.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2: Two-Tone Boxed Grid -->
+    <div class="rounded-4 shadow-lg p-5 mb-5 text-dark" style="background: linear-gradient(to right, #00c9ff, #92fe9d);">
+      <h3 class=" heading_color_black mb-4">Documents Required for Application</h3>
+      <p>Regardless of the level of study, the following documents are typically required when applying to French institutions:</p>
+
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <ul>
+            <li>Passport (valid for at least six months after your intended arrival date in France).</li>
+            <li>Academic Transcripts and Degree Certificates (translated into French or English if necessary).</li>
+            <li>English or French Proficiency Test Scores (IELTS, TOEFL, DELF/DALF).</li>
+            <li>Statement of Purpose (SOP) or Motivation Letter.</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul>
+            <li>Curriculum Vitae (CV) (for postgraduate and doctoral programs).</li>
+            <li>Recommendation Letters from professors or employers (for postgraduate and PhD programs).</li>
+            <li>Portfolio (if applying for creative courses like design, architecture, or art).</li>
+            <li>Proof of Financial Capability to cover living expenses and tuition fees during your stay.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 3: Clean Vertical Timeline Style -->
+    <div class="bg-white rounded-4 shadow-lg p-5 mb-5 border-start border-5 border-warning">
+      <h3 class="heading_color_black fw-bold mb-4">Student Visa Requirements</h3>
+      <ul class="timeline list-unstyled ps-3">
+        <li class="mb-4">
+          <strong class="heading_color">Eligibility:</strong>
+          <p>After being accepted into a French institution, you must apply for a student visa (long-stay visa for studies). The visa process requires proof of:</p>
+          <ul>
+            <li>Acceptance letter from a French institution.</li>
+            <li>Proof of sufficient funds to cover living and tuition expenses (about €615 per month).</li>
+            <li>Health insurance coverage for the duration of your stay in France.</li>
+            <li>A valid passport.</li>
+          </ul>
+        </li>
+        <li>
+          <strong class="heading_color">Visa Application Process:</strong>
+          <p>The visa application is done through Campus France, which handles the visa process for international students.</p>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Conclusion: Strong Blue Banner -->
+    <div class="bg-color text-white p-5 rounded-4 shadow-lg">
+      <h4 class="fw-bold text-white">Conclusion</h4>
+      <p class="mb-0">
+        The eligibility criteria for studying in France depend on the level of study, the course, and the institution.
+        While academic qualifications and language proficiency are key, the application process also involves gathering
+        various documents like transcripts, recommendation letters, and proof of financial support.
+        Be sure to check the specific requirements of the institution and program you are interested in and apply early
+        to ensure a smooth process!
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
     <section class="ftco-section ftco-degree-bg" id="Intakes">
       <div class="container" id="Intakes">
         <h4 class="text-center mb-4 bold-text">Intakes Available</h4>
-    
+        <div>
+          <h5 class="heading_color">1. Fall Intake (Autumn Intake)</h5>
+          <p class="bold-text">Application Deadlines</p>
         <ul>
-          <li> <span class="bold-text heading_color">February/March (Semester 1):</span> Major intake, most courses available</li>
-          <li><span class="bold-text heading_color">July (Semester 2):</span> Second-largest intake, many programs open</li>
-          <li><span class="bold-text heading_color">November (Summer/Trimester 3):</span> Limited courses, mainly for specific programs</li>
+          <li>Typically from <strong>January to April</strong> (depending on the university or program).</li>
+          <li>The application process may begin earlier, often in <strong>November</strong> or <strong>December</strong> the year before, especially for popular programs.</li>
         </ul>
+        </div>
+
+        <div>
+          <h5 class="heading_color">2. Spring Intake</h5>
+          <p class="bold-text">Application Deadlines</p>
+        <ul>
+          <li>For the <strong>Spring Intake,</strong> the application deadlines typically fall between <strong>October to December.</strong></li>
+          <li>Some universities may accept applications up until <strong>January or February,</strong> depending on the program</li>
+        </ul>
+        </div>
+
+        <div>
+          <h5 class="heading_color">3. Summer Intake</h5>
+          <p class="bold-text">Application Deadlines</p>
+        <ul>
+          <li>Some institutions, especially those offering short-term or summer courses, may have rolling admissions with deadlines in <strong>March to May.</strong></li>
+        </ul>
+        </div>
+        
       </div>
     </section>
 
-    <section class="ftco-section ftco-degree-bg" id="living">
-      <div class="container mt-4" id="Studying">
-        <h4 class="text-center mb-4 bold-text">Cost of Living (Approx. Monthly)</h4>
-        <div class="table-responsive">
-            <table class="table table-bordered table-striped custom-table">
-                <thead class="table-dark">
-                    <tr>
-                        <th class="bg-danger">Under Graduate</th>
-                        <th class="bg-danger">Post Graduate</th>
-                        <th class="bg-danger">Doctorate</th>
-                        <th class="bg-danger">Living Expenses</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>AUD 20,000 to 45,000 per year</td>
-                        <td>AUD 22,000 – 50,000 per year</td>
-                        <td>AUD 18,000 – 42,000 per year</td>
-                        <td>AUD 20,000 – 27,000 per year</td>
-                    </tr>
-                    <tr>
-                        <td>(10,84,200 to 24,39,450 INR)</td>
-                        <td>(11,92,620 to 27,10,500 INR)</td>
-                        <td>(INR 9,75,780 to 22,76,820)</td>
-                        <td>(INR 10,84,200 to INR 14,63,670)</td>
-                    </tr>
-                </tbody>
-            </table>
+    <section class="ftco-section ftco-degree-bg" id="Jobs">
+      <h4 class="text-center mb-4 bold-text">Jobs and Salaries</h4>
+      <div class="container francejobs-container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <div class="card francejobs-card">
+                    <div class="card-header francejobs-card-header">
+                        <p class=" text-center text-dark">Job Title	Average Salary (Annual)	Description</p>
+                    </div>
+                    <div class="card-body">
+                        <ul class="francejobs-list">
+                            <li><span>Software Developer:</span> 
+                            <p> €35,000 - €50,000 (₹30L - ₹43L)</p>
+                          <p> Developing software and applications for companies.</p></li>
+    
+                          <li><span>Data Scientist:</span> 
+                            <p> €40,000 - €55,000 (₹34L - ₹47L)</p>
+                          <p> Analyzing and interpreting complex data to help businesses.</p></li>
+    
+                          <li><span>Business Analyst:</span> 
+                            <p> €35,000 - €50,000 (₹30L - ₹43L)</p>
+                          <p> Analyzing business operations and suggesting improvements.</p></li>
+    
+                          <li><span>Marketing Manager:</span> 
+                            <p> €40,000 - €60,000 (₹34L - ₹52L)</p>
+                          <p> Planning and implementing marketing strategies for businesses.</p></li>
+    
+                          <li><span>Financial Analyst:</span> 
+                            <p> €35,000 - €50,000 (₹30L - ₹43L)</p>
+                          <p> Analyzing financial data, trends, and helping companies make decisions.</p></li>
+    
+                          <li><span>Project Manager:</span> 
+                            <p><strong>Salary:</strong> NZD 50,000 - NZD 70,000 per year</p>
+                          <p><strong>INR:</strong> ₹27,00,000 - ₹37,00,000</p></li>
+    
+                          <li><span>UX/UI Designer:</span> 
+                            <p> €35,000 - €50,000 (₹30L - ₹43L)</p>
+                          <p> Designing user-friendly interfaces and experiences</p></li>
+    
+                          <li><span>Healthcare Professionals:</span> 
+                            <p> €30,000 - €45,000 (₹26L - ₹39L)</p>
+                          <p> Doctors, nurses, and medical staff are always in demand.</p></li>
+    
+                          <li><span>Hospitality Manager:</span> 
+                            <p> €30,000 - €45,000 (₹26L - ₹39L)</p>
+                          <p> Managing operations in hotels, restaurants, and tourism-related businesses.</p></li>
+
+                          <li><span>Supply Chain Manager:</span> 
+                            <p>€40,000 - €55,000 (₹34L - ₹47L)</p>
+                          <p> Managing logistics, inventory, and supply chains for businesses.</p></li>
+    
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     </section>
 
-    <section class="ftco-section ftco-degree-bg" id="Eligibility">
-      <div class="container" id="Intakes">
-        <h4 class="text-center mb-4 bold-text">Eligibility</h4>
-        <p>To study in Australia, you need academic qualifications, English proficiency, financial proof, a GTE statement, and a Student Visa (Subclass 500).</p>
-    
+    <section class="ftco-section ftco-degree-bg" id="Visa">
+    <section class="france-visa container py-5">
+      <div class="text-center mb-5">
+        <h4 class="mb-3 bold-text text-center">Visa</h4>
       </div>
-    </section>
-
-    <section class="ftco-section ftco-degree-bg" id="living">
-      <div class="container" id="Intakes">
-        <h4 class="text-center mb-4 bold-text">Application Requirements</h4>
-        <p>For Australian applications, you need academic transcripts, English test scores, SOP, LORs (if required), resume (for PG), passport, proof of funds, and a student visa.</p>
     
-      </div>
-    </section>
-
-    <section class="ukjobs-section" id="Jobs">
-      <div class="container position-relative">
-          <h2 class="ukjobs-header">Jobs & Salaries</h2>
-          
-    
-          <!-- Job Cards Slider -->
-          <div class="ukjobs-slider" id="ukjobsSlider">
-              <!-- Investment Banker -->
-              <div class="ukjobs-card">
-                  <i class="bi bi-cash-stack ukjobs-icon"></i>
-                  <div class="ukjobs-title">Part-time jobs for students pay </div>
-                  <p class="ukjobs-salary">AUD 22–30 (INR 1,192.62 - INR 1,626.300) per hour</p>
-              </div>
-    
-              <!-- Software Engineer -->
-              <div class="ukjobs-card">
-                  <i class="bi bi-code-slash ukjobs-icon"></i>
-                  <div class="ukjobs-title">IT & Software </div>
-                  <p class="ukjobs-salary">AUD 80,000 – 120,000 (INR 43,36,800 - INR 65,05,200)</p>
-              </div>
-    
-              <!-- Data Analyst -->
-              <div class="ukjobs-card">
-                  <i class="bi bi-bar-chart ukjobs-icon"></i>
-                  <div class="ukjobs-title">Engineering</div>
-                  <p class="ukjobs-salary">AUD 75,000 – 110,000 (INR 40,65,750 - INR 59,63,100)</p>
-              </div>
-    
-              <!-- Surgeon -->
-              <div class="ukjobs-card">
-                  <i class="bi bi-hospital ukjobs-icon"></i>
-                  <div class="ukjobs-title">Healthcare (Doctors/Nurses) </div>
-                  <p class="ukjobs-salary">AUD 70,000 – 150,000 (INR 37,94,700 - INR 81,31,500)</p>
-              </div>
-    
-              <!-- Senior Consultant -->
-              <div class="ukjobs-card">
-                  <i class="bi bi-lightbulb ukjobs-icon"></i>
-                  <div class="ukjobs-title">Accounting & Finance </div>
-                  <p class="ukjobs-salary">AUD 65,000 – 100,000 (INR 35,23,650 - INR 54,21,000)</p>
-              </div>
-    
-              <!-- UX/UI Designer -->
-              <div class="ukjobs-card">
-                  <i class="bi bi-brush ukjobs-icon"></i>
-                  <div class="ukjobs-title">Marketing & Sales </div>
-                  <p class="ukjobs-salary">AUD 60,000 – 95,000 (INR 32,52,600 - INR 51,49,950)</p>
-              </div>
-    
-              <!-- Senior Financial Planner -->
-              <div class="ukjobs-card">
-                  <i class="bi bi-bank ukjobs-icon"></i>
-                  <div class="ukjobs-title">Hospitality & Tourism </div>
-                  <p class="ukjobs-salary">AUD 50,000 – 80,000 (INR 27,10,500 - INR 43,36,800)</p>
-              </div>
-
-              <div class="ukjobs-card">
-                <i class="bi bi-bank ukjobs-icon"></i>
-                <div class="ukjobs-title">Education & Teaching </div>
-                <p class="ukjobs-salary">AUD 60,000 – 90,000 (INR 32,52,600 - INR 48,78,900)</p>
+      <div class="row g-4">
+        <!-- Step 1 -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm border-start border-primary border-4">
+            <div class="card-body">
+              <h5 class="card-title heading_color">1. Acceptance Letter:</h5>
+              <p class="card-text">Get an admission letter from a French institution.</p>
             </div>
           </div>
+        </div>
     
-          <!-- Scroll Buttons -->
-          <button class="ukjobs-btn ukjobs-btn-left" onclick="scrollLeft()">&#10094;</button>
-          <button class="ukjobs-btn ukjobs-btn-right" onclick="scrollRight()">&#10095;</button>
+        <!-- Step 2 -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm border-start border-success border-4">
+            <div class="card-body">
+              <h5 class="card-title heading_color">2. Apply Through Campus France:</h5>
+              <p class="card-text">For most countries, you must apply through Campus France for pre-approval.</p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Step 3 -->
+        <div class="col-12 mb-4">
+          <div class="card shadow-sm border-start border-warning border-4">
+            <div class="card-body">
+              <h5 class="card-title heading_color">3. Required Documents:</h5>
+              <p class="card-text">
+                Valid passport (at least 6 months validity).<br>
+                Proof of financial resources (around €615/month).<br>
+                Proof of accommodation in France.<br>
+                Health insurance (coverage for the duration of stay).<br>
+                Academic documents (transcripts, diplomas, language proficiency).<br>
+                Visa application form.
+              </p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Step 4 -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm border-start border-danger border-4">
+            <div class="card-body">
+              <h5 class="card-title heading_color">4. Apply for Long-Stay Student Visa (VLS-TS):</h5>
+              <p class="card-text">
+                Submit your visa application to the French consulate in your home country.<br>
+                Pay the visa fee (around €50-€100).
+              </p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Step 5 -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm border-start border-info border-4">
+            <div class="card-body">
+              <h5 class="card-title heading_color">5. Visa Interview:</h5>
+              <p class="card-text">You may be asked to attend an interview or provide additional documents.</p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Step 6 -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm border-start border-secondary border-4">
+            <div class="card-body">
+              <h5 class="card-title heading_color">6. Receive Visa:</h5>
+              <p class="card-text">If approved, you’ll receive your long-stay student visa (VLS-TS), which allows you to study and stay in France for up to a year.</p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Step 7 -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm border-start border-dark border-4">
+            <div class="card-body">
+              <h5 class="card-title heading_color">7. Upon Arrival:</h5>
+              <p class="card-text">Once in France, you must validate your visa within 3 months via OFII (French Immigration Office).</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-
-    <section class="ftco-section ftco-degree-bg" id="Visa">
-    <div class="container australiavisa-container">
-      <div class="row justify-content-center">
-          <div class="col-12 col-md-8">
-              <div class="card australiavisa-card">
-                  <div class="card-header australiavisa-card-header">
-                      <h4 class="text-white">Visa</h4>
-                  </div>
-                  <div class="card-body">
-                      <ul class="australiavisa-list">
-                          <li><span>CoE:</span> Confirmation of Enrolment</li>
-                          <li><span>GTE:</span> Genuine Temporary Entrant Statement</li>
-                          <li><span>English Proficiency:</span> IELTS, TOEFL, or PTE</li>
-                          <li><span>Financial Proof:</span> Tuition + Living Expenses</li>
-                          <li><span>OSHC:</span> Overseas Student Health Cover</li>
-                          <li><span>Valid Passport:</span> Passport must be valid</li>
-                          <li><span>Visa Fee:</span> Approx. AUD 710</li>
-                          <li><span>Health & Character Certificate:</span> Required documentation</li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
+  </section>
+    
 
 <section class="ftco-section ftco-degree-bg">
   <section class="whyrsr-section" id="WhyRSR">
