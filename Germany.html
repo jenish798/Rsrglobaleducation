@@ -129,103 +129,168 @@
   background-color:#4C4FAF;  /* Darker green when hovered */
 }
 /*--------------------------------------------------------------
-# whyfrance
+# whygermany
 --------------------------------------------------------------*/
 
-.whyfrance {
-      padding: 50px 0;
-      /* background-color: #f8f9fa; */
+.whygermany-section {
+      padding: 80px 20px;
     }
 
-    .whyfrance .card {
-      border: none;
-      border-radius: 15px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-      transition: transform 0.2s;
+    .whygermany-title {
+      font-size: 38px;
+      font-weight: bold;
       text-align: center;
+      color: #003566;
+      margin-bottom: 60px;
     }
 
-    .whyfrance .card:hover {
-      transform: translateY(-5px);
+    .whygermany-row {
+      margin-bottom: 40px;
+      align-items: center;
     }
 
-    .whyfrance .card img {
-      width: 128px;
-      height: 128px;
-      object-fit: contain;
-      margin: 20px auto 10px;
-      border-radius: 10px;
+    .whygermany-card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      padding: 30px;
+      height: 100%;
     }
 
-    .whyfrance .card-body {
-      padding: 15px 20px;
+    /* .whygermany-iconblock {
+      min-height: 200px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      color: white;
+      font-weight: bold;
+    } */
+
+
+/* Apply to each .bg-* class separately for unique patterns */
+
+.bg-1 {
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23003566' fill-opacity='0.08'%3E%3Ccircle cx='5' cy='5' r='2'/%3E%3Ccircle cx='15' cy='5' r='2'/%3E%3Ccircle cx='5' cy='15' r='2'/%3E%3Ccircle cx='15' cy='15' r='2'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.bg-2 {
+  background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ad1457' fill-opacity='0.07'%3E%3Crect x='0' y='0' width='20' height='20'/%3E%3Crect x='20' y='20' width='20' height='20'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.bg-3 {
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  background-image: url("data:image/svg+xml,%3Csvg width='70' height='70' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23e65100' fill-opacity='0.06'%3E%3Cpath d='M35 0 L70 70 L0 70 Z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.bg-4 {
+  background: linear-gradient(135deg, #e0f2f1, #b2dfdb);
+  background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2300574b' fill-opacity='0.07'%3E%3Ccircle cx='15' cy='15' r='5'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.bg-5 {
+  background: linear-gradient(135deg, #e1f5fe, #b3e5fc);
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='%2300283a' stroke-opacity='0.06' stroke-width='1'%3E%3Cpath d='M0 10h20M10 0v20'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.bg-6 {
+  background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2300431a' fill-opacity='0.06'%3E%3Crect x='0' y='0' width='40' height='40'/%3E%3Crect x='40' y='40' width='40' height='40'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Common icon block styling */
+.whygermany-iconblock {
+  position: relative;
+  z-index: 2;
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  border-radius: 20px;
+  background-size: cover;
+  background-repeat: repeat;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+    @media (max-width: 767px) {
+      .whygermany-row {
+        flex-direction: column !important;
+      }
     }
 
-    /*--------------------------------------------------------------
-# francejobs
+
+/*--------------------------------------------------------------
+# popularcoursegermany
 --------------------------------------------------------------*/
-.francejobs-container {
-            margin-top: 80px;
-        }
+.popularcoursegermany-section {
+      padding: 80px 20px;
+    }
 
-        .francejobs-card {
-          background: linear-gradient(135deg, #FFDAB9, #FFC1A1, #FFB07C);
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            color: #fff;
-        }
+    .popularcoursegermany-title {
+      text-align: center;
+      font-size: 36px;
+      font-weight: 700;
+      color: #003566;
+      margin-bottom: 50px;
+    }
 
-        .francejobs-card-header {
-            background-color: #FFC1A1;
-            text-align: center;
-            padding: 20px;
-            font-size: 1.5rem;
-            font-weight: 600;
-        }
+    .popularcoursegermany-scroll {
+      overflow-x: auto;
+      white-space: nowrap;
+      padding-bottom: 10px;
+    }
 
-        .francejobs-list {
-            list-style-type: none;
-            padding-left: 0;
-            margin: 0;
-        }
+    .popularcoursegermany-card {
+      display: inline-block;
+      vertical-align: top;
+      width: 300px;
+      margin: 0 15px;
+      background: linear-gradient(to bottom right, #ffffff, #e3f2fd);
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-        .francejobs-list li {
-            font-size: 1.1rem;
-            padding: 15px;
-            background-color: #ffffff;
-            color: #333;
-            margin-bottom: 12px;
-            border-radius: 8px;
-            border: 1px solid #e1e5f2;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
+    .popularcoursegermany-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    }
 
-        .francejobs-list li:hover {
-            background-color: #eaf0ff;
-            transform: translateY(-4px);
-        }
+    .popularcoursegermany-uni {
+      font-weight: 600;
+      font-size: 18px;
+      color: #0d6efd;
+      margin-bottom: 10px;
+    }
 
-        .francejobs-list li:last-child {
-            margin-bottom: 0;
-        }
+    .popularcoursegermany-desc {
+      font-size: 15px;
+      color: #333;
+    }
 
-        .francejobs-list li span {
-            color: #393BA7;
-            font-weight: 600;
-        }
+    /* Make scroll snap smooth and elegant */
+    .popularcoursegermany-scroll {
+      scroll-snap-type: x mandatory;
+    }
 
-        @media (max-width: 768px) {
-            .francejobs-card-header {
-                font-size: 1.3rem;
-            }
+    .popularcoursegermany-card {
+      scroll-snap-align: start;
+    }
 
-            .francejobs-list li {
-                font-size: 1rem;
-                padding: 12px;
-            }
-        }
-
+    @media (max-width: 576px) {
+      .popularcoursegermany-card {
+        width: 90%;
+        margin: 0 10px;
+      }
+    }
 
 /*--------------------------------------------------------------
 # france visa
@@ -600,7 +665,7 @@
 
     
     
-    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/studydestination/germany.jpg');">
+    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/studydestination/Germany.webp');">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
@@ -616,7 +681,7 @@
       <div class="container">
         <div class="row">
     <div class="hyperlink-button-container">
-      <button class="hyperlink-button" onclick="scrollToSection('whyfrance')">Why Germany</button>
+      <button class="hyperlink-button" onclick="scrollToSection('whygermany')">Why Germany</button>
       <button class="hyperlink-button" onclick="scrollToSection('Universities')">Popular Universities</button>
       <button class="hyperlink-button" onclick="scrollToSection('Courses')">Top Courses</button>
       <button class="hyperlink-button" onclick="scrollToSection('Studying')">Cost of Studying</button>
@@ -632,76 +697,209 @@
 </div>
   </section>
 
-  <!-- <section class="whyfrance ftco-section ftco-degree-bg" id="whyfrance">
+  <section class="whygermany-section ftco-section ftco-degree-bg" id="whygermany">
     <div class="container">
-      <h2 class="text-center mb-5">Why Study in France?</h2>
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card h-100">
-            <img src="images/studydestination/france/icons/world-education.png" alt="World-Class Education" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">World-Class Education</h5>
-              <p class="card-text">France offers top-tier education, with many of its universities and institutions ranked among the best globally. Whether you're studying science, business, engineering, or arts, France has world-renowned programs that attract students from all over the world.</p>
-            </div>
+      <h2 class="whygermany-title">Why Germany?</h2>
+  
+      <div class="row whygermany-row d-flex flex-md-row flex-column-reverse">
+        <div class="col-md-6">
+          <div class="whygermany-card">
+            <div class="whygermany-number heading_color fw-bold mb-2">Quality Education:</div>
+            <div class="whygermany-text">Germany is home to world-class universities and offers a wide range of programs, especially in engineering, technology, and sciences.</div>
           </div>
         </div>
-  
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card h-100">
-            <img src="images/studydestination/france/icons/Affordable Education.png" alt="Affordable Education and Scholarships" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">Affordable Education and Scholarships</h5>
-              <p class="card-text">Compared to many other countries, France offers relatively low tuition fees, particularly at public universities. Additionally, the French government and universities provide various scholarships and financial aid options to international students, making it more accessible.</p>
-            </div>
-          </div>
+        <div class="col-md-6">
+          <div class="whygermany-iconblock bg-1">🎓</div>
         </div>
+      </div>
   
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card h-100">
-            <img src="images/studydestination/france/icons/diversity.png" alt="Cultural Richness and Diversity" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">Cultural Richness and Diversity</h5>
-              <p class="card-text">France is renowned for its rich cultural heritage, including art, history, fashion, and cuisine. Studying in France gives you the chance to immerse yourself in a unique culture while experiencing the country's dynamic arts and entertainment scene.</p>
-            </div>
-          </div>
+      <div class="row whygermany-row">
+        <div class="col-md-6">
+          <div class="whygermany-iconblock bg-2">💰</div>
         </div>
-  
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card h-100">
-            <img src="images/studydestination/france/icons/High Quality of Life.png" alt="High Quality of Life" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">High Quality of Life</h5>
-              <p class="card-text">France boasts a great quality of life, with excellent public transport, healthcare, and safety. The country also offers a balance between urban excitement and natural beauty, with picturesque villages and scenic landscapes to explore during your stay.</p>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card h-100">
-            <img src="images/studydestination/france/icons/Strategic Location in Europe.png" alt="Strategic Location in Europe" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">Strategic Location in Europe</h5>
-              <p class="card-text">France is centrally located in Europe, making it easy to travel to other European countries. With its well-developed transport network, you can visit iconic European cities and explore new cultures, all while studying in France.</p>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100">
-            <img src="images/studydestination/france/icons/Post-Graduation.png" alt="Work Opportunities and Post-Graduation Pathways" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">Work Opportunities and Post-Graduation Pathways</h5>
-              <p class="card-text">International students in France can work part-time during their studies to help cover living expenses. After graduation, students have the option to stay in France for up to 12 months to look for a job in their field. This work visa is a great opportunity for those who want to start their career in France or within the European Union.</p>
-            </div>
+        <div class="col-md-6">
+          <div class="whygermany-card">
+            <div class="whygermany-number heading_color fw-bold mb-2">Low or No Tuition Fees:</div>
+            <div class="whygermany-text">Many public universities in Germany have minimal or no tuition fees, making it more affordable than other countries.</div>
           </div>
         </div>
       </div>
+  
+      <div class="row whygermany-row d-flex flex-md-row flex-column-reverse">
+        <div class="col-md-6">
+          <div class="whygermany-card">
+            <div class="whygermany-number heading_color fw-bold mb-2">Strong Industry Connections:</div>
+            <div class="whygermany-text">Germany has a robust job market, especially in sectors like engineering, IT, and manufacturing, with excellent opportunities for internships and post-graduation employment.</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="whygermany-iconblock bg-3">🏭</div>
+        </div>
+      </div>
+  
+      <div class="row whygermany-row">
+        <div class="col-md-6">
+          <div class="whygermany-iconblock bg-4">🌍</div>
+        </div>
+        <div class="col-md-6">
+          <div class="whygermany-card">
+            <div class="whygermany-number heading_color fw-bold mb-2">Cultural Diversity:</div>
+            <div class="whygermany-text">Germany is a multicultural society, which makes it easier for international students to adapt and feel at home.</div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row whygermany-row d-flex flex-md-row flex-column-reverse">
+        <div class="col-md-6">
+          <div class="whygermany-card">
+            <div class="whygermany-number heading_color fw-bold mb-2">English-Taught Programs:</div>
+            <div class="whygermany-text">Many universities offer programs in English, especially at the master's level, making it easier for non-German speakers to study.</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="whygermany-iconblock bg-5">🗣️</div>
+        </div>
+      </div>
+  
+      <div class="row whygermany-row">
+        <div class="col-md-6">
+          <div class="whygermany-iconblock bg-6">🏡</div>
+        </div>
+        <div class="col-md-6">
+          <div class="whygermany-card">
+            <div class="whygermany-number heading_color fw-bold mb-2">High Standard of Living:</div>
+            <div class="whygermany-text">Germany offers excellent healthcare, public transportation, and a safe environment, making it an attractive destination for students.</div>
+          </div>
+        </div>
+      </div>
+  
     </div>
-  </section> -->
+  </section>
 
-    
+  <section class="popularcoursegermany-section">
+    <div class="container">
+      <h2 class="popularcoursegermany-title">Popular Universities in Germany</h2>
+      <div class="popularcoursegermany-scroll">
+  
+        <div class="popularcoursegermany-card">
+          <div class="popularcoursegermany-uni">Technical University of Munich (TUM)</div>
+          <div class="popularcoursegermany-desc">• Known for its strong focus on engineering, technology, and research, TUM is one of the top universities in Germany and is highly respected worldwide.</div>
+        </div>
+  
+        <div class="popularcoursegermany-card">
+          <div class="popularcoursegermany-uni">Ludwig Maximilian University of Munich (LMU)</div>
+          <div class="popularcoursegermany-desc">• Offering a wide range of programs across disciplines, LMU is known for its high academic standards and is one of the leading universities in Europe.</div>
+        </div>
+  
+        <div class="popularcoursegermany-card">
+          <div class="popularcoursegermany-uni">Heidelberg University</div>
+          <div class="popularcoursegermany-desc">• One of the oldest universities in Germany, it is renowned for its research-driven approach and excellence in fields such as medicine, natural sciences, and humanities.</div>
+        </div>
+  
+        <div class="popularcoursegermany-card">
+          <div class="popularcoursegermany-uni">University of Stuttgart</div>
+          <div class="popularcoursegermany-desc">• Famous for its engineering and technical programs, the University of Stuttgart is a great choice for students interested in engineering, automotive, and mechanical fields.</div>
+        </div>
+  
+        <div class="popularcoursegermany-card">
+          <div class="popularcoursegermany-uni">RWTH Aachen University</div>
+          <div class="popularcoursegermany-desc">• A top choice for students pursuing degrees in engineering and technology, RWTH Aachen is one of Europe's leading technical universities.</div>
+        </div>
+  
+        <div class="popularcoursegermany-card">
+          <div class="popularcoursegermany-uni">University of Freiburg</div>
+          <div class="popularcoursegermany-desc">• Known for its interdisciplinary research and strong academic reputation, the University of Freiburg offers a wide range of courses, especially in environmental sciences, engineering, and the arts.</div>
+        </div>
+  
+        <div class="popularcoursegermany-card">
+          <div class="popularcoursegermany-uni">Technical University of Berlin (TU Berlin)</div>
+          <div class="popularcoursegermany-desc">• Offering strong programs in engineering, computer science, and business, TU Berlin is well-known for its cutting-edge research and global connections.</div>
+        </div>
+  
+        <div class="popularcoursegermany-card">
+          <div class="popularcoursegermany-uni">University of Mannheim</div>
+          <div class="popularcoursegermany-desc">• Particularly known for its business, economics, and social sciences programs, Mannheim is a leading university for students looking to enter the business world.</div>
+        </div>
+  
+        <div class="popularcoursegermany-card">
+          <div class="popularcoursegermany-uni">University of Göttingen</div>
+          <div class="popularcoursegermany-desc">• Known for its research in natural sciences, mathematics, and medicine, Göttingen provides a rich academic experience for international students.</div>
+        </div>
+  
+        <div class="popularcoursegermany-card">
+          <div class="popularcoursegermany-uni">Frankfurt School of Finance & Management</div>
+          <div class="popularcoursegermany-desc">• If you're interested in finance and management, Frankfurt School is one of the leading institutions for business studies in Germany.</div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
 
-
+  <section class="ftco-section ftco-degree-bg">
+    <section class="whyrsr-section" id="WhyRSR">
+      <div class="container">
+        <h4 class="text-center mb-4 bold-text">Why RSR</h4>
+          <h2 class="whyrsr-header">6 Reasons to Pick RSR Global Education</h2>
+          <p class="whyrsr-subtitle text-center">Study in Your Preferred Destination with the Best Guidance</p>
+  
+          <div class="whyrsr-container">
+              <!-- Expert Guidance -->
+              <div class="whyrsr-card">
+                  <div class="whyrsr-icon">
+                      <img src="images/studydestination/uk/expert-icons.png" alt="expert-icons"/>
+                  </div>
+                  <div class="whyrsr-title">Expert Guidance</div>
+                  <p class="whyrsr-text">Personalized Counseling for University & Course Selection</p>
+              </div>
+  
+              <!-- Seamless Application Process -->
+              <div class="whyrsr-card">
+                  <div class="whyrsr-icon">
+                    <img src="images/studydestination/uk/application-process.png" alt="application-icons">
+                                  </div>
+                  <div class="whyrsr-title">Seamless Application Process</div>
+                  <p class="whyrsr-text">Assistance with Documentation, SOPs & Admission</p>
+              </div>
+  
+              <!-- Visa Support -->
+              <div class="whyrsr-card">
+                  <div class="whyrsr-icon">
+                    <img src="images/studydestination/uk/visa.png" alt="visa-icons">
+                  </div>
+                  <div class="whyrsr-title">Visa Support</div>
+                  <p class="whyrsr-text">End-to-end Visa Guidance for a smooth approval process</p>
+              </div>
+  
+              <!-- Affordable & Transparent Services -->
+              <div class="whyrsr-card">
+                  <div class="whyrsr-icon">
+                    <img src="images/studydestination/uk/customer-service.png" alt="customer-icons">
+                  </div>
+                  <div class="whyrsr-title">Affordable & Transparent Services</div>
+                  <p class="whyrsr-text">No hidden charges, ensuring cost-effective solutions</p>
+              </div>
+  
+              <!-- Post-Arrival Support -->
+              <div class="whyrsr-card">
+                  <div class="whyrsr-icon">
+                    <img src="images/studydestination/uk/job-support.png" alt="support-icons">
+                  </div>
+                  <div class="whyrsr-title">Post-Arrival Support</div>
+                  <p class="whyrsr-text">Accommodation, Job Assistance & Local Guidance</p>
+              </div>
+  
+              <!-- Financial Guidance & Scholarships -->
+              <div class="whyrsr-card">
+                  <div class="whyrsr-icon">
+                    <img src="images/studydestination/uk/scholarship.png" alt="scholarship-icons">
+                  </div>
+                  <div class="whyrsr-title">Financial Guidance & Scholarships</div>
+                  <p class="whyrsr-text">Guidance in academic pursuits & access to scholarships</p>
+              </div>
+          </div>
+      </div>
+  </section>
+  </section>
 
       <footer class="ftco-footer ftco-bg-dark ftco-section">
         <div class="container">
