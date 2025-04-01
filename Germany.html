@@ -44,6 +44,11 @@
   font-weight: bold;
 }
 
+.heading_color1 {
+        color: #FD0011;
+        font-weight: bold;
+    }
+
 .bg-color{
   background-color:#393BA7 ;
 }
@@ -276,7 +281,6 @@
       color: #333;
     }
 
-    /* Make scroll snap smooth and elegant */
     .popularcoursegermany-scroll {
       scroll-snap-type: x mandatory;
     }
@@ -292,77 +296,121 @@
       }
     }
 
-/*--------------------------------------------------------------
-# france visa
+    /*--------------------------------------------------------------
+# germanycourse
 --------------------------------------------------------------*/
-        .france-visa .card {
-  border-radius: 1rem;
-  transition: transform 0.3s ease;
-}
-
-.france-visa .card:hover {
-  transform: translateY(-5px);
-}
-
-.france-visa .card-title {
-  font-weight: 600;
-  font-size: 1.2rem;
-}
-
-.france-visa .card-text {
-  font-size: 1rem;
-  line-height: 1.6;
-}
+.germanycourse-container {
+            padding: 60px 0;
+            text-align: center;
+        }
+        .germanycourse-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .germanycourse-feature {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+            padding: 25px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+            margin-bottom: 20px;
+        }
+        .germanycourse-content > div:nth-child(1) .germanycourse-feature { background: #e3f2fd; }
+        .germanycourse-content > div:nth-child(2) .germanycourse-feature { background: #f1f8e9; }
+        .germanycourse-content > div:nth-child(3) .germanycourse-feature { background: #ffecb3; }
+        .germanycourse-content > div:nth-child(4) .germanycourse-feature { background: #f8bbd0; }
+        .germanycourse-content > div:nth-child(5) .germanycourse-feature { background: #d1c4e9; }
+        .germanycourse-content > div:nth-child(6) .germanycourse-feature { background: #c8e6c9; }
+        .germanycourse-content > div:nth-child(7) .germanycourse-feature { background: #ffe0b2; }
+        .germanycourse-content > div:nth-child(8) .germanycourse-feature { background: #b3e5fc; } 
+        .germanycourse-content > div:nth-child(9) .germanycourse-feature { background: #fce4ec; } 
+        .germanycourse-feature:hover {
+            transform: translateY(-8px);
+        }
+        .germanycourse-icon {
+            font-size: 50px;
+            color: #007bff;
+            margin-right: 20px;
+        }
+        .germanycourse-text {
+            text-align: left;
+        }
 
 /*--------------------------------------------------------------
-# australiacourse
+# Eligibility
 --------------------------------------------------------------*/
-        .australiacourse {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-    }
 
-    .australiacourse .left {
-      flex: 1;
-      padding: 15px;
-      text-align: center;
-    }
+.germanyeligibility-body {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+        .germanyeligibility-container {
+            max-width: 900px;
+            margin: auto;
+        }
+        .germanyeligibility-header {
+            font-weight: bold;
+            color: #343a40;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .germanyeligibility-timeline {
+            position: relative;
+            list-style: none;
+            padding: 0;
+        }
+        .germanyeligibility-timeline::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            width: 4px;
+            height: 100%;
+            background: #FD0011;
+        }
+        .germanyeligibility-timeline-item {
+            position: relative;
+            padding: 20px 0 20px 50px;
+        }
+        .germanyeligibility-timeline-item .icon {
+            position: absolute;
+            left: 6px;
+            top: 22px;
+            width: 28px;
+            height: 28px;
+            background: #FD0011;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+        }
+        .germanyeligibility-timeline-content {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
 
-    .australiacourse .right {
-      flex: 1;
-      padding: 15px;
-    }
+/*--------------------------------------------------------------
+# tables
+--------------------------------------------------------------*/
 
-    .australiacourse .right h3 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .australiacourse .right ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-
-    .australiacourse .right ul li {
-      margin-bottom: 10px;
-      font-size: 1.1rem;
-    }
-
-    /* Responsive Styles */
-    @media (max-width: 768px) {
-      .australiacourse {
-        flex-direction: column;
+.custom-table {
+          border: 3px solid black; /* Thicker outer border */
       }
-
-      .australiacourse .left, .australiacourse .right {
-        flex: none;
-        width: 100%;
-        margin-bottom: 20px;
+      .custom-table th, 
+      .custom-table td {
+          border: 2px solid black !important; /* Thicker inner borders */
+          text-align: center; /* Align text to center */
+          vertical-align: middle;
       }
-    }
+      .custom-table tr:last-child td {
+    border-bottom: 3px solid black !important; /* Ensures bottom line is black */
+}
 
 /*--------------------------------------------------------------
 # whyrsr
@@ -683,8 +731,8 @@
     <div class="hyperlink-button-container">
       <button class="hyperlink-button" onclick="scrollToSection('whygermany')">Why Germany</button>
       <button class="hyperlink-button" onclick="scrollToSection('Universities')">Popular Universities</button>
-      <button class="hyperlink-button" onclick="scrollToSection('Courses')">Top Courses</button>
-      <button class="hyperlink-button" onclick="scrollToSection('Studying')">Cost of Studying</button>
+      <button class="hyperlink-button" onclick="scrollToSection('germanycourse')">Top Courses</button>
+      <!-- <button class="hyperlink-button" onclick="scrollToSection('Studying')">Cost of Studying</button> -->
       <button class="hyperlink-button" onclick="scrollToSection('Eligibility')">Eligibility</button>
       <!-- <button class="hyperlink-button" onclick="scrollToSection('living')">Application Requirements</button> -->
       <button class="hyperlink-button" onclick="scrollToSection('Intakes')">Intakes Available</button>
@@ -776,61 +824,352 @@
     </div>
   </section>
 
-  <section class="popularcoursegermany-section">
+
+  <section class="germanyuniversities-section py-5 ftco-section ftco-degree-bg" id="Universities">
     <div class="container">
-      <h2 class="popularcoursegermany-title">Popular Universities in Germany</h2>
-      <div class="popularcoursegermany-scroll">
-  
-        <div class="popularcoursegermany-card">
-          <div class="popularcoursegermany-uni">Technical University of Munich (TUM)</div>
-          <div class="popularcoursegermany-desc">• Known for its strong focus on engineering, technology, and research, TUM is one of the top universities in Germany and is highly respected worldwide.</div>
+      <h4 class="text-center mb-4 bold-text">Popular Universities in Germany</h4>
+      <div class="row gy-4">
+        
+        <div class="col-md-6">
+          <div class="germanyuniversities-card p-4 shadow-sm bg-white rounded">
+            <h5 class="germanyuniversities-name fw-bold heading_color">Technical University of Munich (TUM)</h5>
+            <p>• Known for its strong focus on engineering, technology, and research, TUM is one of the top universities in Germany and is highly respected worldwide.</p>
+          </div>
         </div>
   
-        <div class="popularcoursegermany-card">
-          <div class="popularcoursegermany-uni">Ludwig Maximilian University of Munich (LMU)</div>
-          <div class="popularcoursegermany-desc">• Offering a wide range of programs across disciplines, LMU is known for its high academic standards and is one of the leading universities in Europe.</div>
+        <div class="col-md-6">
+          <div class="germanyuniversities-card p-4 shadow-sm bg-white rounded">
+            <h5 class="germanyuniversities-name fw-bold heading_color">Ludwig Maximilian University of Munich (LMU)</h5>
+            <p>• Offering a wide range of programs across disciplines, LMU is known for its high academic standards and is one of the leading universities in Europe.</p>
+          </div>
         </div>
   
-        <div class="popularcoursegermany-card">
-          <div class="popularcoursegermany-uni">Heidelberg University</div>
-          <div class="popularcoursegermany-desc">• One of the oldest universities in Germany, it is renowned for its research-driven approach and excellence in fields such as medicine, natural sciences, and humanities.</div>
+        <div class="col-md-6">
+          <div class="germanyuniversities-card p-4 shadow-sm bg-white rounded">
+            <h5 class="germanyuniversities-name fw-bold heading_color">Heidelberg University</h5>
+            <p>• One of the oldest universities in Germany, it is renowned for its research-driven approach and excellence in fields such as medicine, natural sciences, and humanities.</p>
+          </div>
         </div>
   
-        <div class="popularcoursegermany-card">
-          <div class="popularcoursegermany-uni">University of Stuttgart</div>
-          <div class="popularcoursegermany-desc">• Famous for its engineering and technical programs, the University of Stuttgart is a great choice for students interested in engineering, automotive, and mechanical fields.</div>
+        <div class="col-md-6">
+          <div class="germanyuniversities-card p-4 shadow-sm bg-white rounded">
+            <h5 class="germanyuniversities-name fw-bold heading_color">University of Stuttgart</h5>
+            <p>• Famous for its engineering and technical programs, the University of Stuttgart is a great choice for students interested in engineering, automotive, and mechanical fields.</p>
+          </div>
         </div>
   
-        <div class="popularcoursegermany-card">
-          <div class="popularcoursegermany-uni">RWTH Aachen University</div>
-          <div class="popularcoursegermany-desc">• A top choice for students pursuing degrees in engineering and technology, RWTH Aachen is one of Europe's leading technical universities.</div>
+        <div class="col-md-6">
+          <div class="germanyuniversities-card p-4 shadow-sm bg-white rounded">
+            <h5 class="germanyuniversities-name fw-bold heading_color">RWTH Aachen University</h5>
+            <p>• A top choice for students pursuing degrees in engineering and technology, RWTH Aachen is one of Europe's leading technical universities.</p>
+          </div>
         </div>
   
-        <div class="popularcoursegermany-card">
-          <div class="popularcoursegermany-uni">University of Freiburg</div>
-          <div class="popularcoursegermany-desc">• Known for its interdisciplinary research and strong academic reputation, the University of Freiburg offers a wide range of courses, especially in environmental sciences, engineering, and the arts.</div>
+        <div class="col-md-6">
+          <div class="germanyuniversities-card p-4 shadow-sm bg-white rounded">
+            <h5 class="germanyuniversities-name fw-bold heading_color">University of Freiburg</h5>
+            <p>• Known for its interdisciplinary research and strong academic reputation, the University of Freiburg offers a wide range of courses, especially in environmental sciences, engineering, and the arts.</p>
+          </div>
         </div>
   
-        <div class="popularcoursegermany-card">
-          <div class="popularcoursegermany-uni">Technical University of Berlin (TU Berlin)</div>
-          <div class="popularcoursegermany-desc">• Offering strong programs in engineering, computer science, and business, TU Berlin is well-known for its cutting-edge research and global connections.</div>
+        <div class="col-md-6">
+          <div class="germanyuniversities-card p-4 shadow-sm bg-white rounded">
+            <h5 class="germanyuniversities-name fw-bold heading_color">Technical University of Berlin (TU Berlin)</h5>
+            <p>• Offering strong programs in engineering, computer science, and business, TU Berlin is well-known for its cutting-edge research and global connections.</p>
+          </div>
         </div>
   
-        <div class="popularcoursegermany-card">
-          <div class="popularcoursegermany-uni">University of Mannheim</div>
-          <div class="popularcoursegermany-desc">• Particularly known for its business, economics, and social sciences programs, Mannheim is a leading university for students looking to enter the business world.</div>
+        <div class="col-md-6">
+          <div class="germanyuniversities-card p-4 shadow-sm bg-white rounded">
+            <h5 class="germanyuniversities-name fw-bold heading_color">University of Mannheim</h5>
+            <p>• Particularly known for its business, economics, and social sciences programs, Mannheim is a leading university for students looking to enter the business world.</p>
+          </div>
         </div>
   
-        <div class="popularcoursegermany-card">
-          <div class="popularcoursegermany-uni">University of Göttingen</div>
-          <div class="popularcoursegermany-desc">• Known for its research in natural sciences, mathematics, and medicine, Göttingen provides a rich academic experience for international students.</div>
+        <div class="col-md-6">
+          <div class="germanyuniversities-card p-4 shadow-sm bg-white rounded">
+            <h5 class="germanyuniversities-name fw-bold heading_color">University of Göttingen</h5>
+            <p>• Known for its research in natural sciences, mathematics, and medicine, Göttingen provides a rich academic experience for international students.</p>
+          </div>
         </div>
   
-        <div class="popularcoursegermany-card">
-          <div class="popularcoursegermany-uni">Frankfurt School of Finance & Management</div>
-          <div class="popularcoursegermany-desc">• If you're interested in finance and management, Frankfurt School is one of the leading institutions for business studies in Germany.</div>
+        <div class="col-md-6">
+          <div class="germanyuniversities-card p-4 shadow-sm bg-white rounded">
+            <h5 class="germanyuniversities-name fw-bold heading_color">Frankfurt School of Finance & Management</h5>
+            <p>• If you're interested in finance and management, Frankfurt School is one of the leading institutions for business studies in Germany.</p>
+          </div>
         </div>
   
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section ftco-degree-bg" id="germanycourse">
+    <section class="germanycourse-container">
+      <div class="container">
+        <h4 class="mb-3 bold-text">Most demanded Courses in Germany</h4>
+          <div class="row germanycourse-content">
+              <div class="col-md-6 col-lg-6">
+                  <div class="germanycourse-feature">
+                      <i class="germanycourse-icon bi bi-book"></i>
+                      <div class="germanycourse-text">
+                          <h5>Engineering (Mechanical, Electrical, Civil, Automotive)</h5>
+                          <p>Germany is known for its engineering excellence, with high demand in industries like automotive, robotics, and renewable energy</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6 col-lg-6">
+                  <div class="germanycourse-feature">
+                      <i class="germanycourse-icon bi bi-lightbulb"></i>
+                      <div class="germanycourse-text">
+                          <h5>Computer Science and IT</h5>
+                          <p>With the growing tech industry, courses in software engineering, artificial intelligence, and data science are highly sought after.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6 col-lg-6">
+                  <div class="germanycourse-feature">
+                      <i class="germanycourse-icon bi bi-briefcase"></i>
+                      <div class="germanycourse-text">
+                          <h5>Business Administration and Management</h5>
+                          <p>Germany's strong economy and global business connections make business courses, particularly in management, finance, and marketing, very popular.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6 col-lg-6">
+                  <div class="germanycourse-feature">
+                      <i class="germanycourse-icon bi bi-palette"></i>
+                      <div class="germanycourse-text">
+                          <h5>Natural Sciences (Physics, Chemistry, Biology)</h5>
+                          <p>German universities offer cutting-edge research opportunities in fields like physics, biology, and environmental sciences.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6 col-lg-6">
+                  <div class="germanycourse-feature">
+                      <i class="germanycourse-icon bi bi-people"></i>
+                      <div class="germanycourse-text">
+                          <h5>Medicine and Healthcare</h5>
+                          <p>Medical and healthcare courses are in demand, especially in fields like medicine, pharmacy, and health management.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6 col-lg-6">
+                  <div class="germanycourse-feature">
+                      <i class="germanycourse-icon bi bi-globe"></i>
+                      <div class="germanycourse-text">
+                          <h5>Renewable Energy and Environmental Engineering</h5>
+                          <p>With Germany's commitment to sustainability, courses in renewable energy, environmental science, and sustainable development are growing in demand.</p>
+                      </div>
+                  </div>
+              </div>
+             
+
+          </div>
+      </div>
+  </section>
+  </section>
+
+  <section class="ftco-section ftco-degree-bg" id="Eligibility">
+    <h4 class="text-center mb-4 bold-text">Eligibility</h4>
+    <div class="germanyeligibility-container" id="Application">
+      <!-- <h2 class="ukapplication-header">Application Requirements</h2> -->
+      <p>To study in Germany, Indian students need to meet the following eligibility criteria</p>
+      <ul class="germanyeligibility-timeline">
+
+          <li class="germanyeligibility-timeline-item">
+              <div class="icon"><i class="bi bi-mortarboard-fill"></i></div>
+              <div class="germanyeligibility-timeline-content">
+                  <h5 class="heading_color1">	Academic Qualifications</h5>
+                  <ul>
+                      <li>For undergraduate programs, you need to have completed 12 years of schooling (Class 12) with good grades. The Indian Board exams should be recognized by German institutions.</li>
+                      <li>For master's programs, a relevant bachelor's degree (usually a 3-4 year program) from a recognized university is required</li>
+                      
+                  </ul>
+              </div>
+          </li>
+
+          <li class="germanyeligibility-timeline-item">
+              <div class="icon"><i class="bi bi-book-fill"></i></div>
+              <div class="germanyeligibility-timeline-content">
+                  <h5 class="heading_color1"> Language Proficiency</h5>
+                  <ul>
+                      <li>For programs in <strong>German,</strong> a good score in the <strong>TestDaF</strong> or <strong>DSH</strong> exams is required</li>
+                      <li>For <strong>English-taught programs,</strong> you need to prove proficiency through tests like <strong>TOEFL</strong> or <strong>IELTS.</strong></li>
+                  </ul>
+              </div>
+          </li>
+
+          <li class="germanyeligibility-timeline-item">
+            <div class="icon"><i class="bi bi-book-fill"></i></div>
+            <div class="germanyeligibility-timeline-content">
+                <h5 class="heading_color1">	Visa Requirements</h5>
+                <ul>
+                    <li>You must apply for a <strong>Student Visa</strong> from the German embassy in India, providing proof of admission, financial resources (around €10,000 for living expenses), and health insurance</li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="germanyeligibility-timeline-item">
+          <div class="icon"><i class="bi bi-book-fill"></i></div>
+          <div class="germanyeligibility-timeline-content">
+              <h5 class="heading_color1"> Financial Proof</h5>
+              <ul>
+                  <li>Demonstrating financial stability is crucial, and students need to show they can cover living expenses in Germany (bank statements, scholarship, or financial guarantee).</li>
+              </ul>
+          </div>
+      </li>
+
+      <li class="germanyeligibility-timeline-item">
+        <div class="icon"><i class="bi bi-book-fill"></i></div>
+        <div class="germanyeligibility-timeline-content">
+            <h5 class="heading_color1"> Entrance Exams (if applicable):</h5>
+            <ul>
+                <li>Some courses, especially in fields like engineering or business, may require you to pass additional exams like <strong>GRE</strong> or <strong>GMAT.</strong></li>
+            </ul>
+        </div>
+    </li>
+
+      </ul>
+  </div>
+  </section>
+
+  <section class="ftco-section ftco-degree-bg" id="Intakes">
+    <div class="container">
+      <h4 class="text-center mb-4 bold-text">Intakes Available</h4>
+      <div>
+        <h5 class="heading_color">Winter Intake (October):</h5>
+      <ul>
+        <li>The primary intake for most programs, especially for undergraduate and master’s courses. Application deadlines are typically between <strong>May and July.</strong></li>
+      </ul>
+      </div>
+
+      <div>
+        <h5 class="heading_color"> Summer Intake (April)</h5>
+      <ul>
+        <li>Not as common as winter intake, but some universities offer certain programs, mainly master's courses. Application deadlines are usually between <strong>November and January</strong></li>
+      </ul>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="ftco-section ftco-degree-bg" id="Jobs">
+    <div class="container mt-4">
+      <h4 class="text-center mb-4 bold-text">Jobs and Salaries</h4>
+      <div class="table-responsive">
+          <table class="table table-bordered table-striped custom-table">
+              <thead class="table-dark">
+                  <tr>
+                      <th class="bg-danger">Job Title</th>
+                      <th class="bg-danger">Industry</th>
+                      <th class="bg-danger">Average Salary (per year)</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Software Engineer</td>
+                      <td>IT/Software Development</td>
+                      <td>€50,000 - €65,000</td>
+                  </tr>
+                  <tr>
+                      <td>Mechanical Engineer</td>
+                      <td>Engineering/Automotive</td>
+                      <td>€45,000 - €60,000</td>
+                  </tr>
+                  <tr>
+                      <td>Data Scientist</td>
+                      <td>IT/Technology</td>
+                      <td>€55,000 - €70,000</td>
+                  </tr>
+                  <tr>
+                      <td>Electrical Engineer</td>
+                      <td>Engineering/Energy</td>
+                      <td>€50,000 - €65,000</td>
+                  </tr>
+                  <tr>
+                    <td>Business Analyst</td>
+                    <td>Consulting/Finance</td>
+                    <td>€50,000 - €65,000</td>
+                </tr>
+                <tr>
+                  <td>Marketing Manager</td>
+                  <td>Marketing/Business</td>
+                  <td>€55,000 - €70,000</td>
+              </tr>
+              <tr>
+                  <td>Financial Analyst</td>
+                  <td>Finance/Banking</td>
+                  <td>€50,000 - €60,000</td>
+              </tr>
+              <tr>
+                  <td>Doctor/Healthcare Worker</td>
+                  <td>Healthcare/Medicine</td>
+                  <td>€60,000 - €80,000</td>
+              </tr>
+              <tr>
+                  <td>Civil Engineer</td>
+                  <td>Construction/Infrastructure</td>
+                  <td>€45,000 - €60,000</td>
+              </tr>
+              <tr>
+                <td>Project Manager</td>
+                <td>Management/Engineering</td>
+                <td>€55,000 - €70,000</td>
+            </tr>
+              </tbody>
+          </table>
+      </div>
+  </div>
+  </section>
+
+  <section class="germanyvisa-section py-5 ftco-section ftco-degree-bg" id="Visa">
+    <div class="container">
+      <h4 class="text-center mb-4 bold-text">Visa</h4>
+  
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6">
+          <div class="germanyvisa-text-left pe-lg-5">
+            <p>The visa process for studying in Germany as an international student involves a few key steps:</p>
+            <p><span class="heading_color">1.	Get Admission to a German University:</span><br>
+            Apply to a recognized German university and secure an offer letter for your desired course.</p>
+            <p><span class="heading_color">2.	Choose the Right Visa:</span><br>
+            Apply for a <strong>Student Visa</strong> (for full-time study) or <strong>Language Course Visa</strong> (if you're attending a language program before university).</p>
+            <p><span class="heading_color">3.	Gather Required Documents:</span><br>
+            <strong>Valid Passport</strong><br>
+            <strong>Admission letter</strong> from a German university<br>
+            <strong>Proof of financial resources</strong> (around €10,000 for living expenses)<br>
+            <strong>Proof of language proficiency</strong> (IELTS/TOEFL for English, or TestDaF/DSH for German)<br>
+            <strong>Health insurance coverage</strong><br>
+            <strong>Academic transcripts</strong> and certificates<br>
+            <strong>Visa application form</strong> and photo.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="germanyvisa-image-right text-center">
+            <img src="images/studydestination/germany/image-1.png" alt="Visa Info Image" class="img-fluid rounded shadow">
+          </div>
+        </div>
+      </div>
+  
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-1 order-2">
+          <div class="germanyvisa-image-left text-center">
+            <img src="images/studydestination/germany/image-2.png" alt="Visa Interview Image" class="img-fluid rounded shadow">
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-2 order-1">
+          <div class="germanyvisa-text-right ps-lg-5">
+            <p><span class="heading_color">4.	Submit Application:</span><br>
+            Submit your visa application to the <strong>German Embassy/Consulate</strong> in your home country. You may need to schedule an appointment for an interview.</p>
+            <p><span class="heading_color">5.	Visa Fee Payment:</span><br>
+            Pay the visa fee, which is usually around €75-€100.</p>
+            <p><span class="heading_color">6.	Attend Visa Interview (if required):</span><br>
+            You may be asked to attend an interview at the embassy or consulate.</p>
+            <p><span class="heading_color">7.	Wait for Visa Approval:</span><br>
+            Processing time can take around 6-8 weeks, so apply well in advance.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
