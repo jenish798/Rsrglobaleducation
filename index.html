@@ -126,7 +126,7 @@
       display: flex;
       flex-wrap: nowrap;
       overflow-x: auto;
-      scroll-behavior: smooth;
+      /* scroll-behavior: smooth; */
       white-space: nowrap;
     }
 
@@ -1383,6 +1383,7 @@
     
         <div id="logoCarousel" class="logo-carousel">
           <!-- Add your 20 logos here -->
+           
           <div class="logo-item"><img src="./images/partners/logo-1.jpg" alt="Logo 1"></div>
           <div class="logo-item"><img src="./images/partners/logo-2.jpg" alt="Logo 2"></div>
           <div class="logo-item"><img src="./images/partners/logo-3.png" alt="Logo 3"></div>
@@ -1527,12 +1528,12 @@
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
   <script src="js/contactvalidate.js"></script>
-  <script src="js/custom.js"></script>
+  <!-- <script src="js/custom.js"></script> -->
   <script src="js/popupcontactvalidate.js"></script>
 
   <!-- partners - logo scripts -->
 
-<script>
+<!-- <script>
   const carousel = document.getElementById('logoCarousel');
   let scrollSpeed = 3;
   let autoScroll;
@@ -1553,6 +1554,7 @@
 
   function startAutoScroll() {
     autoScroll = setInterval(() => {
+      console.log("running")
       carousel.scrollLeft += scrollSpeed;
 
       if (carousel.scrollLeft >= carousel.scrollWidth / 2) {
@@ -1569,7 +1571,59 @@
 
   carousel.addEventListener('mouseenter', stopAutoScroll);
   carousel.addEventListener('mouseleave', startAutoScroll);
+</script> -->
+
+<script>
+  const carousel = document.getElementById('logoCarousel');
+  let scrollSpeed = 4;
+  let animationFrameId;
+  let paused = false;
+
+  // Duplicate the content for infinite scrolling
+  carousel.innerHTML += carousel.innerHTML;
+
+  function scrollStep() {
+    if (!paused) {
+      carousel.scrollLeft += scrollSpeed;
+
+      if (carousel.scrollLeft >= carousel.scrollWidth / 2) {
+        carousel.scrollLeft = 0;
+      }
+    }
+    animationFrameId = requestAnimationFrame(scrollStep);
+  }
+
+  function startAutoScroll() {
+    paused = false;
+    scrollStep();
+  }
+
+  function stopAutoScroll() {
+    paused = true;
+    cancelAnimationFrame(animationFrameId);
+  }
+
+  // Scroll manually with buttons
+  function scrollLogos(offset) {
+    console.log("calling")
+    carousel.scrollLeft += offset;
+
+    // Loop logic
+    if (carousel.scrollLeft >= carousel.scrollWidth / 2) {
+      carousel.scrollLeft = 0;
+    } else if (carousel.scrollLeft < 0) {
+      carousel.scrollLeft = carousel.scrollWidth / 2;
+    }
+  }
+
+  // Start auto scroll on load
+  window.onload = startAutoScroll;
+
+  // Pause/resume on hover
+  carousel.addEventListener('mouseenter', stopAutoScroll);
+  carousel.addEventListener('mouseleave', startAutoScroll);
 </script>
+
 
   <script>
 $(document).ready(function() {
