@@ -8397,7 +8397,7 @@ h1, h2, h3, h4, h5,
     bottom: 0;
     content: '';
     opacity: .3;
-    background: #000000;
+    /* background: #000000; */
     height: 850px; 
   }
   @media (max-width: 991.98px) {
