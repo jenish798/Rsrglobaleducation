@@ -8416,6 +8416,19 @@ h1, h2, h3, h4, h5,
       height: 600px !important; 
     }
 
+    @media (max-width: 1200px) {
+      .hero-wrap {
+          background-size: contain;
+          background-position: center center;
+          background-color: #000; 
+      }
+      .hero-wrap.hero-wrap-2 .overlay {
+        width: 100%;
+        opacity: .3;
+        height: 800px; 
+      }
+  }
+
 .slider-text {
   height: 850px; }
   @media (max-width: 991.98px) {
