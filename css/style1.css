@@ -195,7 +195,9 @@
  /* webinar button blink */
 
     .blink-red {
-    color: red !important;
+      background-color: #ed3c0d !important;
+    color: #fff !important;
+    border-radius: 15px;
     animation: blinkRed 1s step-start infinite;
   }
 
