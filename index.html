@@ -203,6 +203,19 @@
     .news-ticker:hover .ticker-text{
       animation-play-state:paused ;
     }
+
+    /* webinar button blink */
+
+    .blink-red {
+    color: red !important;
+    animation: blinkRed 1s step-start infinite;
+  }
+
+  @keyframes blinkRed {
+    50% {
+      opacity: 0;
+    }
+  }
   </style>
 
   </head>
@@ -344,7 +357,7 @@
           </ul>
         </li>
         <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-        <li class="nav-item"><a href="Webinars.html" class="nav-link blink-red">Webinars</a></li>
+        <li class="nav-item blink-red"><a href="Webinars.html" class="nav-link blink-red">Webinars</a></li>
       </ul>
     </div>
   </div>

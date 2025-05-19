@@ -125,14 +125,3 @@
           text-align: center; /* Align text to center */
           vertical-align: middle;
       }
-
-  .blink-red{
-    animation:blinkRed is step-start infinite;
-    color: red
-  }
-
-  @keyframes blinkRed{
-    50%{
-      opacity: 0;
-    }
-  }
