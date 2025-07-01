@@ -204,6 +204,102 @@
       animation-play-state:paused ;
     }
 
+/* .logo-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+  max-height: 100px;
+}
+
+@media (max-width: 768px) {
+  .logo-container {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .logo img {
+    max-height: 80px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-container {
+    grid-template-columns: 1fr; 
+  }
+
+  .logo img {
+    max-height: 60px; 
+  }
+} */
+
+
+.logo-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px;
+  padding: 20px;
+  height: auto; 
+}
+
+.column {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  transition: all 0.5s ease;
+}
+
+.logo img {
+  padding-top: 20px;
+  max-width: 100%;
+  height: auto;
+  max-height: 100px; 
+}
+
+.column {
+  display: none;
+}
+
+.column.show {
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .logo-container {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+}
+
+@media (max-width: 992px) {
+  .logo-container {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-container {
+    grid-template-columns: repeat (2, 1fr); 
+    padding: 10px;
+  }
+  .logo img {
+    max-height: 80px; 
+  }
+}
+
+
   </style>
 
   </head>
@@ -1485,6 +1581,97 @@ Study in the USA - <a href="https://dubai.rsrglobaleducation.com/" target="_blan
       </div>
     </div>
 
+<div class="logo-container container">
+  <div class="column">
+    <div class="logo">
+      <img src="./images/partners/logo-1.jpg" alt="Lakehead University">
+    </div>
+    <div class="logo">
+      <img src="./images/partners/logo-2.jpg" alt="University Canada West">
+    </div>
+  </div>
+  <div class="column">
+    <div class="logo">
+      <img src="./images/partners/logo-3.png" alt="North Island College">
+    </div>
+    <div class="logo">
+      <img src="./images/partners/logo-4.png" alt="University of Texas Arlington">
+    </div>
+  </div>
+  <div class="column">
+    <div class="logo">
+      <img src="./images/partners/logo-5.png" alt="San José State University">
+    </div>
+    <div class="logo">
+      <img src="./images/partners/logo-6.png" alt="University of Houston">
+    </div>
+  </div>
+  <div class="column">
+    <div class="logo">
+      <img src="./images/partners/logo-7.png" alt="Niagara College Canada">
+    </div>
+    <div class="logo">
+      <img src="./images/partners/logo-8.jpg" alt="Stevens Institute of Technology">
+    </div>
+  </div>
+  <div class="column">
+    <div class="logo">
+      <img src="./images/partners/logo-9.png" alt="Niagara College Canada">
+    </div>
+    <div class="logo">
+      <img src="./images/partners/logo-10.jpg" alt="Stevens Institute of Technology">
+    </div>
+  </div>
+  <div class="column">
+    <div class="logo">
+      <img src="./images/partners/logo-11.png" alt="Niagara College Canada">
+    </div>
+    <div class="logo">
+      <img src="./images/partners/logo-12.png" alt="Stevens Institute of Technology">
+    </div>
+  </div>
+  <div class="column">
+    <div class="logo">
+      <img src="./images/partners/logo-13.jpg" alt="Niagara College Canada">
+    </div>
+    <div class="logo">
+      <img src="./images/partners/logo-14.png" alt="Stevens Institute of Technology">
+    </div>
+  </div>
+  <div class="column">
+    <div class="logo">
+      <img src="./images/partners/logo-15.png" alt="Niagara College Canada">
+    </div>
+    <div class="logo">
+      <img src="./images/partners/logo-16.png" alt="Stevens Institute of Technology">
+    </div>
+  </div>
+  <div class="column">
+    <div class="logo">
+      <img src="./images/partners/logo-17.jpg" alt="Niagara College Canada">
+    </div>
+    <div class="logo">
+      <img src="./images/partners/logo-18.png" alt="Stevens Institute of Technology">
+    </div>
+  </div>
+  <div class="column">
+    <div class="logo">
+      <img src="./images/partners/logo-19.jpg" alt="Niagara College Canada">
+    </div>
+    <div class="logo">
+      <img src="./images/partners/logo-20.png" alt="Stevens Institute of Technology">
+    </div>
+  </div>
+  <div class="column">
+    <div class="logo">
+      <img src="./images/partners/logo-21.jpg" alt="Niagara College Canada">
+    </div>
+    <div class="logo">
+      <img src="./images/partners/logo-22.png" alt="Stevens Institute of Technology">
+    </div>
+  </div>
+</div>
+
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
         <div class="row mb-5">
@@ -1705,6 +1892,41 @@ Study in the USA - <a href="https://dubai.rsrglobaleducation.com/" target="_blan
 $(document).ready(function() {
     $('#welcomeModal').modal('show');
   });
+  </script>
+
+  <script>
+   let currentIndex = 0;
+const columns = document.querySelectorAll('.column');
+const totalColumns = columns.length;
+
+// Show the first 4 columns initially
+for (let i = 0; i < 4; i++) {
+  columns[i].classList.add('show');
+}
+
+// Function to show the next set of 4 columns
+function nextColumns() {
+  // Remove the 'show' class from the current 4 columns
+  for (let i = currentIndex; i < currentIndex + 4; i++) {
+    if (i < totalColumns) {
+      columns[i].classList.remove('show');
+    }
+  }
+
+  // Move to the next set of 4 columns
+  currentIndex = (currentIndex + 1) % totalColumns;
+
+  // Show the next 4 columns
+  for (let i = currentIndex; i < currentIndex + 4; i++) {
+    if (i < totalColumns) {
+      columns[i].classList.add('show');
+    }
+  }
+}
+
+setInterval(nextColumns, 5000); 
+
+
   </script>
 
     
